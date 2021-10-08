@@ -1,0 +1,123 @@
+/* ----------------- GLOBAL STYLES -------------- */
+
+/* 
+COLOURS
+#D5E5F2 LIGHT-BLUE
+#8FB7C7 BLUE-MEDIUM
+#013440 DARK-BLUE
+#026259 DARK-GREEN
+#707070 DARK-GREY
+#5FB002 GREEN
+ */
+
+html {
+  scroll-behavior: smooth;
+}
+
+header {
+  background-color: #ffffff;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* ------------------------ HEADER STYLES -------------------- */
+
+.header-section {
+  max-width: 1610px;
+  border: black solid;
+  margin: 25px auto;
+}
+
+.logo {
+  margin: auto;
+  max-width: 160px;
+  display: block;
+}
+
+/* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
+
+.login-wish-cart {
+  border: orangered thin solid;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+  max-width: fit-content;
+  /* padding: 0 17px; */
+}
+
+.login-wish-cart p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  color: #013440;
+  margin: auto 0;
+  border: #013440 solid;
+  border-radius: 30px;
+  padding: 3px 26px;
+}
+
+.login-wish-cart img {
+  /* max-width: 33px; */
+  /* color: #013440; */
+}
+
+/* -------------------  NAVIGATION MENU STYLES ---------------- */
+
+.main-menu ul,
+.about-contact ul {
+  padding: 0;
+}
+
+.main-menu li,
+.about-contact li {
+  display: inline;
+  list-style-type: none;
+  margin: 0 12px;
+}
+
+.main-menu a,
+.about-contact a {
+  /* border: #013440 solid; */
+  color: #013440;
+  font-size: 1.5em;
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+/* -------------------  SEARCH MENU STYLES ---------------- */
+
+.search {
+  display: flex;
+  gap: 15px;
+}
+
+.search-area {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1.1em;
+  color: #8fb7c7;
+  border: #707070 thin solid;
+  padding: 4px 100px 4px 15px;
+  border-radius: 10px;
+}
+
+/* -----------------  ABOUT CONTACT US STYLES (see navigation menu styles) -------------- */
+
+.about-contact a {
+  font-size: 0.9em;
+}
+
+/* -------------------  FREE SHIPPING AREA STYLES ---------------- */
+/* 
+.free-shipping {
+  display: flex;
+  gap: 20px;
+}
+
+.free-shipping-text {
+  color: rgb(214, 93, 23);
+  text-decoration: underline;
+  font-style: italic;
+  font-size: 0.9em;
+} */
