@@ -8,6 +8,9 @@ COLOURS
 #026259 DARK-GREEN
 #707070 DARK-GREY
 #5FB002 GREEN
+#FFFFFF WHITE BACKGROUND
+#2AAF4D HOME CTA BACKGROUND
+#8FC7B8 LANDING IMAGE FILL COLOR
  */
 
 html {
@@ -25,27 +28,39 @@ body {
 /* ------------------------ HEADER STYLES -------------------- */
 
 .header-section {
-  max-width: 1610px;
-  border: black solid;
-  margin: 25px auto;
+  max-width: 1700px;
+  min-width: 1250px;
+  /* position: fixed; */
+  top: 0px;
+  /* border: black solid; */
+  margin: 0 auto 25px;
+}
+
+.header-section::after {
+  content: none;
+  display: table;
 }
 
 .logo {
-  margin: auto;
   max-width: 160px;
-  display: block;
+  /* display: block; */
+}
+
+.logo-container {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto 5px;
 }
 
 /* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
 
 .login-wish-cart {
-  border: orangered thin solid;
+  /* border: orangered thin solid; */
   display: flex;
   justify-content: center;
   align-items: center;
   gap: 25px;
   max-width: fit-content;
-  /* padding: 0 17px; */
 }
 
 .login-wish-cart p {
@@ -58,9 +73,10 @@ body {
   padding: 3px 26px;
 }
 
-.login-wish-cart img {
-  /* max-width: 33px; */
-  /* color: #013440; */
+.login-container {
+  display: flex;
+  justify-content: right;
+  margin-right: 35px;
 }
 
 /* -------------------  NAVIGATION MENU STYLES ---------------- */
@@ -108,6 +124,16 @@ body {
   font-size: 0.9em;
 }
 
+/* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */
+
+.menu-about-container {
+  display: flex;
+  margin: 10px auto 0;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
 /* -------------------  FREE SHIPPING AREA STYLES ---------------- */
 /* 
 .free-shipping {
@@ -121,3 +147,57 @@ body {
   font-style: italic;
   font-size: 0.9em;
 } */
+
+/* -------------------------  MAIN BODY STYLES --------------------- */
+
+.main-body {
+  max-width: 1344px;
+  margin: 0 auto;
+  padding: 20px 0;
+  position: relative;
+}
+
+.main-body-section {
+  border: #8fb7c7 thin solid;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+.landing-image {
+  max-height: 615px;
+  background-color: #8fc7b8;
+}
+
+.landing-cta {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 2.1em;
+  font-weight: bold;
+  border: #2aaf4d thin solid;
+  padding: 10px 50px;
+  background-color: #2aaf4d;
+  border-radius: 15px;
+  position: absolute;
+  left: 442px;
+  top: 390px;
+}
+
+.selling-point li {
+  color: #013440;
+  opacity: 0.8;
+  font-size: 2em;
+  /* font-style: italic; */
+  /* list-style-type: none; */
+  /* border-left: orangered thick solid; */
+  padding: 10px;
+}
+
+/* START HERE */
+
+.link-cta {
+  color: #013440;
+  font-size: 1.5em;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
