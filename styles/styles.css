@@ -36,10 +36,10 @@ body {
   margin: 0 auto 25px;
 }
 
-.header-section::after {
+/* .header-section::after {
   content: none;
   display: table;
-}
+} */
 
 .logo {
   max-width: 160px;
@@ -95,7 +95,6 @@ body {
 
 .main-menu a,
 .about-contact a {
-  /* border: #013440 solid; */
   color: #013440;
   font-size: 1.5em;
   padding: 0 10px;
@@ -109,12 +108,10 @@ body {
   gap: 15px;
 }
 
-.search-area {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  font-size: 1.1em;
-  color: #8fb7c7;
+.search-field {
+  font-size: 1em;
+  color: #013440;
   border: #707070 thin solid;
-  padding: 4px 100px 4px 15px;
   border-radius: 10px;
 }
 
@@ -151,8 +148,8 @@ body {
 /* -------------------------  MAIN BODY STYLES --------------------- */
 
 .main-body {
-  max-width: 1344px;
-  margin: 0 auto;
+  max-width: 1343px;
+  margin: 25px auto;
   padding: 20px 0;
   position: relative;
 }
@@ -163,16 +160,25 @@ body {
   flex-wrap: wrap;
   align-items: center;
 }
+
+/* ----------------------- LANDING IMAGE STYLES --------------------- */
+
 .landing-image {
   max-height: 615px;
   background-color: #8fc7b8;
 }
 
+.image-container {
+  display: inline-flex;
+}
+
 .landing-cta {
   color: #ffffff;
   text-decoration: none;
-  font-size: 2.1em;
+  text-align: center;
+  font-size: 2.3em;
   font-weight: bold;
+  min-width: fit-content;
   border: #2aaf4d thin solid;
   padding: 10px 50px;
   background-color: #2aaf4d;
@@ -182,22 +188,36 @@ body {
   top: 390px;
 }
 
+/* ----------------------- SELLING POINT STYLES --------------------- */
+
+.selling-point-section {
+  min-width: 419px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.selling-point {
+  margin: 50px auto;
+}
+
 .selling-point li {
   color: #013440;
   opacity: 0.8;
   font-size: 2em;
-  /* font-style: italic; */
-  /* list-style-type: none; */
-  /* border-left: orangered thick solid; */
   padding: 10px;
 }
 
-/* START HERE */
-
 .link-cta {
-  color: #013440;
+  color: #026259;
+  text-align: center;
   font-size: 1.5em;
+  max-width: 250px;
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+}
+
+/* ----------------------- FOOTER SECTION STYLES --------------------- */
+
+.footer {
+  background-color: #d5e5f2;
 }
