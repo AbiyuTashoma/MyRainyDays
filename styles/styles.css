@@ -30,7 +30,7 @@ header {
 
 .header-section {
   max-width: 1700px;
-  min-width: 1250px;
+  min-width: 1200px;
   /* position: fixed; */
   top: 0px;
   margin: 0 auto 25px;
@@ -77,6 +77,15 @@ header {
 }
 
 /* -------------------  NAVIGATION MENU STYLES ---------------- */
+
+#hamb-menu,
+.ham-menu-label {
+  display: none;
+}
+
+.hamburger-icon {
+  max-width: 2em;
+}
 
 .main-menu ul,
 .about-contact ul,
@@ -266,3 +275,56 @@ footer p {
   list-style-type: none;
   margin: 3px 0;
 }
+
+/* ----------------------- MEDIA QUERY --------------------- */
+
+@media only screen and (max-width: 1200px) {
+  .header-section {
+    min-width: 510px;
+  }
+
+  .menu-about-container {
+    align-items: flex-start;
+  }
+
+  .main-menu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .about-contact li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .ham-menu-label {
+    display: block;
+    font-size: 1em;
+    margin-left: 18px;
+  }
+
+  #hamb-menu:checked ~ .main-menu {
+    display: flex;
+    margin-bottom: 5px;
+  }
+}
+
+/* .menu-about-container {
+  flex-direction: column;
+  align-items: flex-start;
+  justify-items: left;
+  justify-items: flex-start;
+}
+.main-menu li,
+.about-contact li {
+  display: block;
+  margin-bottom: 5px;
+}
+search-field
+.search {
+  margin: 5px 18px;
+} */
