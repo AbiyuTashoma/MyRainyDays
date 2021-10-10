@@ -73,21 +73,24 @@ header {
 .login-container {
   display: flex;
   justify-content: right;
-  margin-right: 35px;
+  margin-right: 40px;
 }
 
 /* -------------------  NAVIGATION MENU STYLES ---------------- */
 
 .main-menu ul,
-.about-contact ul {
+.about-contact ul,
+.footer-menu ul,
+.footer-about ul {
   padding: 0;
+  margin: 0;
 }
 
 .main-menu li,
 .about-contact li {
   display: inline;
   list-style-type: none;
-  margin: 0 12px;
+  margin: 0 18px;
 }
 
 .main-menu a,
@@ -111,6 +114,7 @@ header {
 
 .search-field {
   font-size: 1em;
+  padding: 0 7px;
   border: #707070 thin solid;
   border-radius: 10px;
 }
@@ -121,6 +125,12 @@ header {
   font-size: 0.9em;
 }
 
+.main-menu a:hover,
+.about-contact a:hover,
+.footer-section a:hover {
+  opacity: 0.6;
+  border-bottom: #013440 thin solid;
+}
 /* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */
 
 .menu-about-container {
@@ -176,7 +186,7 @@ header {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  font-size: 2.3em;
+  font-size: 2.5em;
   font-weight: bold;
   min-width: fit-content;
   border: #2aaf4d thin solid;
@@ -222,22 +232,14 @@ header {
   margin: 0 auto;
 }
 
+/* see ABOUT CONTACT US STYLES for hover styles */
 .footer-section a,
 footer p {
-  /* border: olive thin solid; */
   font-size: 0.9em;
   text-decoration: none;
   padding: 1px 5px;
   margin: 0;
-}
-
-.footer-menu,
-.footer-about {
-  display: flex;
-  flex-direction: column;
-  gap: 2px;
-  justify-content: flex-start;
-  min-width: fit-content;
+  color: #013440;
 }
 
 .follow-us {
@@ -257,4 +259,10 @@ footer p {
   margin: 0 auto;
   padding: 10px 0;
   justify-content: space-between;
+}
+
+.footer-menu li,
+.footer-about li {
+  list-style-type: none;
+  margin: 3px 0;
 }
