@@ -20,6 +20,7 @@ html {
 body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: #013440;
+  margin: 0;
 }
 
 header {
@@ -29,17 +30,11 @@ header {
 /* ------------------------ HEADER STYLES -------------------- */
 
 .header-section {
-  max-width: 1700px;
-  min-width: 1200px;
-  /* position: fixed; */
+  max-width: 1600px;
+  min-width: 1170px;
   top: 0px;
   margin: 0 auto 25px;
 }
-
-/* .header-section::after {
-  content: none;
-  display: table;
-} */
 
 .logo {
   max-width: 160px;
@@ -48,7 +43,7 @@ header {
 .logo-container {
   display: flex;
   justify-content: center;
-  margin: 0 auto 5px;
+  margin: 0 auto 10px;
 }
 
 /* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
@@ -140,17 +135,18 @@ header {
   opacity: 0.6;
   border-bottom: #013440 thin solid;
 }
+
 /* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */
 
 .menu-about-container {
   display: flex;
-  margin: 10px auto 0;
+  margin: 20px auto 0;
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 
-/* -------------------  FREE SHIPPING AREA STYLES ---------------- */
+/* -------------------  FREE SHIPPING AREA STYLES (undecided)---------------- */
 /* 
 .free-shipping {
   display: flex;
@@ -167,28 +163,28 @@ header {
 /* -------------------------  MAIN BODY STYLES --------------------- */
 
 .main-body {
-  max-width: 1343px;
+  max-width: 1300px;
   margin: 25px auto;
   padding: 20px 0;
-  position: relative;
 }
 
 .main-body-section {
-  border: #8fb7c7 thin solid;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
+  justify-content: center;
 }
 
 /* ----------------------- LANDING IMAGE STYLES --------------------- */
 
 .landing-image {
-  max-height: 615px;
+  max-height: 600px;
   background-color: #8fc7b8;
 }
 
 .image-container {
   display: inline-flex;
+  position: relative;
 }
 
 .landing-cta {
@@ -203,14 +199,14 @@ header {
   background-color: #2aaf4d;
   border-radius: 15px;
   position: absolute;
-  left: 442px;
+  left: 300px;
   top: 390px;
 }
 
 /* ----------------------- SELLING POINT STYLES --------------------- */
 
 .selling-point-section {
-  min-width: 419px;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -242,6 +238,7 @@ header {
 }
 
 /* see ABOUT CONTACT US STYLES for hover styles */
+
 .footer-section a,
 footer p {
   font-size: 0.9em;
@@ -254,6 +251,7 @@ footer p {
 .follow-us {
   display: flex;
   align-items: center;
+  min-width: fit-content;
 }
 
 .media-icon {
@@ -263,24 +261,30 @@ footer p {
 
 .footer-section {
   display: flex;
-  max-width: 1343px;
-  min-width: 570px;
+  max-width: 1000px;
+  flex-wrap: wrap;
   margin: 0 auto;
   padding: 10px 0;
   justify-content: space-between;
+  align-items: flex-start;
 }
 
 .footer-menu li,
 .footer-about li {
   list-style-type: none;
   margin: 3px 0;
+  min-width: fit-content;
 }
 
 /* ----------------------- MEDIA QUERY --------------------- */
 
-@media only screen and (max-width: 1200px) {
+@media only screen and (max-width: 1153px) {
   .header-section {
     min-width: 510px;
+  }
+
+  .main-body {
+    min-width: 550px;
   }
 
   .menu-about-container {
@@ -311,20 +315,10 @@ footer p {
     display: flex;
     margin-bottom: 5px;
   }
-}
 
-/* .menu-about-container {
-  flex-direction: column;
-  align-items: flex-start;
-  justify-items: left;
-  justify-items: flex-start;
+  .landing-cta {
+    position: absolute;
+    left: 150px;
+    top: 390px;
+  }
 }
-.main-menu li,
-.about-contact li {
-  display: block;
-  margin-bottom: 5px;
-}
-search-field
-.search {
-  margin: 5px 18px;
-} */
