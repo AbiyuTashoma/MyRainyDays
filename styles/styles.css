@@ -370,6 +370,10 @@ footer p {
     min-width: 510px;
   }
 
+  .footer-section {
+    justify-content: space-around;
+  }
+
   .menu-about-container {
     align-items: flex-start;
   }
