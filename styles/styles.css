@@ -353,7 +353,7 @@ footer p {
 
 @media only screen and (max-width: 719px) {
   .landing-image {
-    max-width: 360px;
+    max-width: 400px;
   }
 
   .landing-cta {
