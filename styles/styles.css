@@ -280,8 +280,7 @@ footer p {
 
 .footer-section {
   display: flex;
-  max-width: 1000px;
-  min-width: 550px;
+  max-width: 1500px;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 10px 0;
@@ -312,6 +311,11 @@ footer p {
 
   .menu-about-container {
     align-items: flex-start;
+    justify-content: space-evenly;
+  }
+
+  .footer-section {
+    justify-content: space-evenly;
   }
 
   .main-menu li {
@@ -357,7 +361,7 @@ footer p {
     position: absolute;
     font-size: 1.5em;
     left: 50px;
-    top: 150px;
+    top: 180px;
   }
 
   .header-section {
