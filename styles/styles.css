@@ -253,7 +253,7 @@ header {
 /* ----------------------- FOOTER SECTION STYLES --------------------- */
 
 .footer {
-  background-color: #d5e5f2;
+  /* background-color: #d5e5f2; */
   margin: 0;
 }
 
@@ -271,7 +271,7 @@ footer p {
 .follow-us {
   display: flex;
   align-items: center;
-  min-width: fit-content;
+  /* min-width: fit-content; */
 }
 
 .media-icon {
@@ -364,13 +364,15 @@ footer p {
     top: 180px;
   }
 
-  .header-section {
+  .header-section,
+  .footer-section,
+  .main-body {
     min-width: 510px;
   }
 
-  .main-body {
-    min-width: 550px;
-  }
+  /* .main-body {
+    min-width: fit-content;
+  } */
 
   .menu-about-container {
     align-items: flex-start;
