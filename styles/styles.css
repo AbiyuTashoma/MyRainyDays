@@ -253,7 +253,7 @@ header {
 /* ----------------------- FOOTER SECTION STYLES --------------------- */
 
 .footer {
-  /* background-color: #d5e5f2; */
+  background-color: #d5e5f2;
   margin: 0;
 }
 
@@ -369,10 +369,6 @@ footer p {
   .main-body {
     min-width: 510px;
   }
-
-  /* .main-body {
-    min-width: fit-content;
-  } */
 
   .menu-about-container {
     align-items: flex-start;
