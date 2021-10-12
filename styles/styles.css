@@ -77,11 +77,13 @@ header {
   cursor: pointer;
 }
 
-.wish-cart:hover {
+.wish-cart:hover,
+.hamburger-icon:hover,
+.search-icon:hover {
   opacity: 0.6;
   cursor: pointer;
 }
-/* -------------------  NAVIGATION MENU STYLES ---------------- */
+/* -------------------  NAVIGATION MENU STYLES ( for hover style check LOGIN WISH-LIST CART STYLES)---------------- */
 
 #hamb-menu,
 .ham-menu-label {
@@ -89,7 +91,7 @@ header {
 }
 
 .hamburger-icon {
-  max-width: 2em;
+  max-width: 2.2em;
 }
 
 .main-menu ul,
@@ -119,7 +121,7 @@ header {
   border-bottom: #013440 solid;
 }
 
-/* -------------------  SEARCH MENU STYLES ---------------- */
+/* -------------------  SEARCH MENU STYLES ( for hover style check LOGIN WISH-LIST CART STYLES)---------------- */
 
 .search {
   display: flex;
@@ -189,7 +191,6 @@ header {
 
 .landing-image {
   max-height: 600px;
-  background-color: #8fc7b8;
 }
 
 .image-container {
@@ -252,7 +253,7 @@ header {
 
 .footer {
   background-color: #d5e5f2;
-  margin: 0 auto;
+  margin: 0;
 }
 
 /* see ABOUT CONTACT US STYLES for hover styles */
@@ -280,11 +281,13 @@ footer p {
 .footer-section {
   display: flex;
   max-width: 1000px;
+  min-width: 550px;
   flex-wrap: wrap;
   margin: 0 auto;
   padding: 10px 0;
   justify-content: space-between;
   align-items: flex-start;
+  background-color: #d5e5f2;
 }
 
 .footer-menu li,
@@ -296,7 +299,9 @@ footer p {
 
 /* ----------------------- MEDIA QUERY --------------------- */
 
-@media only screen and (max-width: 1153px) {
+/* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
+
+@media only screen and (min-width: 720px) and (max-width: 1153px) {
   .header-section {
     min-width: 510px;
   }
@@ -338,5 +343,57 @@ footer p {
     position: absolute;
     left: 150px;
     top: 390px;
+  }
+}
+
+/* ----------------------- Small size screens MEDIA QUERY --------------------- */
+
+@media only screen and (max-width: 719px) {
+  .landing-image {
+    max-width: 360px;
+  }
+
+  .landing-cta {
+    position: absolute;
+    font-size: 1.5em;
+    left: 50px;
+    top: 150px;
+  }
+
+  .header-section {
+    min-width: 510px;
+  }
+
+  .main-body {
+    min-width: 550px;
+  }
+
+  .menu-about-container {
+    align-items: flex-start;
+  }
+
+  .main-menu li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .main-menu {
+    display: none;
+  }
+
+  .about-contact li {
+    display: block;
+    margin-bottom: 5px;
+  }
+
+  .ham-menu-label {
+    display: block;
+    font-size: 1em;
+    margin-left: 18px;
+  }
+
+  #hamb-menu:checked ~ .main-menu {
+    display: flex;
+    margin-bottom: 5px;
   }
 }
