@@ -348,13 +348,17 @@ footer p {
     left: 150px;
     top: 390px;
   }
+
+  .login-container {
+    margin-right: 18px;
+  }
 }
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
 
 @media only screen and (max-width: 719px) {
   .landing-image {
-    max-width: 400px;
+    max-width: 380px;
   }
 
   .landing-cta {
@@ -367,7 +371,7 @@ footer p {
   .header-section,
   .footer-section,
   .main-body {
-    min-width: 510px;
+    min-width: 380px;
   }
 
   .footer-section {
@@ -401,5 +405,30 @@ footer p {
   #hamb-menu:checked ~ .main-menu {
     display: flex;
     margin-bottom: 5px;
+  }
+
+  .login-wish-cart {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    max-width: fit-content;
+  }
+
+  .login {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.7em;
+    margin: auto 0;
+    border: #013440 solid;
+    border-radius: 30px;
+    padding: 3px 15px;
+  }
+
+  .wish-cart {
+    max-width: 1.5em;
+  }
+
+  .login-container {
+    margin-right: 18px;
   }
 }
