@@ -407,6 +407,10 @@ footer p {
     margin-bottom: 5px;
   }
 
+  .search-field {
+    font-size: 0.7em;
+  }
+
   .login-wish-cart {
     display: flex;
     justify-content: center;
@@ -424,7 +428,8 @@ footer p {
     padding: 3px 15px;
   }
 
-  .wish-cart {
+  .wish-cart,
+  .search-icon {
     max-width: 1.5em;
   }
 
