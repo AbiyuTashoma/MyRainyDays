@@ -29,7 +29,7 @@ body {
 
 .header-container {
   background-color: #ffffff;
-  min-height: 200px;
+  /* min-height: 200px; */
   margin: 0 auto;
   align-content: center;
 }
@@ -50,7 +50,7 @@ body {
 
 .logo-container {
   text-align: center;
-  margin-bottom: 15px;
+  /* margin-bottom: 15px; */
 }
 
 /* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
@@ -60,7 +60,6 @@ body {
   justify-content: center;
   align-items: center;
   gap: 25px;
-  max-width: fit-content;
 }
 
 .login {
@@ -97,7 +96,7 @@ body {
 }
 
 .hamburger-icon {
-  max-width: 2.2em;
+  max-width: 2em;
 }
 
 .main-menu ul,
@@ -163,9 +162,9 @@ body {
 
 .menu-about-container {
   display: flex;
-  margin: 20px auto 0;
+  margin: 0 auto;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-wrap: wrap;
 }
 
@@ -311,7 +310,7 @@ footer p {
 
 /* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
 
-@media only screen and (min-width: 650px) and (max-width: 1153px) {
+@media only screen and (min-width: 501px) and (max-width: 1153px) {
   .header-section {
     min-width: 650px;
   }
@@ -352,8 +351,6 @@ footer p {
 
   .ham-menu-label {
     display: block;
-    font-size: 1em;
-    margin-left: 18px;
   }
 
   #hamb-menu:checked ~ .main-menu {
@@ -363,7 +360,6 @@ footer p {
   }
 
   .landing-cta {
-    /* position: absolute; */
     left: 150px;
     top: 390px;
   }
@@ -375,50 +371,42 @@ footer p {
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
 
-@media only screen and (max-width: 649px) {
-  .landing-image {
-    max-width: 350px;
+@media only screen and (max-width: 500px) {
+  .logo {
+    max-width: 100px;
   }
 
-  .landing-cta {
-    position: absolute;
-    font-size: 1.5em;
-    left: 12.5%;
-    top: 180px;
+  /* .header-container {
+    min-height: 165px;
+  } */
+
+  .login-wish-cart {
+    gap: 5px;
   }
 
-  .selling-point li {
-    font-size: 1.5em;
+  .login {
+    font-size: 0.7em;
+    margin: auto 0;
+    padding: 3px 5px;
+    border: #013440 solid thin;
   }
 
-  .selling-point {
-    margin: 25px auto;
+  .wish-cart,
+  .search-icon {
+    max-width: 1.5em;
   }
 
-  .header-section,
-  .footer-section,
-  .main-body {
-    min-width: 350px;
+  .search {
+    gap: 3px;
+  }
+  .search-field {
+    opacity: 0;
+    font-size: 0.8em;
   }
 
-  .main-body {
-    margin: 0 auto;
-  }
-
-  .header-section {
-    padding-bottom: 0;
-  }
-
-  .main-body-section {
-    flex-direction: column;
-  }
-
-  .menu-about-container {
-    align-items: flex-start;
-    justify-content: right;
-    gap: 50px;
-    flex-direction: row-reverse;
-    margin-right: 30px;
+  .search-field:focus-visible {
+    opacity: 1;
+    width: 80%;
   }
 
   .main-menu li {
@@ -438,8 +426,6 @@ footer p {
 
   .ham-menu-label {
     display: block;
-    font-size: 1em;
-    margin-left: 18px;
   }
 
   #hamb-menu:checked ~ .main-menu {
@@ -448,33 +434,64 @@ footer p {
     z-index: 100;
   }
 
-  .search-field {
-    font-size: 0.7em;
-    margin-right: 10px;
-  }
-
-  .login-wish-cart {
-    display: flex;
-    justify-content: center;
+  .menu-about-container {
+    grid-area: menu-about;
     align-items: center;
     gap: 20px;
-    max-width: fit-content;
+    /* min-width: 370px; */
   }
 
-  .login {
-    font-size: 0.7em;
-    margin: auto 0;
-    padding: 3px 15px;
-    border: #013440 solid thin;
-  }
-
-  .wish-cart,
-  .search-icon {
-    max-width: 1.5em;
+  /*grid area definition*/
+  .logo-container {
+    grid-area: logo;
   }
 
   .login-container {
-    margin-right: 30px;
+    grid-area: login;
+    margin-right: 0;
+  }
+
+  .header-section {
+    display: grid;
+    grid-template-areas:
+      "logo logo"
+      "menu-about login";
+    justify-content: center;
+    padding-bottom: 0;
+    margin: 0 auto;
+  }
+
+  .landing-image {
+    max-width: 360px;
+  }
+
+  .landing-cta {
+    font-size: 1.5em;
+    left: 12.5%;
+    top: 180px;
+  }
+
+  .selling-point li {
+    font-size: 1.5em;
+  }
+
+  .selling-point {
+    margin: 25px auto;
+  }
+
+  .header-section,
+  .footer-section,
+  .main-body {
+    min-width: 360px;
+  }
+
+  .main-body {
+    margin: 0 auto;
+    padding: 10px 0;
+  }
+
+  .main-body-section {
+    flex-direction: column;
   }
 
   .footer-section {
