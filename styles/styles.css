@@ -64,6 +64,8 @@ body {
   border: #013440 solid;
   border-radius: 30px;
   padding: 3px 26px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 .login-container {
@@ -77,6 +79,14 @@ body {
   cursor: pointer;
 }
 
+.wish-cart,
+.media-icon,
+.search-icon {
+  transition-property: opacity;
+  transition-duration: 0.5s;
+}
+
+.media-icon:hover,
 .wish-cart:hover,
 .hamburger-icon:hover,
 .search-icon:hover {
@@ -114,12 +124,14 @@ body {
   background-color: #ffffff;
 }
 
-.main-menu a,
-.about-contact a {
+.menu-a {
   color: #013440;
   font-size: 1.5em;
   padding: 2px 5px;
   text-decoration: none;
+  border-bottom: transparent;
+  transition-property: all;
+  transition-duration: 1s;
 }
 
 .active {
@@ -146,7 +158,8 @@ body {
   font-size: 0.9em;
 }
 
-.main-menu a:hover,
+/* .main-menu a:hover, */
+.menu-a:hover,
 .about-contact a:hover,
 .footer-section a:hover {
   opacity: 0.7;
@@ -215,7 +228,7 @@ body {
   background-color: #2aaf4d;
   border-radius: 15px;
   position: absolute;
-  left: 300px;
+  left: 250px;
   top: 390px;
 }
 
@@ -351,8 +364,8 @@ footer p {
   }
 
   .landing-cta {
-    left: 80px;
-    top: 250px;
+    left: 100px;
+    top: 270px;
   }
 }
 
@@ -451,7 +464,7 @@ footer p {
 
   .landing-cta {
     font-size: 1.5em;
-    left: 12.5%;
+    left: 55px;
     top: 180px;
   }
 
