@@ -82,7 +82,7 @@ body {
 .wish-cart,
 .media-icon,
 .search-icon {
-  transition-property: opacity;
+  transition-property: opacity, cursor;
   transition-duration: 0.5s;
 }
 
@@ -131,7 +131,7 @@ body {
   text-decoration: none;
   border-bottom: transparent;
   transition-property: all;
-  transition-duration: 1s;
+  transition-duration: 0.5s;
 }
 
 .active {
@@ -230,6 +230,8 @@ body {
   position: absolute;
   left: 250px;
   top: 390px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
 }
 
 .landing-cta:hover {
@@ -261,6 +263,8 @@ body {
   max-width: 250px;
   display: flex;
   flex-wrap: wrap;
+  transition-property: opacity;
+  transition-duration: 0.5s;
 }
 
 .link-cta:hover {
