@@ -71,7 +71,7 @@ body {
 .login-container {
   display: flex;
   justify-content: right;
-  margin: 20px 40px 20px 0;
+  margin: 20px 59px 20px 0;
 }
 
 .login:hover {
@@ -117,7 +117,7 @@ body {
 .about-contact li {
   display: inline;
   list-style-type: none;
-  margin: 0 5px;
+  margin: 0 15px;
 }
 
 .main-menu ul {
@@ -318,7 +318,7 @@ footer p {
 
 /* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
 
-@media only screen and (min-width: 551px) and (max-width: 1153px) {
+@media only screen and (min-width: 551px) and (max-width: 1180px) {
   .login-container {
     margin-right: 7px;
   }
