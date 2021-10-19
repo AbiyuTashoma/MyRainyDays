@@ -9,7 +9,7 @@ COLOURS
 #707070 DARK-GREY
 #5FB002 GREEN
 #FFFFFF WHITE BACKGROUND
-#2AAF4D HOME CTA BACKGROUND
+#2AAF4D HOME CTA BACKGROUND #19692f
 #00C60D HOME CTA HOVER
 #8FC7B8 LANDING IMAGE FILL COLOR
  */
@@ -223,19 +223,20 @@ body {
   font-size: 2.5em;
   font-weight: bold;
   min-width: fit-content;
-  border: #2aaf4d thin solid;
+  border: #19692f solid;
   padding: 10px 50px;
-  background-color: #2aaf4d;
+  background-color: #299748;
   border-radius: 15px;
   position: absolute;
   left: 250px;
   top: 390px;
-  transition-property: background-color;
+  transition-property: background-color, border;
   transition-duration: 0.5s;
 }
 
 .landing-cta:hover {
   background-color: #00c60d;
+  border: #00c60d solid;
 }
 
 /* ----------------------- SELLING POINT STYLES --------------------- */
