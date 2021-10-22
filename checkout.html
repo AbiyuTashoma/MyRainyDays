@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>RAINYDAYS | About</title>
+        <meta charset="UTF-8"/>
+        <meta name="description" content="mens womens quality outdoor jackets"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <!-- <link href="styles/about-contact.css" rel="stylesheet"/> -->
+        <link href="styles/styles.css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <header>
+            <section class="header-section">
+                <div class="logo-container">
+                    <a href="index.html" title="rainy days logo"><img src="images/RainyDays_Logo.png" alt="rainydays logo" class="logo"></a>
+                </div>
+                <div class="login-container">
+                    <div class="login-wish-cart">
+                        <p class="login" title="login">Login</p>
+                        <img src="icons/wish-list.svg" alt="wish list" title="wish list" class="wish-cart">
+                        <img src="icons/shopping-cart.svg" alt="shopping cart" title="shopping cart" class="wish-cart">
+                    </div>
+                </div>
+                <div class="menu-about-container">
+                    <div class="drop-down">
+                        <label for="hamb-menu" class="ham-menu-label"><img src="icons/hamburger-menu.svg" class="hamburger-icon" alt="hamburger menu"></label>
+                        <input type="checkbox" name="hamburger-menu" id="hamb-menu">
+                        <nav class="main-menu">
+                            <ul class="main-menu-ul">
+                                <li><a href="index.html" title="home" class="active menu-a">Home</a></li>
+                                <li><a href="womens.html" title="womens jackets" class="menu-a">Womens</a></li>
+                                <li><a href="mens.html" title="mens jackets" class="menu-a">Mens</a></li>
+                                <li><a href="new-arrivals.html" title="new arrivals jackets" class="menu-a">New Arrivals</a></li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <form class="search">
+                        <label for="search-item" class="search-label"><img src="icons/search.svg" alt="search icon" title="search" class="search-icon"></label>
+                        <input type="search" name="search-item" id="search-item" title="search" class="search-field">
+                    </form>
+                    <nav class="about-contact">
+                        <ul>
+                            <li><a href="about.html" title="about rainydays" class="menu-a">About RAINYDAYS</a></li>
+                            <li><a href="contact-us.html" title="contact us" class="menu-a">Contact Us</a></li>
+                        </ul>
+                    </nav>
+                <!-- <div class="free-shipping">
+                    <p class="free-shipping-text">Free Shipping All Over The World</p>
+                    <img src="icons/delivery-truck.svg" alt="delivery truck" class="delivery-truck">
+                </div> -->
+                </div>
+            </section>
+        </header>
+
+        <main class="main-body">
+            <section class="checkout-section">
+                <ol>
+                    <li>login for early checkout</li>
+                        <form>
+                            <label for="username" title="username">Username</label><input type="text" name="username" id="username">
+                            <label for="password" title="password">Password</label><input type="password" name="password" id="password">
+                            <input type="submit" title="login" name="login" value="Login">
+                        </form>
+                        <div>
+                            <label for="register">New user</label>
+                            <input type="button" title="register" name="register" value="Register">
+                        </div>
+                        <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
+                        <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
+                </ol>
+                <form>
+                    <ol>
+                        <li>Contact information</li>
+                            <ul>
+                                <li>
+                                    <label for="first-name" title="name">Name</label>
+                                    <input type="text" title="first name" id="first-name" name="first-name">
+                                    <input type="text" title="last name" id="last-name" name="last-name">
+                                </li>
+                                <li>
+                                    <label for="street-name" title="address">Address</label>
+                                    <input type="text" title="street name" name="street-name" id="street-name">
+                                    <input type="text" title="street number" name="street-number" id="street-number">
+                                    <input type="number" title="postal code" name="postal-code" id="postal-code">
+                                    <input type="text" title="city" name="city" id="city">
+                                    <input type="text" title="country" name="country" id="country">
+                                </li>
+                                <li>
+                                    <label for="mobile-number" title="telephone number">Telephone</label>
+                                    <input type="tel" title="mobile phone number" name="mobile-number" id="mobile-number">
+                                    <input type="tel" title="line phone number" name="line-number" id="line-number"> 
+                                </li>
+                                <li>
+                                    <label for="email" title="email address">Email</label>
+                                    <input type="email" title="email address" name="email" id="email">
+                                    <input type="email" title="repeat amail address" name="email-2" id="email-2"> 
+                                </li>
+                            </ul>
+                            
+                        <li>Shipping information</li>
+                            <input type="checkbox" name="same-contact-info" id="same-contact-info"><label for="same-contact-info" title="same as contact information">Same as Contact Information</label>
+                            <input type="text" title="shipping street name" name="shipping-street-name" id="shipping-street-name">
+                            <input type="text" title="shipping street number" name="shipping-street-number" id="shipping-street-number">
+                            <input type="number" title="shipping postal code" name="shipping-postal-code" id="shipping-postal-code">
+                            <input type="text" title="shipping city" name="shipping-city" id="shipping-city">
+                            <input type="text" title="shipping country" name="shipping-country" id="shipping-country">
+                        <li>Payment information</li>
+                            <input type="radio" name="visa-vipps" id="visa" value="visa"><label for="visa" title="visa">Visa</label>
+                                <ul>
+                                    <li>
+                                        <label for="card-number" title="card number">Card number</label>
+                                        <input type="number" title="card number" name="card number" id="card-number">
+                                    </li>
+                                    <li>
+                                        <label for="month" title="expire date">Valid thru</label>
+                                        <input type="number" title="month" name="month" id="month">
+                                        <input type="number" title="year" name="year" id="year">
+                                    </li>
+                                    <li>
+                                        <label for="cvc" title="cvc code">CVC</label>
+                                        <input type="number" title="cvc" name="cvc" id="cvc">
+                                    </li>
+                                </ul>
+                            <input type="radio" name="visa-vipps" id="vipps" value="vipps"><label for="vipps" title="vipps">Vipps</label>
+                                <div>vipps logo</div>
+                                <label for="vipps-mobile" title="vipps mobile">Mobile</label>
+                                <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile">
+                            <input type="checkbox" name="remember-me" id="remember-me">
+                            <label for="remember-me" title="remember me">Remember me</label>
+                            <input type="submit" name="check-out" id="check-out" title="continue">
+                    </ol>
+            </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-section">
+                <div class="footer-menu">
+                    <ul>
+                        <li><a href="index.html" title="home" class="menu-a">Home</a></li>
+                        <li><a href="womens.html" title="womens jackets" class="menu-a">Womens</a></li>
+                        <li><a href="mens.html" title="mens jackets" class="menu-a">Mens</a></li>
+                        <li><a href="new-arrivals.html" title="new arrivals jackets" class="menu-a">New Arrivals</a></li>
+                        <li><a href="new-arrivals.html" title="new arrivals jackets" class="menu-a">Get Inspired</a></li>
+                        <li><a href="new-arrivals.html" title="new arrivals jackets" class="menu-a">More from RAINYDAYS</a></li>
+                    </ul>
+                </div>
+                <div class="footer-about">
+                    <p>RAINYDAYS</p>
+                    <ul>
+                        <li><a href="about.html" title="about rainydays" class="menu-a">About Us</a></li>
+                        <li><a href="contact-us.html" title="contact us" class="menu-a">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="follow-us">
+                    <p>Follow us on</p>
+                    <img src="icons/social-media/facebook.svg" class="media-icon" alt="RAINYDAYS facebook channel" title="facebook channel">
+                    <img src="icons/social-media/instagram.svg" class="media-icon" alt="RAINYDAYS instagram channel" title="instagram channel">
+                    <img src="icons/social-media/tiktok.svg" class="media-icon" alt="RAINYDAYS tiktok channel" title="tiktok channel">
+                    <img src="icons/social-media/twitter.svg" class="media-icon" alt="RAINYDAYS twitter channel" title="twitter channel">
+                    <img src="icons/social-media/youtube.svg" class="media-icon" alt="RAINYDAYS youtube channel" title="youtube channel">
+                </div>
+            </div>
+        </footer>
+
+    </body>
+</html>
