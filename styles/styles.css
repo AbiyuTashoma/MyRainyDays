@@ -2,15 +2,15 @@
 
 /* 
 COLOURS
-#D5E5F2 LIGHT-BLUE
+#E6F4FF LIGHT-BLUE FOOTER BACKGROUND
 #8FB7C7 BLUE-MEDIUM
 #013440 DARK-BLUE
 #026259 DARK-GREEN
 #707070 DARK-GREY
 #5FB002 GREEN
-#FFFFFF WHITE BACKGROUND
+#FFFFFF WHITE BODY BACKGROUND
 #299748 HOME CTA BACKGROUND
-#18b418 HOME CTA HOVER
+#18b418 HOME CTA HOVER BACKGROUND
 #8FC7B8 LANDING IMAGE FILL COLOR
  */
 
@@ -75,21 +75,24 @@ body {
 }
 
 .login:hover {
-  background-color: #d5e5f2;
+  background-color: #e6f4ff;
   cursor: pointer;
 }
 
+.wish {
+  fill: lightseagreen;
+}
+
 .wish-cart,
-.media-icon,
 .search-icon {
   transition-property: opacity, cursor;
   transition-duration: 0.5s;
 }
 
-.media-icon:hover,
 .wish-cart:hover,
 .hamburger-icon:hover,
 .search-icon:hover {
+  fill: #18b418;
   opacity: 0.7;
   cursor: pointer;
 }
@@ -135,7 +138,7 @@ body {
 }
 
 .active {
-  border-bottom: #013440 solid;
+  border-bottom: #013440 solid thin;
 }
 
 /* -------------------  SEARCH MENU STYLES ( for hover style check LOGIN WISH-LIST CART STYLES)---------------- */
@@ -163,6 +166,7 @@ body {
 .about-contact a:hover,
 .footer-section a:hover {
   opacity: 0.7;
+  /* color: #079284; */
   border-bottom: #013440 thin solid;
 }
 
@@ -258,24 +262,25 @@ body {
 }
 
 .link-cta {
-  color: #026259;
+  color: #013440;
   text-align: center;
   font-size: 1.5em;
   max-width: 250px;
   display: flex;
   flex-wrap: wrap;
-  transition-property: opacity;
+  transition-property: all;
   transition-duration: 0.5s;
 }
 
 .link-cta:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
+  color: #079284;
 }
 
 /* ----------------------- FOOTER SECTION STYLES --------------------- */
 
 .footer {
-  background-color: #d5e5f2;
+  background-color: #e6f4ff;
   margin: 0;
 }
 
@@ -297,7 +302,18 @@ footer p {
 
 .media-icon {
   max-width: 30px;
-  padding: 0 1px;
+  margin: 0 1px;
+  border-radius: 50%;
+}
+
+.media-icon {
+  transition-property: background-color;
+  transition-duration: 1s;
+}
+
+.media-icon:hover {
+  background-color: lightseagreen;
+  cursor: pointer;
 }
 
 .footer-section {
@@ -308,7 +324,6 @@ footer p {
   padding: 10px 0;
   justify-content: space-around;
   align-items: flex-start;
-  background-color: #d5e5f2;
 }
 
 .footer-menu li,
@@ -325,7 +340,7 @@ footer p {
 
 @media only screen and (min-width: 551px) and (max-width: 1180px) {
   .login-container {
-    margin-right: 7px;
+    margin-right: 13px;
   }
 
   .login {
@@ -402,12 +417,12 @@ footer p {
   }
   .search-field {
     opacity: 0;
-    font-size: 0.8em;
+    font-size: 0.7em;
   }
 
   .search-field:focus-visible {
     opacity: 1;
-    width: 80%;
+    width: 70%;
   }
 
   .main-menu li {
@@ -482,7 +497,7 @@ footer p {
   }
 
   .header-section,
-  .footer-section,
+  .footer,
   .main-body {
     min-width: 360px;
   }

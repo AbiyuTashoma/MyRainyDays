@@ -1,0 +1,16 @@
+.about-div {
+  max-width: 650px;
+  margin-left: 50px;
+}
+
+.about-text {
+  font-size: 0.9em;
+  padding: 0 8px;
+}
+
+@media only screen and (max-width: 550px) {
+  .about-div {
+    max-width: 360px;
+    margin: 0 auto;
+  }
+}
