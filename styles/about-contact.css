@@ -13,7 +13,7 @@
 }
 
 @media only screen and (max-width: 550px) {
-  .about-section {
+  .about-contact-section {
     max-width: 360px;
     margin: 0 auto;
   }
