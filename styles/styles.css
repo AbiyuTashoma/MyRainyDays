@@ -471,23 +471,26 @@ footer p {
   }
 
   .image-container {
-    min-height: 20vh;
+    min-height: 25vh;
   }
 
   .landing-cta {
-    font-size: 1.5em;
+    right: auto;
     left: 25px;
-    bottom: 35px;
+    bottom: 20px;
   }
 
-  .selling-point li {
+  .selling-point li,
+  .landing-cta,
+  .selling-point-header,
+  .link-cta {
     font-size: 1.5em;
   }
 
   .header-section,
   .footer,
   .main-body {
-    min-width: 360px;
+    min-width: 350px;
   }
 
   .main-body {
