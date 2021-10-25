@@ -362,7 +362,7 @@ footer p {
   .main-menu li,
   .about-contact li {
     display: block;
-    margin-bottom: 5px;
+    margin: 0 5px 5px;
   }
 
   .main-menu {
@@ -427,7 +427,7 @@ footer p {
 
   .main-menu li {
     display: block;
-    margin-bottom: 5px;
+    margin: 0 5px 5px;
   }
 
   .main-menu,
