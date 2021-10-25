@@ -34,8 +34,7 @@ body {
 
 .header-section {
   max-width: 1500px;
-  margin: 0 auto 25px;
-  background-color: #ffffff;
+  margin: 0 auto;
   z-index: 100;
 }
 
@@ -71,7 +70,7 @@ body {
 .login-container {
   display: flex;
   justify-content: right;
-  margin: 20px 59px 20px 0;
+  margin: 20px 60px 20px 0;
 }
 
 .login:hover {
@@ -80,7 +79,7 @@ body {
 }
 
 .wish {
-  fill: lightseagreen;
+  fill: lightseagreen; /*path test*/
 }
 
 .wish-cart,
@@ -371,6 +370,10 @@ footer p {
     z-index: 100;
   }
 
+  .main-body {
+    margin: 0 auto;
+  }
+
   .image-container {
     min-height: 50vh;
   }
@@ -470,23 +473,6 @@ footer p {
     margin: 0 auto;
   }
 
-  .image-container {
-    min-height: 25vh;
-  }
-
-  .landing-cta {
-    right: auto;
-    left: 25px;
-    bottom: 20px;
-  }
-
-  .selling-point li,
-  .landing-cta,
-  .selling-point-header,
-  .link-cta {
-    font-size: 1.5em;
-  }
-
   .header-section,
   .footer,
   .main-body {
@@ -495,10 +481,27 @@ footer p {
 
   .main-body {
     margin: 0 auto;
-    padding: 10px 0;
+    padding: 0 0 20px;
   }
 
   .main-body-section {
     flex-direction: column;
+  }
+
+  .image-container {
+    min-height: 25vh;
+  }
+
+  .landing-cta {
+    right: auto;
+    left: 20px;
+    bottom: 30px;
+  }
+
+  .selling-point li,
+  .landing-cta,
+  .selling-point-header,
+  .link-cta {
+    font-size: 1.5em;
   }
 }
