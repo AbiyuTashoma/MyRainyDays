@@ -1,6 +1,6 @@
 .about-contact-section {
   max-width: 650px;
-  margin-left: 50px;
+  margin-left: 150px;
   padding: 25px 0;
 }
 
@@ -11,6 +11,12 @@
 
 .bold {
   font-weight: bold;
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1180px) {
+  .about-contact-section {
+    margin-left: 50px;
+  }
 }
 
 @media only screen and (max-width: 550px) {
