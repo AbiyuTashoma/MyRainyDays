@@ -198,7 +198,10 @@ body {
 .main-body {
   max-width: 1920px;
   margin: 25px auto;
-  padding: 20px 0;
+  padding: 10px 0;
+  background-image: linear-gradient(#ebebeb, #fff, #fff, #fff);
+  background-size: auto 60px;
+  background-repeat: no-repeat;
 }
 
 /* ----------------------- LANDING IMAGE STYLES --------------------- */
@@ -215,11 +218,11 @@ body {
   color: #ffffff;
   text-decoration: none;
   text-align: center;
-  font-size: 2.5em;
+  font-size: 2.7em;
   font-weight: bold;
   min-width: fit-content;
   border: #299748 thin solid;
-  padding: 10px 50px;
+  padding: 15px 50px;
   background-color: #299748;
   border-radius: 15px;
   position: absolute;
@@ -460,7 +463,7 @@ footer p {
 
   .login-container {
     grid-area: login;
-    margin-right: 0;
+    margin: 10px 0;
   }
 
   .header-section {
@@ -481,7 +484,7 @@ footer p {
 
   .main-body {
     margin: 0 auto;
-    padding: 0 0 20px;
+    /* padding: 0 0 20px; */
   }
 
   .main-body-section {
@@ -496,6 +499,7 @@ footer p {
     right: auto;
     left: 40px;
     bottom: 30px;
+    padding: 10px 40px;
   }
 
   .selling-point li,
