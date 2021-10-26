@@ -197,8 +197,8 @@ body {
 
 .main-body {
   max-width: 1920px;
-  margin: 25px auto;
-  padding: 10px 0;
+  margin: 30px auto;
+  /* padding: 0 0 2px; */
   background-image: linear-gradient(#ebebeb, #fff, #fff, #fff);
   background-size: auto 60px;
   background-repeat: no-repeat;
@@ -374,7 +374,7 @@ footer p {
   }
 
   .main-body {
-    margin: 0 auto;
+    margin: 10 auto;
   }
 
   .image-container {
@@ -484,7 +484,6 @@ footer p {
 
   .main-body {
     margin: 0 auto;
-    /* padding: 0 0 20px; */
   }
 
   .main-body-section {
