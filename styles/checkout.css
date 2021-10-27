@@ -1,0 +1,25 @@
+@import "styles.css";
+
+:root {
+  --ol-li-font-size: 1.25em;
+  --li-font-size: 1em;
+  --ol-margin: 25px;
+  --li-margin: 10px;
+  --inter-li-margin: 5px;
+}
+
+.checkout-li {
+  font-size: var(--ol-li-font-size);
+  text-transform: capitalize;
+}
+
+.new-line {
+  display: table; /*Starts a new line*/
+}
+
+.input-fields {
+  font-size: var(--li-font-size);
+  border: var(--dark-grey-border) solid thin;
+  border-radius: 7px;
+  margin: var(--inter-li-margin);
+}
