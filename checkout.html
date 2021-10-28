@@ -54,94 +54,96 @@
         </header>
 
         <main class="main-body">
-            <section class="checkout-section">
-                <ol>
-                    <li class="checkout-li">login for early checkout</li>
-                        <section>
-                            <form>                            
+            <section class="main-body-section">
+                <div class="checkout-section">
+                    <ol>
+                        <li class="checkout-li">login for early checkout</li>
+                            <section>
+                                <form>                            
+                                    <div>
+                                        <label for="username" title="username">Username</label>
+                                        <input type="text" name="username" title="user name" id="username" class="input-fields">
+                                    </div>
+                                    <div>
+                                        <label for="password" title="password">Password</label>
+                                        <input type="password" name="password" title="password" id="password" class="input-fields">
+                                    </div>
+                                    <input type="submit" title="login" name="login" value="Login">
+                                </form>
                                 <div>
-                                    <label for="username" title="username">Username</label>
-                                    <input type="text" name="username" title="user name" id="username" class="input-fields">
+                                    <label for="register"  class="new-line">New user</label>
+                                    <input type="button" title="register" name="register" value="Register">
                                 </div>
-                                <div>
-                                    <label for="password" title="password">Password</label>
-                                    <input type="password" name="password" title="password" id="password" class="input-fields">
-                                </div>
-                                <input type="submit" title="login" name="login" value="Login">
-                            </form>
-                            <div>
-                                <label for="register"  class="new-line">New user</label>
-                                <input type="button" title="register" name="register" value="Register">
-                            </div>
-                        </section>
-                        <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
-                        <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
-                </ol>
-                <form>
-                    <ol start="2" class="ol-contact-info">
-                        <li class="checkout-li">Contact information</li>
-                            <ul>
-                                <li>
-                                    <label for="first-name" title="name">Name</label>
-                                    <input type="text" title="first name" id="first-name" name="first-name" class="input-fields">
-                                    <input type="text" title="last name" id="last-name" name="last-name" class="input-fields">
-                                </li>
-                                <li>
-                                    <label for="street-name" title="address">Address</label>
-                                    <input type="text" title="street name" name="street-name" id="street-name" class="input-fields">
-                                    <input type="text" title="street number" name="street-number" id="street-number" class="new-line input-fields">
-                                    <input type="number" title="postal code" name="postal-code" id="postal-code" class="new-line input-fields">
-                                    <input type="text" title="city" name="city" id="city" class="new-line input-fields">
-                                    <input type="text" title="country" name="country" id="country" class="input-fields">
-                                </li>
-                                <li>
-                                    <label for="mobile-number" title="telephone number">Telephone</label>
-                                    <input type="tel" title="mobile phone number" name="mobile-number" id="mobile-number" class="input-fields">
-                                    <input type="tel" title="line phone number" name="line-number" id="line-number" class="new-line input-fields"> 
-                                </li>
-                                <li>
-                                    <label for="email" title="email address">Email</label>
-                                    <input type="email" title="email address" name="email" id="email" class="input-fields">
-                                    <input type="email" title="repeat amail address" name="email-2" id="email-2" class="new-line input-fields"> 
-                                </li>
-                            </ul>
-                            
-                        <li class="checkout-li">Shipping information</li>
-                            <input type="checkbox" name="same-contact-info" id="same-contact-info">
-                            <label for="same-contact-info" title="same as contact information">Same as Contact Information</label>
-                            <input type="text" title="shipping street name" name="shipping-street-name" id="shipping-street-name" class="new-line input-fields">
-                            <input type="text" title="shipping street number" name="shipping-street-number" id="shipping-street-number" class="new-line input-fields">
-                            <input type="number" title="shipping postal code" name="shipping-postal-code" id="shipping-postal-code" class="new-line input-fields">
-                            <input type="text" title="shipping city" name="shipping-city" id="shipping-city" class="new-line input-fields">
-                            <input type="text" title="shipping country" name="shipping-country" id="shipping-country" class="input-fields">
-                        <li class="checkout-li">Payment information</li>
-                            <input type="radio" name="visa-vipps" id="visa" value="visa">
-                            <label for="visa" title="visa">Visa</label>
+                            </section>
+                            <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
+                            <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
+                    </ol>
+                    <form>
+                        <ol start="2" class="ol-contact-info">
+                            <li class="checkout-li">Contact information</li>
                                 <ul>
                                     <li>
-                                        <label for="card-number" title="card number">Card number</label>
-                                        <input type="number" title="card number" name="card number" id="card-number" class="input-fields">
+                                        <label for="first-name" title="name">Name</label>
+                                        <input type="text" title="first name" id="first-name" name="first-name" class="input-fields">
+                                        <input type="text" title="last name" id="last-name" name="last-name" class="input-fields">
                                     </li>
                                     <li>
-                                        <label for="month" title="expire date">Valid thru</label>
-                                        <input type="number" title="month" name="month" id="month" class="input-fields">
-                                        <span>/</span>
-                                        <input type="number" title="year" name="year" id="year" class="input-fields">
+                                        <label for="street-name" title="address">Address</label>
+                                        <input type="text" title="street name" name="street-name" id="street-name" class="input-fields">
+                                        <input type="text" title="street number" name="street-number" id="street-number" class="new-line input-fields">
+                                        <input type="number" title="postal code" name="postal-code" id="postal-code" class="new-line input-fields">
+                                        <input type="text" title="city" name="city" id="city" class="new-line input-fields">
+                                        <input type="text" title="country" name="country" id="country" class="input-fields">
                                     </li>
                                     <li>
-                                        <label for="cvc" title="cvc code">CVC</label>
-                                        <input type="number" title="cvc" name="cvc" id="cvc" class="input-fields">
+                                        <label for="mobile-number" title="telephone number">Telephone</label>
+                                        <input type="tel" title="mobile phone number" name="mobile-number" id="mobile-number" class="input-fields">
+                                        <input type="tel" title="line phone number" name="line-number" id="line-number" class="new-line input-fields"> 
+                                    </li>
+                                    <li>
+                                        <label for="email" title="email address">Email</label>
+                                        <input type="email" title="email address" name="email" id="email" class="input-fields">
+                                        <input type="email" title="repeat amail address" name="email-2" id="email-2" class="new-line input-fields"> 
                                     </li>
                                 </ul>
-                            <input type="radio" name="visa-vipps" id="vipps" value="vipps"><label for="vipps" title="vipps">Vipps</label>
-                                <div>vipps logo</div>
-                                <label for="vipps-mobile" title="vipps mobile">Mobile</label>
-                                <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile" class="new-line input-fields">
-                            <input type="checkbox" name="remember-me" id="remember-me">
-                            <label for="remember-me" title="remember me">Remember me</label>
-                            <input type="submit" name="check-out" id="check-out" title="continue" class="new-line">
-                    </ol>
-            </form>
+                                
+                            <li class="checkout-li">Shipping information</li>
+                                <input type="checkbox" name="same-contact-info" id="same-contact-info">
+                                <label for="same-contact-info" title="same as contact information">Same as Contact Information</label>
+                                <input type="text" title="shipping street name" name="shipping-street-name" id="shipping-street-name" class="new-line input-fields">
+                                <input type="text" title="shipping street number" name="shipping-street-number" id="shipping-street-number" class="new-line input-fields">
+                                <input type="number" title="shipping postal code" name="shipping-postal-code" id="shipping-postal-code" class="new-line input-fields">
+                                <input type="text" title="shipping city" name="shipping-city" id="shipping-city" class="new-line input-fields">
+                                <input type="text" title="shipping country" name="shipping-country" id="shipping-country" class="input-fields">
+                            <li class="checkout-li">Payment information</li>
+                                <input type="radio" name="visa-vipps" id="visa" value="visa">
+                                <label for="visa" title="visa">Visa</label>
+                                    <ul>
+                                        <li>
+                                            <label for="card-number" title="card number">Card number</label>
+                                            <input type="number" title="card number" name="card number" id="card-number" class="input-fields">
+                                        </li>
+                                        <li>
+                                            <label for="month" title="expire date">Valid thru</label>
+                                            <input type="number" title="month" name="month" id="month" class="input-fields">
+                                            <span>/</span>
+                                            <input type="number" title="year" name="year" id="year" class="input-fields">
+                                        </li>
+                                        <li>
+                                            <label for="cvc" title="cvc code">CVC</label>
+                                            <input type="number" title="cvc" name="cvc" id="cvc" class="input-fields">
+                                        </li>
+                                    </ul>
+                                <input type="radio" name="visa-vipps" id="vipps" value="vipps"><label for="vipps" title="vipps">Vipps</label>
+                                    <div>vipps logo</div>
+                                    <label for="vipps-mobile" title="vipps mobile">Mobile</label>
+                                    <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile" class="new-line input-fields">
+                                <input type="checkbox" name="remember-me" id="remember-me">
+                                <label for="remember-me" title="remember me">Remember me</label>
+                                <input type="submit" name="check-out" id="check-out" title="continue" class="new-line">
+                        </ol>
+                    </form>
+                </div>
             </section>
         </main>
 
