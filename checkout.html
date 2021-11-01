@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <title>RAINYDAYS | About</title>
+        <title>RAINYDAYS | checkout</title>
         <meta charset="UTF-8"/>
         <meta name="description" content="mens womens quality outdoor jackets"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
@@ -59,29 +59,36 @@
                 <div class="checkout-section">
                     <ol>
                         <li class="checkout-li">login for early checkout</li>
-                            <section>
-                                <form method="post">                            
-                                    <div>
-                                        <label for="username" title="username">Username</label>
-                                        <input type="text" name="username" title="user name" id="username" class="input-fields">
-                                    </div>
-                                    <div>
-                                        <label for="password" title="password">Password</label>
-                                        <input type="password" name="password" title="password" id="password" class="input-fields">
-                                    </div>
-                                    <div>
-                                        <input type="submit" title="login" name="login" value="Login">
-                                    </div>
-                                    <div>
-                                        <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
-                                        <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
-                                    </div>
+                            <div class="checkout-login-section">
+                                <form method="post">  
+                                    <div class="checkout-login right-aligned">                          
+                                        <div>
+                                            <label for="username" title="username">Username</label>
+                                            <input type="text" placeholder="username" name="username" title="user name" id="username" class="input-fields">
+                                        </div>
+                                        <div>
+                                            <label for="password" title="password">Password</label>
+                                            <input type="password" name="password" title="password" id="password" class="input-fields">
+                                        </div>
+                                        <div class="center-aligned">
+                                            <input type="submit" title="login" name="login" value="Login">
+                                        </div>
+                                    </div>                                    
                                 </form>
-                                <div>
+                                
+                                <div class="divider">
+                                            
+                                </div>
+                                <div class="center-aligned">
                                     <label for="register"  class="new-line">New user</label>
                                     <input type="button" title="register" name="register" value="Register">
                                 </div>
-                            </section>
+                            </div>
+                            <div>
+                                <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
+                                <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
+                            </div>
+                            
                             
                     </ol>
                     <form method="post">
@@ -90,7 +97,7 @@
                                 <ul>
                                     <li>
                                         <label for="first-name" title="name">First Name</label>
-                                        <input type="text" title="first name" id="first-name" name="first-name" class="input-fields">
+                                        <input type="text" required title="first name" id="first-name" name="first-name" class="input-fields">
                                         <label for="last-name" title="last name">Last Name</label>
                                         <input type="text" title="last name" id="last-name" name="last-name" class="input-fields">
                                     </li>

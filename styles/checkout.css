@@ -6,6 +6,19 @@
   --ol-margin: 25px;
   --li-margin: 10px;
   --inter-li-margin: 5px;
+  --medium-field-width: 5em;
+}
+
+.right-aligned {
+  text-align: right;
+}
+
+.center-aligned {
+  text-align: center;
+}
+
+.new-line {
+  display: table;
 }
 
 .checkout-li {
@@ -13,17 +26,30 @@
   text-transform: capitalize;
 }
 
-.new-line {
-  display: table; /*Starts a new line*/
-}
-
 .input-fields {
   font-size: var(--li-font-size);
+  width: var(--medium-field-width);
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
   padding: 3px 7px;
   margin: var(--inter-li-margin);
 }
+
+/* =============== 1.LOGIN SECTION ===============*/
+
+.checkout-login-section {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.divider {
+  width: 1px;
+  height: 5em;
+  background-color: var(--dark-blue-rainydays);
+}
+
+/* =============== ABOUT CONTACT SECTION ===============*/
 
 .about-contact-section,
 .checkout-section {
