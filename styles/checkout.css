@@ -21,5 +21,36 @@
   font-size: var(--li-font-size);
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
+  padding: 3px 7px;
   margin: var(--inter-li-margin);
+}
+
+.about-contact-section,
+.checkout-section {
+  max-width: 650px;
+  margin-left: 150px;
+  padding: 25px 0;
+}
+
+.about-text {
+  font-size: 0.95em;
+  padding: 0 8px;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+@media only screen and (min-width: 551px) and (max-width: 1180px) {
+  .about-contact-section,
+  .checkout-section {
+    margin-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .about-contact-section {
+    max-width: 360px;
+    margin: 0 auto;
+  }
 }
