@@ -91,6 +91,47 @@
   gap: var(--gap);
 }
 
+#visa:checked ~ .hide-vipps {
+  display: none;
+}
+
+#ck {
+  display: none;
+}
+
+.ckbx {
+  position: relative;
+}
+
+#ck:checked ~ .ckd {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+  /* background-repeat: no-repeat; */
+  /* background-position: center; */
+}
+
+/* .ckbx {
+  border: var(--dark-blue-rainydays) solid;
+  border-radius: 10px;
+  padding: 7px;
+
+  background-image: url(../icons/checked.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+} */
+
+/* #hamb-menu,
+.ham-menu-label {
+  display: none;
+}
+
+#hamb-menu:checked ~ .main-menu {
+  display: flex;
+  position: absolute;
+  z-index: 100;
+} */
+
 /* =============== ABOUT CONTACT SECTION ===============*/
 
 .about-contact-section,
@@ -101,7 +142,7 @@
 }
 
 .checkout-section {
-  max-width: 700px;
+  max-width: 800px;
 }
 .about-text {
   font-size: 0.95em;

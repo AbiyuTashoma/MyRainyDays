@@ -175,10 +175,11 @@
                                     <div>
                                         <input type="radio" checked name="visa-vipps" id="visa" value="visa">
                                         <label for="visa" title="visa">Visa</label>
+                                        <div class="hide-visa">
                                             <ul>
                                                 <li>
                                                     <label for="card-number" title="card number">Card number</label>
-                                                    <input type="text" title="card number" name="card number" id="card-number" class="input-fields wide-field">
+                                                    <input type="text" title="card number" name="card number" id="card-number" class="input-fields">
                                                 </li>
                                                 <li>
                                                     <label for="month" title="expire date">Valid thru</label>
@@ -213,27 +214,41 @@
                                                     <input type="number" title="cvc" name="cvc" id="cvc" class="input-fields small-field">
                                                 </li>
                                             </ul>
+                                        </div>
                                     </div>
+
+                                    <div class="divider"></div>
+
                                     <div class="vipps-container">
                                         <div class="center-aligned">
                                             <input type="radio" name="visa-vipps" id="vipps" value="vipps">
                                             <label for="vipps" title="vipps">Vipps</label>
                                         </div>
-                                        <div class="vipps-logo-container center-aligned">
-                                            <img src="icons/vipps/vipps-rgb-orange-pos.svg" alt="vipps log" title="vipps logo" class="vipps-logo">
-                                        </div>
-                                        <div class="center-aligned">
-                                            <label for="vipps-mobile" title="vipps mobile">Mobile</label>
-                                            <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile" class="input-fields">
+                                        <div class="hide-vipps">
+                                            <div class="vipps-logo-container center-aligned">
+                                                <img src="icons/vipps/vipps-rgb-orange-pos.svg" alt="vipps log" title="vipps logo" class="vipps-logo">
+                                            </div>
+                                            <div class="center-aligned">
+                                                <label for="vipps-mobile" title="vipps mobile">Mobile</label>
+                                                <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile" class="input-fields">
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div>
+                                <div class="container-margin">
                                     <input type="checkbox" checked name="remember-me" id="remember-me">
                                     <label for="remember-me" title="remember me">Remember me</label>
                                 </div>
                                 <div>
-                                    <input type="submit" name="check-out" id="check-out" title="continue">
+                                    <input type="submit" value="Continue" name="check-out" id="check-out" title="continue" class="login">
+                                </div>
+
+                                <div class="container-margin">
+                                    <input type="checkbox" id="ck" name="ck">
+                                    <label for="ck">
+                                        <img src="icons/checkbox.svg" alt="ckbx" class="ckbx">
+                                        <img src="icons/checked.svg" alt="ckd" class="ckd">
+                                    </label>
                                 </div>
                         </ol>
                     </form>

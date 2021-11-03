@@ -63,19 +63,43 @@
                         <h2>Hiking Puffer Jacket</h2>
                         <p>699 kr</p>
                         <form>
-                            <p>Select Size</p>
-                            <input type="radio" name="product-size" value="small" id="small" title="small"><label for="small">s</label>
-                            <input type="radio" name="product-size" value="medium" id="medium" title="medium"><label for="medium">m</label>
-                            <input type="radio" name="product-size" value="large" id="large" title="large"><label for="large">l</label>
-                            <input type="radio" name="product-size" value="xlarge" id="xlarge" title="extra large"><label for="xlarge">xl</label>
+                            <ul>
+                                <li>Select Size</li>
+                                <div>
+                                    <input type="radio" name="product-size" value="small" id="small" title="small">
+                                    <label for="small">s</label>
+                                </div>
+                                <div>
+                                    <input type="radio" checked name="product-size" value="medium" id="medium" title="medium">
+                                    <label for="medium">m</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="product-size" value="large" id="large" title="large">
+                                    <label for="large">l</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="product-size" value="xlarge" id="xlarge" title="extra large">
+                                    <label for="xlarge">xl</label>
+                                </div>
 
-                            <p>Select Color</p>
-                            <input type="radio" name="product-color" value="red" id="red" title="red"><label for="red">red</label>
-                            <input type="radio" name="product-color" value="navy" id="navy" title="navy"><label for="navy">navy</label>
-                            <input type="radio" name="product-color" value="green" id="green" title="green"><label for="green">green</label>
-
-                            <input type="submit" name="add-to-cart" value="add to cart">
-                            <input type="submit" name="add-to-wish-list" value="add to wish list">
+                                <li>Select Color</li>
+                                    <div>
+                                        <input type="radio" checked name="product-color" value="red" id="red" title="red">
+                                        <label for="red">red</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="product-color" value="navy" id="navy" title="navy">
+                                        <label for="navy">navy</label>
+                                    </div>
+                                    <div>
+                                        <input type="radio" name="product-color" value="green" id="green" title="green">
+                                        <label for="green">green</label>
+                                    </div>
+                            </ul>
+                            <div>
+                                <input type="submit" name="add-to-cart" value="add to cart">
+                                <input type="submit" name="add-to-wish-list" value="add to wish list">
+                            </div>
 
                         </form>
                     </div>
