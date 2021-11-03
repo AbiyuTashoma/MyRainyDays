@@ -71,6 +71,7 @@ body {
   margin: auto 0;
   border: var(--dark-blue-rainydays) solid;
   border-radius: 30px;
+  background-color: var(--white-background);
   padding: 3px 26px;
   transition-property: background-color;
   transition-duration: 0.5s;

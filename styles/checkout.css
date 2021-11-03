@@ -6,11 +6,11 @@
   --ol-margin: 25px;
   --li-margin: 10px;
   --inter-li-margin: 5px;
-  --medium-field-width: 5em;
-}
-
-.right-aligned {
-  text-align: right;
+  --wide-field-width: 16em;
+  --normal-field-width: 10em;
+  --small-field-width: 3em;
+  --x-small-field-width: 2em;
+  --gap: 70px;
 }
 
 .center-aligned {
@@ -18,7 +18,8 @@
 }
 
 .new-line {
-  display: table;
+  display: flex;
+  justify-content: center;
 }
 
 .checkout-li {
@@ -28,11 +29,31 @@
 
 .input-fields {
   font-size: var(--li-font-size);
-  width: var(--medium-field-width);
+  width: var(--normal-field-width);
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
   padding: 3px 7px;
   margin: var(--inter-li-margin);
+}
+
+.item-margin {
+  margin: var(--li-margin) auto;
+}
+
+.container-margin {
+  margin: var(--ol-margin) auto;
+}
+
+.x-small-field {
+  width: var(--x-small-field-width);
+}
+
+.small-field {
+  width: var(--small-field-width);
+}
+
+.wide-field {
+  width: var(--wide-field-width);
 }
 
 /* =============== 1.LOGIN SECTION ===============*/
@@ -45,8 +66,29 @@
 
 .divider {
   width: 1px;
-  height: 5em;
+  height: 7em;
   background-color: var(--dark-blue-rainydays);
+}
+
+/* =============== CONTACT INFORMATION SECTION ===============*/
+
+/* =============== SHIPPING INFORMATION SECTION ===============*/
+
+/* =============== PAYMENT INFORMATION SECTION ===============*/
+.vipps-logo {
+  max-width: 5em;
+}
+
+.vipps-container {
+  max-width: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.visa-vipps-container {
+  display: flex;
+  gap: var(--gap);
 }
 
 /* =============== ABOUT CONTACT SECTION ===============*/
@@ -58,6 +100,9 @@
   padding: 25px 0;
 }
 
+.checkout-section {
+  max-width: 700px;
+}
 .about-text {
   font-size: 0.95em;
   padding: 0 8px;
