@@ -1,8 +1,8 @@
 @import "styles.css";
-@import "checkout.ss";
+@import "checkout.css";
 
 :root {
-  --product-image-height: 600px;
+  --product-image-height: 500px;
   --gap-medium: 50px;
 }
 
@@ -37,19 +37,52 @@
   text-transform: uppercase;
 }
 
-.addto-cta {
-  color: #ffffff;
-  /* text-decoration: none; */
-  /* text-align: center; */
-  font-size: 1.5 em;
-  font-weight: bold;
-  border: #299748 thin solid;
-  background-color: #299748;
-  border-radius: 15px;
-  transition-property: all;
-  transition-duration: 0.5s;
+.add-to-cart-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 25px;
+  gap: 10px;
+  background-color: var(--cta-background);
+  border-radius: 10px;
 }
 
-.cart-cart {
-  background-color: violet;
+.cart-container {
+  position: relative;
+}
+
+.add {
+  background-color: var(--cart-add-background);
+  background-image: url(../icons/cart-add.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  display: inline-flex;
+  /* padding: 2px; */
+  border: var(--cart-add-background) solid thin;
+  border-radius: 50%;
+  position: absolute;
+  left: 21px;
+  top: -2px;
+  width: 15px;
+  height: 15px;
+}
+
+/* .add-p {
+  color: white;
+  background-color: var(--cart-add-background);
+  font-size: 11px;
+  margin: 0;
+  padding: 2px;
+  border: var(--cart-add-background) solid thin;
+  border-radius: 50%;
+  position: absolute;
+  left: 21px;
+  top: -2px;
+} */
+
+.add-to-cart-txt {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
 }
