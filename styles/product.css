@@ -42,9 +42,9 @@
   gap: 25px;
 }
 
-.link-addto {
+/* .link-addto {
   text-decoration: none;
-}
+} */
 
 .add-to-cart-container,
 .add-to-wish-container {
@@ -58,6 +58,11 @@
   transition-duration: 0.5s;
 }
 
+#add-to-cart,
+#add-to-wish {
+  display: none;
+}
+
 .add-to-wish-container {
   background-color: white;
   border: var(--dark-blue-rainydays) solid thin;
@@ -65,9 +70,12 @@
 
 .add-to-cart-container:hover {
   background: var(--cta-hover-background);
+  cursor: pointer;
 }
+
 .add-to-wish-container:hover {
   background-color: var(--light-blue-footer);
+  cursor: pointer;
 }
 
 .cart-container {

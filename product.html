@@ -63,7 +63,7 @@
                     <div class="product-detail">
                         <h2 class="product-title">Hiking Puffer Jacket</h2>
                         <p class="price">699 kr</p>
-                        <form>
+                        <form ac>
                             <ul>
                                 <li class="checkout-li">Select Size</li>
                                 <div class="item-margin">
@@ -98,7 +98,8 @@
                                     </div>
                             </ul>
                             <div class="product-cta-container">
-                                <a href="mens.html" title="add to cart" class="link-addto">
+                                <input type="submit" id="add-to-cart" formaction="cartoverlay.html">
+                                <label for="add-to-cart" title="add to cart">
                                     <div class="add-to-cart-container">
                                         <div class="cart-container">
                                             <img src="icons/cart.svg" alt="cart" class="cart-size">
@@ -107,8 +108,10 @@
                                         </div>
                                         <p class="add-to-cart-txt">Add To Cart</p>
                                     </div>
-                                </a>
-                                <a href="about.html" title="wish list" class="link-addto">
+                                </label>
+                                <input type="submit" id="add-to-wish">
+                                <label for="add-to-wish" title="wish list">
+                                <!-- <a href="about.html" title="wish list" class="link-addto"> -->
                                     <div class="add-to-wish-container">
                                         <div class="cart-container">
                                             <img src="icons/wish.svg" alt="wish" class="cart-size">
@@ -117,7 +120,8 @@
                                         </div>
                                         <p class="add-to-wish-txt">Wish list</p>
                                     </div>
-                                </a>
+                                <!-- </a> -->
+                                </label>                                
                             </div>
                         </form>
                     </div>
