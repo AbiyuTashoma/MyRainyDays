@@ -19,6 +19,7 @@ COLOURS
   --white-background: #ffffff;
   --cta-background: #299748;
   --cart-add-background: #026259;
+  --cta-hover-background: #18b418;
   --dark-grey-border: #707070;
   --max-width-main: 1920px;
   --max-width-medium: 1180px;
@@ -253,7 +254,7 @@ body {
 }
 
 .landing-cta:hover {
-  background-color: #18b418;
+  background-color: var(--cta-hover-background);
 }
 
 /* ----------------------- SELLING POINT STYLES --------------------- */
