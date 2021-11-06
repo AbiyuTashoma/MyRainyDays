@@ -92,6 +92,24 @@
   gap: var(--gap);
 }
 
+.continue-co {
+  background-color: var(--cta-background);
+  color: white;
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 7px 25px;
+  margin-top: var(--ol-margin);
+  border: var(--cta-background) solid thin;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.continue-co:hover {
+  background-color: var(--cta-hover-background);
+  cursor: pointer;
+}
+
 /* =============== ABOUT CONTACT SECTION ===============*/
 
 .about-contact-section,
