@@ -13,6 +13,7 @@ COLOURS
 #18b418 HOME CTA HOVER BACKGROUND
 #8FC7B8 LANDING IMAGE FILL COLOR
  */
+
 :root {
   --dark-blue-rainydays: #013440; /*RAINYDAYS color*/
   --light-blue-footer: #e6f4ff; /*footer*/
@@ -24,6 +25,16 @@ COLOURS
   --max-width-main: 1920px;
   --max-width-medium: 1180px;
   --min-width-medium: 551px;
+  --ol-li-font-size: 1.25em;
+  --li-font-size: 1em;
+  --ol-margin: 25px;
+  --li-margin: 10px;
+  --inter-li-margin: 5px;
+  --wide-field-width: 16em;
+  --normal-field-width: 10em;
+  --small-field-width: 3em;
+  --x-small-field-width: 2em;
+  --gap: 70px;
 }
 
 html {
@@ -34,6 +45,10 @@ body {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   color: var(--dark-blue-rainydays);
   margin: 0 auto;
+}
+
+.center-aligned {
+  text-align: center;
 }
 
 /* ------------------------ HEADER STYLES -------------------- */
@@ -52,11 +67,7 @@ body {
 
 .logo {
   max-width: 160px;
-  padding-top: 10px;
-}
-
-.logo-container {
-  text-align: center;
+  padding-top: var(--li-margin);
 }
 
 /* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
@@ -65,7 +76,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  gap: 25px;
+  gap: var(--ol-margin);
 }
 
 .login {
@@ -162,7 +173,7 @@ body {
   font-size: 1em;
   padding: 0 5px;
   border: var(--dark-grey-border) thin solid;
-  border-radius: 10px;
+  border-radius: var(--li-margin);
 }
 
 /* -----------------  ABOUT CONTACT US STYLES (see navigation menu styles) -------------- */
@@ -171,12 +182,10 @@ body {
   font-size: 0.9em;
 }
 
-/* .main-menu a:hover, */
 .menu-a:hover,
 .about-contact a:hover,
 .footer-section a:hover {
   opacity: 0.7;
-  /* color: #079284; */
   border-bottom: var(--dark-blue-rainydays) thin solid;
 }
 
@@ -184,7 +193,7 @@ body {
 
 .menu-about-container {
   display: flex;
-  margin: 0 25px;
+  margin: 0 var(--ol-margin);
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -236,7 +245,6 @@ body {
 .landing-cta {
   color: #ffffff;
   text-decoration: none;
-  text-align: center;
   font-size: 2.7em;
   font-weight: bold;
   min-width: fit-content;
@@ -264,19 +272,18 @@ body {
 }
 
 .selling-point-header {
-  margin: 25px auto 0;
+  margin: var(--ol-margin) auto 0;
   text-transform: capitalize;
 }
 
 .selling-point li {
   font-size: 2em;
-  padding: 10px;
+  padding: var(--li-margin);
   text-transform: capitalize;
 }
 
 .link-cta {
   color: var(--dark-blue-rainydays);
-  text-align: center;
   font-size: 2.5em;
   text-transform: capitalize;
   max-width: 250px;
@@ -334,7 +341,7 @@ footer p {
   max-width: var(--max-width-main);
   flex-wrap: wrap;
   margin: 0 auto;
-  padding: 10px 10px;
+  padding: var(--li-margin);
   justify-content: space-between;
   align-items: flex-start;
 }

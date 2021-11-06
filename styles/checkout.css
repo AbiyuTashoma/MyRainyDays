@@ -1,20 +1,6 @@
 @import "styles.css";
 
-:root {
-  --ol-li-font-size: 1.25em;
-  --li-font-size: 1em;
-  --ol-margin: 25px;
-  --li-margin: 10px;
-  --inter-li-margin: 5px;
-  --wide-field-width: 16em;
-  --normal-field-width: 10em;
-  --small-field-width: 3em;
-  --x-small-field-width: 2em;
-  --gap: 70px;
-}
-
-/* =============== CART SECTION ===============*/
-
+/* =============== CART INDICATOR ===============*/
 .cart-item-ref {
   position: relative;
 }
@@ -30,11 +16,6 @@
   border-radius: 50%;
   width: 20px;
   height: 20px;
-  text-align: center;
-}
-
-.center-aligned {
-  text-align: center;
 }
 
 .new-line {
@@ -110,47 +91,6 @@
   display: flex;
   gap: var(--gap);
 }
-
-#visa:checked ~ .hide-vipps {
-  display: none;
-}
-
-#ck {
-  display: none;
-}
-
-.ckbx {
-  position: relative;
-}
-
-#ck:checked ~ .ckd {
-  display: flex;
-  position: absolute;
-  z-index: 100;
-  /* background-repeat: no-repeat; */
-  /* background-position: center; */
-}
-
-/* .ckbx {
-  border: var(--dark-blue-rainydays) solid;
-  border-radius: 10px;
-  padding: 7px;
-
-  background-image: url(../icons/checked.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-} */
-
-/* #hamb-menu,
-.ham-menu-label {
-  display: none;
-}
-
-#hamb-menu:checked ~ .main-menu {
-  display: flex;
-  position: absolute;
-  z-index: 100;
-} */
 
 /* =============== ABOUT CONTACT SECTION ===============*/
 

@@ -1,0 +1,27 @@
+@import "styles.css";
+
+.success-body {
+  margin: 30px auto;
+}
+
+.close {
+  text-align: right;
+}
+
+.payment-success {
+  display: inline-block;
+  color: var(--cta-background);
+  border: var(--cta-background) solid thin;
+  padding: 20px 30px;
+  font-weight: bold;
+}
+
+.success-info {
+  max-width: 350px;
+  font-size: 0.9em;
+  padding: 20px 30px;
+}
+
+.suggestion-p {
+  font-size: 0.9em;
+}
