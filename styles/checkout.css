@@ -13,6 +13,26 @@
   --gap: 70px;
 }
 
+/* =============== CART SECTION ===============*/
+
+.cart-item-ref {
+  position: relative;
+}
+
+.cart-items {
+  margin: 0;
+  padding: 2px;
+  position: absolute;
+  top: -6px;
+  right: -11px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+}
+
 .center-aligned {
   text-align: center;
 }

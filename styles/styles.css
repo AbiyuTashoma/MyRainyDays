@@ -91,17 +91,15 @@ body {
   cursor: pointer;
 }
 
-.wish {
-  fill: lightseagreen; /*path test*/
-}
-
 .wish-cart,
+.shopping-cart,
 .search-icon {
   transition-property: opacity, cursor;
   transition-duration: 0.5s;
 }
 
 .wish-cart:hover,
+.shopping-cart:hover,
 .hamburger-icon:hover,
 .search-icon:hover {
   fill: #18b418;
@@ -365,6 +363,7 @@ footer p {
   }
 
   .wish-cart,
+  .shopping-cart,
   .search-icon {
     max-width: 1.7em;
   }
@@ -427,6 +426,7 @@ footer p {
   }
 
   .wish-cart,
+  .shopping-cart,
   .search-icon {
     max-width: 1.5em;
   }

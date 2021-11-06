@@ -6,7 +6,6 @@
         <meta name="description" content="mens womens quality outdoor jackets"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="styles/styles.css" rel="stylesheet"/>
-        <!-- <link href="styles/about-contact.css" rel="stylesheet"/> -->
         <link href="styles/checkout.css" rel="stylesheet"/>
     </head>
 
@@ -14,18 +13,25 @@
         <header>
             <section class="header-section">
                 <div class="logo-container">
-                    <a href="index.html" title="rainy days logo"><img src="images/RainyDays_Logo.png" alt="rainydays logo" class="logo"></a>
+                    <a href="index.html" title="rainy days logo">
+                        <img src="images/RainyDays_Logo.png" alt="rainydays logo" class="logo">
+                    </a>
                 </div>
                 <div class="login-container">
                     <div class="login-wish-cart">
                         <p class="login" title="login">Login</p>
                         <img src="icons/wish-list.svg" alt="wish list" title="wish list" class="wish-cart">
-                        <img src="icons/shopping-cart.svg" alt="shopping cart" title="shopping cart" class="wish-cart">
+                        <div class="cart-item-ref">
+                            <img src="icons/shopping-cart.svg" alt="shopping cart" title="shopping cart" class="wish-cart">
+                            <p class="cart-items">1</p>
+                        </div>
                     </div>
                 </div>
                 <div class="menu-about-container">
                     <div class="drop-down">
-                        <label for="hamb-menu" class="ham-menu-label"><img src="icons/hamburger-menu.svg" class="hamburger-icon" alt="hamburger menu"></label>
+                        <label for="hamb-menu" class="ham-menu-label">
+                            <img src="icons/hamburger-menu.svg" class="hamburger-icon" alt="hamburger menu">
+                        </label>
                         <input type="checkbox" name="hamburger-menu" id="hamb-menu">
                         <nav class="main-menu">
                             <ul class="main-menu-ul">
@@ -37,7 +43,9 @@
                         </nav>
                     </div>
                     <form method="get" class="search">
-                        <label for="search-item" class="search-label"><img src="icons/search.svg" alt="search icon" title="search" class="search-icon"></label>
+                        <label for="search-item" class="search-label">
+                            <img src="icons/search.svg" alt="search icon" title="search" class="search-icon">
+                        </label>
                         <input type="search" name="search-item" id="search-item" title="search" class="search-field">
                     </form>
                     <nav class="about-contact">
@@ -241,14 +249,6 @@
                                 </div>
                                 <div>
                                     <input type="submit" value="Continue" name="check-out" id="check-out" title="continue" class="login">
-                                </div>
-
-                                <div class="container-margin">
-                                    <input type="checkbox" id="ck" name="ck">
-                                    <label for="ck">
-                                        <img src="icons/checkbox.svg" alt="ckbx" class="ckbx">
-                                        <img src="icons/checked.svg" alt="ckd" class="ckd">
-                                    </label>
                                 </div>
                         </ol>
                     </form>
