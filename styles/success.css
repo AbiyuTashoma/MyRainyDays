@@ -21,6 +21,7 @@
   border: var(--dark-blue-rainydays) solid thin;
   border-radius: 10px;
   padding: 10px 30px;
+  margin-right: 10px;
   transition-property: background-color;
   transition-duration: 00.5s;
 }
@@ -44,9 +45,6 @@
   border-radius: 12px;
   margin-bottom: 60px;
 }
-
-/* transition-property: background-color;
-transition-duration: 0.5s; */
 
 .success-info {
   border: var(--dark-blue-rainydays) solid thin;
