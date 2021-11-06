@@ -2,21 +2,54 @@
 
 .success-body {
   margin: 30px auto;
+  max-width: 1000px;
+}
+
+.close-container {
+  text-align: right;
+}
+
+.x,
+.close {
+  text-decoration: none;
+  font-size: 1.25em;
+  color: var(--dark-blue-rainydays);
+  padding: 5px;
 }
 
 .close {
-  text-align: right;
+  border: var(--dark-blue-rainydays) solid thin;
+  border-radius: 10px;
+  padding: 10px 30px;
+  transition-property: background-color;
+  transition-duration: 00.5s;
+}
+
+.close:hover {
+  background-color: var(--light-blue-footer);
 }
 
 .payment-success {
   display: inline-block;
   color: var(--cta-background);
   border: var(--cta-background) solid thin;
-  padding: 20px 30px;
   font-weight: bold;
+  margin: 60px auto;
 }
 
+.border-class {
+  text-decoration: none;
+  padding: 20px 30px;
+  font-size: 1.25em;
+  border-radius: 12px;
+  margin-bottom: 60px;
+}
+
+/* transition-property: background-color;
+transition-duration: 0.5s; */
+
 .success-info {
+  border: var(--dark-blue-rainydays) solid thin;
   max-width: 350px;
   font-size: 0.9em;
   padding: 20px 30px;
@@ -24,4 +57,20 @@
 
 .suggestion-p {
   font-size: 0.9em;
+}
+
+.suggestion-container {
+  display: flex;
+  gap: 10px;
+}
+
+.success-img {
+  border: var(--image-border) solid thin;
+  height: 200px;
+  transition-property: border;
+  transition-duration: 00.5s;
+}
+
+.success-img:hover {
+  border: var(--dark-blue-rainydays) solid thin;
 }

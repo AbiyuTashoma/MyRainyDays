@@ -7,6 +7,7 @@ COLOURS
 #013440 DARK-BLUE
 #026259 DARK-GREEN
 #707070 DARK-GREY
+#e0e0e0 LIGHT-GREY (BORDER)
 #5FB002 GREEN
 #FFFFFF WHITE BODY BACKGROUND
 #299748 HOME CTA BACKGROUND
@@ -21,6 +22,7 @@ COLOURS
   --cta-background: #299748;
   --cart-add-background: #026259;
   --cta-hover-background: #18b418;
+  --image-border: #e0e0e0;
   --dark-grey-border: #707070;
   --max-width-main: 1920px;
   --max-width-medium: 1180px;
