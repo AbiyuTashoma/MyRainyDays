@@ -502,6 +502,17 @@ footer p {
   .left-margin {
     margin-left: 25px;
   }
+
+  /*================ SUCCESS PAGE ==========*/
+
+  .success-body {
+    margin: 50px auto;
+    max-width: 500px;
+  }
+
+  .success-img {
+    height: 115px;
+  }
 }
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
@@ -740,5 +751,20 @@ footer p {
 
   .left-padding {
     padding-left: 8px;
+  }
+
+  /*================ SUCCESS PAGE ==========*/
+
+  .success-body {
+    margin: 50px auto;
+    max-width: 310px;
+  }
+
+  .success-img {
+    height: 95px;
+  }
+
+  .hidden-item {
+    display: none;
   }
 }
