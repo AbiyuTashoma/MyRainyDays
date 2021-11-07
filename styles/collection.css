@@ -1,11 +1,14 @@
-/* @import "styles.css"; */
+@import "styles.css";
 
 .collection-container {
   max-width: var(--max-width-main);
   margin: 0 auto;
+  padding-top: 25px;
+  padding-bottom: 25px;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 1em;
+  column-gap: 1em;
+  row-gap: 2em;
 }
 
 .grid-image {
@@ -14,8 +17,28 @@
 }
 
 .item-container {
-  max-width: fit-content;
   display: flex;
   flex-direction: column;
+  gap: 5px;
   place-self: center;
+}
+
+.p-title,
+.p-price {
+  text-decoration: none;
+  text-transform: capitalize;
+  color: var(--dark-blue-rainydays);
+}
+
+.p-title:hover,
+.p-price:hover {
+  text-decoration: underline;
+}
+
+.p-title {
+  font-weight: bold;
+}
+
+.p-price {
+  font-style: italic;
 }

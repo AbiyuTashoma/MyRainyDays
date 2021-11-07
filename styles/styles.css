@@ -276,6 +276,7 @@ body {
 .selling-point-header {
   margin: var(--ol-margin) auto 0;
   text-transform: capitalize;
+  font-size: 2em;
 }
 
 .selling-point li {
