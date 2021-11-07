@@ -510,6 +510,21 @@ footer p {
   .success-img {
     height: 115px;
   }
+
+  /*================ WOMENS PAGE / COLLECTION PAGE==========*/
+
+  .collection-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .grid-image {
+    width: 164px;
+  }
+
+  .p-title,
+  .p-price {
+    font-size: 0.9em;
+  }
 }
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
@@ -763,5 +778,19 @@ footer p {
 
   .hidden-item {
     display: none;
+  }
+
+  /*================ WOMENS PAGE / COLLECTION PAGE==========*/
+
+  .collection-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .grid-image {
+    width: 160px;
+  }
+
+  .p-title,
+  .p-price {
+    font-size: 00.9em;
   }
 }
