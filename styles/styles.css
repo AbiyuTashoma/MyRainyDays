@@ -253,24 +253,30 @@ body {
   position: relative;
 }
 
-.landing-cta {
-  color: #ffffff;
+.landing-cta,
+.link-cta {
+  color: var(--white-background);
   text-decoration: none;
-  font-size: 2.7em;
+  text-transform: capitalize;
+  transition-property: all;
+  transition-duration: 0.5s;
+  background-color: var(--cta-background);
+  border: var(--cta-background) solid thin;
+}
+
+.landing-cta {
   font-weight: bold;
   min-width: fit-content;
-  border: #299748 thin solid;
   padding: 15px 50px;
-  background-color: #299748;
   border-radius: 15px;
   position: absolute;
   right: 216px;
   bottom: 150px;
-  transition-property: all;
-  transition-duration: 0.5s;
+  font-size: 2.7em;
 }
 
-.landing-cta:hover {
+.landing-cta:hover,
+.link-cta:hover {
   background-color: var(--cta-hover-background);
 }
 
@@ -295,18 +301,9 @@ body {
 }
 
 .link-cta {
-  color: var(--dark-blue-rainydays);
+  padding: 5px 15px;
+  border-radius: 10px;
   font-size: 2.5em;
-  text-transform: capitalize;
-  max-width: 250px;
-  display: flex;
-  flex-wrap: wrap;
-  transition-property: all;
-  transition-duration: 0.5s;
-}
-
-.link-cta:hover {
-  color: #079284;
 }
 
 /* ----------------------- FOOTER SECTION STYLES --------------------- */
