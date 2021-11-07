@@ -472,9 +472,35 @@ footer p {
 
   /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/
 
-  .about-contact-section,
-  .checkout-section {
+  .about-contact-section {
     margin-left: 50px;
+  }
+
+  .checkout-section {
+    margin-left: 20px;
+  }
+
+  .cart-items {
+    width: 15px;
+    height: 15px;
+    font-size: 0.8em;
+  }
+
+  .divider-visa {
+    display: none;
+  }
+
+  .visa-vipps-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .vipps-container {
+    align-items: flex-start;
+  }
+
+  .left-margin {
+    margin-left: 25px;
   }
 }
 
@@ -664,5 +690,55 @@ footer p {
     text-decoration: none;
     font-size: 1em;
     padding: 6px 10px;
+  }
+
+  /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/
+
+  .checkout-section {
+    margin-left: -5px;
+  }
+
+  .cart-items {
+    width: 15px;
+    height: 15px;
+    font-size: 0.8em;
+  }
+
+  .divider-visa {
+    display: none;
+  }
+
+  .divider-login {
+    width: 12em;
+    height: 1px;
+  }
+
+  .checkout-login-section {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .visa-vipps-container {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .vipps-container {
+    align-items: flex-start;
+  }
+
+  .left-margin {
+    margin-left: 25px;
+  }
+
+  .input-fields {
+    font-size: 0.8em;
+  }
+
+  .wide-field {
+    width: auto;
+  }
+
+  .left-padding {
+    padding-left: 8px;
   }
 }

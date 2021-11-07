@@ -78,23 +78,23 @@
                                             <label for="password" title="password">Password:</label>
                                             <input type="password" required name="password" title="password" id="password" class="input-fields">
                                         </div>
-                                        <div class="center-aligned">
+                                        <div class="center-aligned top-margin">
                                             <input type="submit" title="login" name="login" value="Login" class="login item-margin" formaction=#scroll-to>
                                         </div>
                                     </div>                                    
                                 </form>
                                 
-                                <div class="divider">
+                                <div class="divider-login">
                                             
                                 </div>
                                 <div class="center-aligned">
                                     <label for="register"  class="new-line">New user</label>
-                                    <input type="button" title="register" name="register" value="Register" class="login item-margin">
+                                    <input type="button" title="register" name="register" value="Register" class="login">
                                 </div>
                             </div>
                             <div class="container-margin">
                                 <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
-                                <label for="cont-without-profile" title="continue without profile">Continue without profile</label>
+                                <label for="cont-without-profile" title="continue without profile" class="bottom-margin">Continue without profile</label>
                             </div>
                             
                             
@@ -102,7 +102,7 @@
                     <form> <!--method post is removed temporarily due to error 404-->
                         <ol start="2" class="ol-contact-info">
                             <li class="checkout-li container-margin">Contact information</li>
-                                <ul>
+                                <ul class="left-padding">
                                     <li class="item-margin">
                                         <div>
                                             <label for="first-name" title="name">First Name</label>
@@ -148,7 +148,7 @@
                                         </div>
                                         <div>
                                             <label for="re-email" title="email address">Re-enter email</label>
-                                            <input type="email" required title="re-enter amail address" name="re-email" id="re-email" class="input-fields wide-field">
+                                            <input type="email" required title="re-enter amail address" name="re-email" id="re-email" class="input-fields wide-field bottom-margin">
                                         </div> 
                                     </li>
                                 </ul>
@@ -159,7 +159,7 @@
                                     <label for="new-shipping-information" title="same as above">Same as Contact Information</label>
                                 </div>
                                 <div class="new-shipping-address">
-                                    <ul>
+                                    <ul class="left-padding">
                                         <div>
                                             <label for="street-address-2" title="street address">Street Address</label>
                                             <input type="text" title="street address" name="street-address-2" id="street-address-2" class="input-fields">
@@ -174,7 +174,7 @@
                                         </div>
                                         <div>
                                             <label for="country-2" title="country">Country</label>
-                                            <input type="text" title="country" name="country-2" id="country-2" class="input-fields">
+                                            <input type="text" title="country" name="country-2" id="country-2" class="input-fields bottom-margin">
                                         </div>
                                     </ul>
                                 </div>
@@ -183,7 +183,7 @@
                                     <div>
                                         <input type="radio" checked name="visa-vipps" id="visa" value="visa">
                                         <label for="visa" title="visa">Visa</label>
-                                        <div class="hide-visa">
+                                        <div>
                                             <ul>
                                                 <li>
                                                     <label for="card-number" title="card number">Card number</label>
@@ -191,7 +191,7 @@
                                                 </li>
                                                 <li>
                                                     <label for="month" title="expire date">Valid thru</label>
-                                                    <input type="text" min="01" max="12" step="1" title="month" name="month" id="month" class="input-fields x-small-field" list="month-list">
+                                                    <input type="text" min="01" max="12" step="1" title="month" name="month" id="month" class="input-fields small-field" list="month-list">
                                                     <datalist id="month-list">
                                                         <option value="01">
                                                         <option value="02">
@@ -207,7 +207,7 @@
                                                         <option value="12">
                                                     </datalist>
                                                     <span>/</span>
-                                                    <input type="text" min="21" step="1" title="year" name="year" id="year" class="input-fields x-small-field" list="year-list">
+                                                    <input type="text" min="21" step="1" title="year" name="year" id="year" class="input-fields small-field" list="year-list">
                                                     <datalist id="year-list">
                                                         <option value="21"></option>
                                                         <option value="22"></option>
@@ -225,14 +225,14 @@
                                         </div>
                                     </div>
 
-                                    <div class="divider"></div>
+                                    <div class="divider-visa"></div>
 
                                     <div class="vipps-container">
                                         <div class="center-aligned">
                                             <input type="radio" name="visa-vipps" id="vipps" value="vipps">
                                             <label for="vipps" title="vipps">Vipps</label>
                                         </div>
-                                        <div class="hide-vipps">
+                                        <div class="left-margin">
                                             <div class="vipps-logo-container center-aligned">
                                                 <img src="icons/vipps/vipps-rgb-orange-pos.svg" alt="vipps log" class="vipps-logo">
                                             </div>
