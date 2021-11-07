@@ -1,3 +1,8 @@
+@import "product.css";
+@import "checkout.css";
+@import "cartoverlay.css";
+@import "collection.css";
+@import "success.css";
 /* ----------------- GLOBAL STYLES -------------- */
 
 /* 
@@ -416,7 +421,7 @@ footer p {
   }
 
   .landing-cta {
-    right: 170px;
+    right: 130px;
     bottom: 100px;
   }
 
@@ -424,7 +429,7 @@ footer p {
 
   .product-section {
     padding-top: 25px;
-    gap: 25px;
+    gap: 20px;
   }
 
   .product-image {
@@ -464,6 +469,13 @@ footer p {
     width: 16px;
     height: 16px;
   }
+
+  /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/
+
+  .about-contact-section,
+  .checkout-section {
+    margin-left: 50px;
+  }
 }
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
@@ -482,6 +494,11 @@ footer p {
     margin: auto 0;
     padding: 3px 5px;
     border: var(--dark-blue-rainydays) solid thin;
+  }
+
+  .about-contact-section {
+    max-width: 360px;
+    margin: 0 auto;
   }
 
   .wish-cart,
@@ -633,5 +650,19 @@ footer p {
     font-size: 13px;
     width: 16px;
     height: 16px;
+  }
+
+  /*================ CART OVERLAY ==========*/
+
+  .overlay-container {
+    width: 330px;
+    height: 90px;
+    margin-top: 150px;
+  }
+
+  .overlay {
+    text-decoration: none;
+    font-size: 1em;
+    padding: 6px 10px;
   }
 }
