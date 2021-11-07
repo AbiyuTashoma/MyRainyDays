@@ -1,0 +1,21 @@
+/* @import "styles.css"; */
+
+.collection-container {
+  max-width: var(--max-width-main);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 1em;
+}
+
+.grid-image {
+  width: 280px;
+  border: var(--image-border) solid thin;
+}
+
+.item-container {
+  max-width: fit-content;
+  display: flex;
+  flex-direction: column;
+  place-self: center;
+}
