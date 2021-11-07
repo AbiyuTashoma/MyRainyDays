@@ -15,6 +15,8 @@ COLOURS
 #8FC7B8 LANDING IMAGE FILL COLOR
  */
 
+/* ----------------- VARIABLES -------------- */
+
 :root {
   --dark-blue-rainydays: #013440; /*RAINYDAYS color*/
   --light-blue-footer: #e6f4ff; /*footer*/
@@ -26,6 +28,8 @@ COLOURS
   --dark-grey-border: #707070;
   --max-width-main: 1920px;
   --max-width-medium: 1180px;
+  --product-image-height: 500px;
+  --gap-medium: 50px;
   --min-width-medium: 551px;
   --ol-li-font-size: 1.25em;
   --li-font-size: 1em;
@@ -415,6 +419,51 @@ footer p {
     right: 170px;
     bottom: 100px;
   }
+
+  /* =================== PRODUCT PAGE ============== */
+
+  .product-section {
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  .product-image {
+    max-height: 250px;
+  }
+
+  .product-detail {
+    margin-left: 0;
+  }
+
+  .product-title,
+  .price,
+  .checkout-li,
+  .add-to-cart-txt,
+  .add-to-wish-txt {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .product-ul {
+    margin: 5px auto;
+  }
+
+  .product-cta-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-to-cart-container,
+  .add-to-wish-container {
+    padding: 5px 15px;
+  }
+
+  .add-cart,
+  .add-wish {
+    font-size: 13px;
+    width: 16px;
+    height: 16px;
+  }
 }
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
@@ -537,5 +586,52 @@ footer p {
   .selling-point-header,
   .link-cta {
     font-size: 1.5em;
+  }
+
+  /* =================== PRODUCT PAGE ============== */
+
+  .product-section {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 25px;
+    gap: 25px;
+  }
+
+  .product-image {
+    max-height: 250px;
+  }
+
+  .product-detail {
+    margin-left: -100px;
+  }
+
+  .product-title,
+  .price,
+  .checkout-li,
+  .add-to-cart-txt,
+  .add-to-wish-txt {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .product-ul {
+    margin: 5px auto;
+  }
+
+  .product-cta-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .add-to-cart-container,
+  .add-to-wish-container {
+    padding: 5px 15px;
+  }
+
+  .add-cart,
+  .add-wish {
+    font-size: 13px;
+    width: 16px;
+    height: 16px;
   }
 }

@@ -1,11 +1,6 @@
 @import "styles.css";
 @import "checkout.css";
 
-:root {
-  --product-image-height: 500px;
-  --gap-medium: 50px;
-}
-
 .product-image {
   max-height: var(--product-image-height);
 }
@@ -15,6 +10,10 @@
   padding-top: var(--gap-medium);
   justify-content: center;
   gap: var(--gap);
+}
+
+.product-detail {
+  margin-left: 0;
 }
 
 .product-title {

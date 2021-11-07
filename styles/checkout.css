@@ -1,6 +1,7 @@
 @import "styles.css";
 
 /* =============== CART INDICATOR ===============*/
+
 .cart-item-ref {
   position: relative;
 }
@@ -57,8 +58,6 @@
   width: var(--wide-field-width);
 }
 
-/* =============== 1.LOGIN SECTION ===============*/
-
 .checkout-login-section {
   display: flex;
   justify-content: space-around;
@@ -71,11 +70,6 @@
   background-color: var(--dark-blue-rainydays);
 }
 
-/* =============== CONTACT INFORMATION SECTION ===============*/
-
-/* =============== SHIPPING INFORMATION SECTION ===============*/
-
-/* =============== PAYMENT INFORMATION SECTION ===============*/
 .vipps-logo {
   max-width: 5em;
 }
