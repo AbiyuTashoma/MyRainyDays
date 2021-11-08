@@ -41,7 +41,14 @@
                     </div>
                     <form class="search">
                         <label for="search-item" class="search-label"><img src="icons/search.svg" alt="search icon" title="search" class="search-icon"></label>
-                        <input type="search" name="search-item" id="search-item" title="search" class="search-field">
+                        <input type="search" name="search-item" id="search-item" list="search-items" title="search" class="search-field">                        
+                        <datalist id="search-items">
+                            <option value="jackets"></option>
+                            <option value="running jackets"></option>
+                            <option value="hiking jackets"></option>
+                            <option value="ski jackets"></option>
+                            <option value="puffer jackets"></option>
+                        </datalist>
                     </form>
                     <nav class="about-contact">
                         <ul>
