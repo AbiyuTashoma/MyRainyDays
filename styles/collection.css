@@ -16,6 +16,10 @@
   border: var(--image-border) solid thin;
 }
 
+.grid-image:hover {
+  border: var(--dark-blue-rainydays) solid thin;
+}
+
 .item-container {
   display: flex;
   flex-direction: column;
