@@ -71,7 +71,7 @@
         <main class="main-body">
             <section class="main-body-section">
                 <div class="checkout-section">
-                    <ol>
+                    <ol class="ol-contact-info">
                         <li class="checkout-li container-margin">login for early checkout</li>
                             <div class="checkout-login-section item-margin">
                                 <form> <!--method post is removed temporarily due to error 404-->  
@@ -90,9 +90,9 @@
                                     </div>                                    
                                 </form>
                                 
-                                <div class="divider-login">
-                                            
+                                <div class="divider-login">                                            
                                 </div>
+
                                 <div class="center-aligned">
                                     <label for="register"  class="new-line">New user</label>
                                     <input type="button" title="register" name="register" value="Register" class="login">
@@ -119,7 +119,7 @@
                                             <input type="text" required title="last name" id="last-name" name="last-name" class="input-fields">
                                         </div>
                                     </li>
-                                    <li class="item-margin">
+                                    <!-- <li class="item-margin">
                                         <div>
                                             <label for="street-address" title="street address">Street Address</label>
                                             <input type="text" required title="street address" name="street-address" id="street-address" class="input-fields">
@@ -136,37 +136,53 @@
                                             <label for="country" title="country">Country</label>
                                             <input type="text" required title="country" name="country" id="country" class="input-fields">
                                         </div>
-                                    </li>
+                                    </li> -->
                                     <li class="item-margin">
                                         <div>
                                             <label for="mobile-number" title="mobile number">Mobile</label>
                                             <input type="tel" required title="mobile number" name="mobile-number" id="mobile-number" class="input-fields">
                                         </div>
-                                        <div>
+                                        <!-- <div>
                                             <label for="telephone-number" title="telephone number">Telephone</label>
                                             <input type="tel" title="telephone number" name="telephone-number" id="telephone-number" class="input-fields">
-                                        </div>
+                                        </div> -->
                                     </li>
                                     <li class="item-margin">
                                         <div>
                                             <label for="email" title="email address">Email</label>
                                             <input type="email" required title="email address" name="email" id="email" class="input-fields wide-field">
                                         </div>
-                                        <div>
+                                        <!-- <div>
                                             <label for="re-email" title="email address">Re-enter email</label>
                                             <input type="email" required title="re-enter amail address" name="re-email" id="re-email" class="input-fields wide-field bottom-margin">
-                                        </div> 
+                                        </div>  -->
                                     </li>
                                 </ul>
                                 
                             <li class="checkout-li container-margin">Shipping information</li>
-                                <div class="container-margin">
+                                <!-- <div class="container-margin">
                                     <input type="checkbox" checked name="new-shipping-information" id="new-shipping-information">
                                     <label for="new-shipping-information" title="same as above">Same as Contact Information</label>
-                                </div>
+                                </div> -->
                                 <div class="new-shipping-address">
                                     <ul class="left-padding">
                                         <div>
+                                            <label for="street-address" title="street address">Street Address</label>
+                                            <input type="text" required title="street address" name="street-address" id="street-address" class="input-fields">
+                                        </div>
+                                        <div>
+                                            <label for="postal-code" title="postal code">Postal code</label>
+                                            <input type="number" required title="postal code" name="postal-code" id="postal-code" class="input-fields">
+                                        </div>
+                                        <div>
+                                            <label for="city" title="city">City</label>
+                                            <input type="text" required title="city" name="city" id="city" class="input-fields">
+                                        </div>
+                                        <div>
+                                            <label for="country" title="country">Country</label>
+                                            <input type="text" required title="country" name="country" id="country" class="input-fields">
+                                        </div>
+                                        <!-- <div>
                                             <label for="street-address-2" title="street address">Street Address</label>
                                             <input type="text" title="street address" name="street-address-2" id="street-address-2" class="input-fields">
                                         </div>
@@ -181,12 +197,12 @@
                                         <div>
                                             <label for="country-2" title="country">Country</label>
                                             <input type="text" title="country" name="country-2" id="country-2" class="input-fields bottom-margin">
-                                        </div>
+                                        </div> -->
                                     </ul>
                                 </div>
                             <li class="checkout-li container-margin" id="scroll-to">Payment information</li>
                                 <div class="visa-vipps-container">
-                                    <div>
+                                    <div class="container-margin">
                                         <input type="radio" checked name="visa-vipps" id="visa" value="visa">
                                         <label for="visa" title="visa">Visa</label>
                                         <div>
@@ -231,18 +247,23 @@
                                         </div>
                                     </div>
 
-                                    <div class="divider-visa"></div>
+                                    <!-- <div class="vipps-container"> -->
+                                    <div>
 
-                                    <div class="vipps-container">
-                                        <div class="center-aligned">
+                                        <!-- <div class="center-aligned"> -->
+
+                                        <div>
                                             <input type="radio" name="visa-vipps" id="vipps" value="vipps">
-                                            <label for="vipps" title="vipps">Vipps</label>
+                                            <label for="vipps" title="vipps" class="vipps-label">
+                                                <span>Vipps</span>
+                                                <img src="icons/vipps/vipps-rgb-orange-pos.svg" alt="vipps log" class="vipps-logo">
+                                            </label>
                                         </div>
                                         <div class="left-margin">
-                                            <div class="vipps-logo-container center-aligned">
+                                            <!-- <div class="vipps-logo-container">
                                                 <img src="icons/vipps/vipps-rgb-orange-pos.svg" alt="vipps log" class="vipps-logo">
-                                            </div>
-                                            <div class="center-aligned">
+                                            </div> -->
+                                            <div>
                                                 <label for="vipps-mobile" title="vipps mobile">Mobile</label>
                                                 <input type="tel" title="vipps mobile" name="vipps-mobile" id="vipps-mobile" class="input-fields">
                                             </div>
