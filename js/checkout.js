@@ -66,7 +66,7 @@ const lastNameContainer = document.querySelector("#last-name");
 const mobileContainer = document.querySelector("#mobile");
 const emailContainer = document.querySelector("#email");
 const messageContainer = document.querySelector(".message");
-const eventFormContainer = document.querySelector(".event-form");
+const checkoutFormContainer = document.querySelector(".checkout-form");
 
 const noteFirstNameContainer = document.querySelector(".note-firstname");
 const noteLastNameContainer = document.querySelector(".note-lastname");
@@ -78,7 +78,7 @@ const cardNumberContainer = document.querySelector("#card-number");
 const validMonthContainer = document.querySelector("#valid-month");
 const validYearContainer = document.querySelector("#valid-year");
 const validCVCContainer = document.querySelector("#cvc");
-const validVippsNumberContainer = document.querySelector("#mobile-number");
+const validVippsNumberContainer = document.querySelector("#vipps-mobile");
 const visaPaymentRadio = document.querySelector("#visa-payment");
 const vippsPaymentRadio = document.querySelector("#vipps-payment");
 
