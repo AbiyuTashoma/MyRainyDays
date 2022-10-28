@@ -78,11 +78,11 @@
                                     <div class="checkout-login">                          
                                         <div>
                                             <label for="username" title="username">Username:</label>
-                                            <input type="text" required name="username" title="user name" id="username" class="input-fields">
+                                            <input type="text" name="username" title="user name" id="username" class="input-fields">
                                         </div>
                                         <div>
                                             <label for="password" title="password">Password:</label>
-                                            <input type="password" required name="password" title="password" id="password" class="input-fields">
+                                            <input type="password" name="password" title="password" id="password" class="input-fields">
                                         </div>
                                         <div class="center-aligned top-margin">
                                             <input type="submit" title="login" name="login" value="Login" class="login item-margin" formaction=#scroll-to>
@@ -98,10 +98,10 @@
                                     <input type="button" title="register" name="register" value="Register" class="login">
                                 </div>
                             </div>
-                            <div class="container-margin">
+                            <!-- <div class="container-margin">
                                 <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
                                 <label for="cont-without-profile" title="continue without profile" class="bottom-margin">Continue without profile</label>
-                            </div>
+                            </div> -->
                             
                             
                     </ol>
@@ -113,14 +113,14 @@
                                         <div>
                                             <label for="first-name" title="name">
                                                 First Name
-                                                <input type="text" required title="first name" id="first-name" name="first-name" class="input-fields">
+                                                <input type="text" title="first name" id="first-name" name="first-name" class="input-fields">
                                                 <div class="note-firstname"></div>                                                
                                             </label>
                                         </div>
                                         <div>
                                             <label for="last-name" title="last name">
                                                 Last Name
-                                                <input type="text" required title="last name" id="last-name" name="last-name" class="input-fields">
+                                                <input type="text" title="last name" id="last-name" name="last-name" class="input-fields">
                                                 <div class="note-lastname"></div>
                                             </label>
                                         </div>
@@ -129,7 +129,7 @@
                                         <div>
                                             <label for="mobile" title="mobile number">
                                                 Mobile Number
-                                                <input type="tel" required title="mobile number" name="mobile" id="mobile" class="input-fields">
+                                                <input type="tel" id="mobile" name="mobile" title="mobile number" class="input-fields">
                                                 <div class="note-mobile"></div>
                                             </label>
                                         </div>
@@ -138,7 +138,7 @@
                                         <div>
                                             <label for="email" title="email address">
                                                 Email
-                                                <input type="email" required title="email address" name="email" id="email" class="input-fields wide-field">
+                                                <input type="email" id="email" title="email address" name="email" class="input-fields wide-field">
                                                 <div class="note-email"></div>
                                             </label>
                                         </div>
@@ -149,19 +149,19 @@
                                 <ul class="left-padding">
                                     <div>
                                         <label for="street-address" title="street address">Street Address</label>
-                                        <input type="text" required title="street address" name="street-address" id="street-address" class="input-fields">
+                                        <input type="text" title="street address" name="street-address" id="street-address" class="input-fields">
                                     </div>
                                     <div>
                                         <label for="postal-code" title="postal code">Postal code</label>
-                                        <input type="number" required title="postal code" name="postal-code" id="postal-code" class="input-fields">
+                                        <input type="number" title="postal code" name="postal-code" id="postal-code" class="input-fields">
                                     </div>
                                     <div>
                                         <label for="city" title="city">City</label>
-                                        <input type="text" required title="city" name="city" id="city" class="input-fields">
+                                        <input type="text" title="city" name="city" id="city" class="input-fields">
                                     </div>
                                     <div>
                                         <label for="country" title="country">Country</label>
-                                        <input type="text" required title="country" name="country" id="country" class="input-fields">
+                                        <input type="text" title="country" name="country" id="country" class="input-fields">
                                     </div>                                        
                                 </ul>
                             <li class="checkout-li container-margin" id="scroll-to">Payment information</li>
@@ -190,7 +190,7 @@
                                                 <div class="note-validthru"></div>
                                             </li>
                                             <li>
-                                                <label for="cvc" id="cvc" title="cvc">
+                                                <label for="cvc" title="cvc">
                                                     CVC
                                                     <input type="number" title="cvc" name="cvc" id="cvc" class="input-fields small-field">
                                                     <div class="note-cvc"></div>
@@ -226,7 +226,7 @@
                                 </div>
                                 
                                 <div>
-                                    <input type="submit" value="Continue" name="check-out" id="check-out" title="continue" class="continue-co" formaction="success.html">
+                                    <input type="submit" value="Continue" name="check-out" id="check-out" title="continue" class="continue-co">
                                 </div>
 
                                 <div class="message"></div>
@@ -266,6 +266,8 @@
             </div>
         </footer>
 
+        <script src="js/components/message.js"></script>
+        <script src="js/components/validate.js"></script>
         <script src="js/checkout.js"></script>
     </body>
 </html>

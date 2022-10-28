@@ -9,10 +9,10 @@ function validateText (stringValue, len = 1) {
     }
 }
 
-//Trim and validate phonenumber
-function validateNumber (phone, len = 8) {
-    const phoneTrim = phone.trim();
-    if (phoneTrim.length == len) {
+//Trim and validate number + phone
+function validateNumber (num, len = 8) {
+    const numTrim = num.trim();
+    if (numTrim.length == len) {
         return true;
     }
 

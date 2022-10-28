@@ -60,13 +60,16 @@
 //     clearError(noteSelectSeat, roomContainer);
 // }
 
+
+//checkout form and feedback
+const messageContainer = document.querySelector(".message");
+const checkoutFormContainer = document.querySelector(".checkout-form");
+
 //Personal information
 const firstNameContainer = document.querySelector("#first-name");
 const lastNameContainer = document.querySelector("#last-name");
 const mobileContainer = document.querySelector("#mobile");
 const emailContainer = document.querySelector("#email");
-const messageContainer = document.querySelector(".message");
-const checkoutFormContainer = document.querySelector(".checkout-form");
 
 const noteFirstNameContainer = document.querySelector(".note-firstname");
 const noteLastNameContainer = document.querySelector(".note-lastname");
@@ -94,11 +97,6 @@ visaPaymentRadio.onchange = function() {
 
 vippsPaymentRadio.onchange = function() {
     clearVisaError();
-}
-
-//Clear error
-quantityContainer.oninput = function() {
-    clearError(noteQuantityContainer, quantityContainer);
 }
 
 firstNameContainer.oninput = function() {
@@ -143,13 +141,13 @@ function validate(event) {
     messageContainer.innerHTML = "";
     let validBooking = true;
 
-    const selectedEvent = eventContainer.value;
+    // const selectedEvent = eventContainer.value;
 
-    const seats = document.querySelectorAll("input.seat");
-    const checkedSeat = countSeat(seats);
+    // const seats = document.querySelectorAll("input.seat");
+    // const checkedSeat = countSeat(seats);
 
-    const quantity = quantityContainer.value;
-    const validQuantity = validateMoney(quantity);
+    // const quantity = quantityContainer.value;
+    // const validQuantity = validateMoney(quantity);
 
     const firstName = firstNameContainer.value;
     const lastName = lastNameContainer.value;
@@ -175,16 +173,18 @@ function validate(event) {
     const validValidCVC = validateNumber(validCVC, 3);
     const validValidVipps = validateNumber(validVipps);
 
-// booking
-    if (!checkedSeat && (selectedEvent === "aeronautics_lecture")) {
-        validBooking = false;
-        setError(noteSelectSeat, roomContainer, "Select Seat");
-    }
 
-    if (!validQuantity && ((selectedEvent === "night_museum") || (selectedEvent === "guided_tour"))) {
-        validBooking = false;
-        setError(noteQuantityContainer, quantityContainer, "Enter valid reservation");
-    }
+
+// booking
+    // if (!checkedSeat && (selectedEvent === "aeronautics_lecture")) {
+    //     validBooking = false;
+    //     setError(noteSelectSeat, roomContainer, "Select Seat");
+    // }
+
+    // if (!validQuantity && ((selectedEvent === "night_museum") || (selectedEvent === "guided_tour"))) {
+    //     validBooking = false;
+    //     setError(noteQuantityContainer, quantityContainer, "Enter valid reservation");
+    // }
 
 // payment
     if (!validCardNumber && visaChecked) {
@@ -236,11 +236,11 @@ function validate(event) {
 
     if (validBooking) {
         messageContainer.innerHTML = displayMessage("Booking successfully completed!", "success");
-        eventFormContainer.reset();
-        setDate(dateContainer);
-        displayPrice(priceContainer, 0);
+        checkoutFormContainer.reset();
+        // setDate(dateContainer);
+        // displayPrice(priceContainer, 0);
     }
 }
 
 //Add event listener
-eventFormContainer.addEventListener("submit", validate);
+checkoutFormContainer.addEventListener("submit", validate);

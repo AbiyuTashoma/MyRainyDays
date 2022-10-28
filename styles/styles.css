@@ -58,6 +58,29 @@ body {
   margin: 0 auto;
 }
 
+/*============ user message ============*/
+.message-area {
+  border-radius: 5px;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+.note {
+  font-size: smaller;
+  color: red;
+  margin-bottom: 10px;
+  margin-left: 5px;
+  text-transform: none;
+}
+
+.success {
+  background-color: rgb(128, 203, 128);
+}
+
+.error {
+  background-color: rgb(214, 138, 138);
+}
+
 .center-aligned {
   text-align: center;
 }
