@@ -90,7 +90,7 @@ const noteValidThruContainer = document.querySelector(".note-validthru");
 const noteCVCContainer = document.querySelector(".note-cvc");
 const noteVippsNumberContainer = document.querySelector(".note-vippsnumber");
 
-//payment method change
+//clear error message onchange and oninput
 visaPaymentRadio.onchange = function() {
     clearVippsError();
 }
@@ -139,7 +139,7 @@ validVippsNumberContainer.oninput = function() {
 function validate(event) {
     event.preventDefault();
     messageContainer.innerHTML = "";
-    let validBooking = true;
+    let validCheckout = true;
 
     // const selectedEvent = eventContainer.value;
 
@@ -173,69 +173,67 @@ function validate(event) {
     const validValidCVC = validateNumber(validCVC, 3);
     const validValidVipps = validateNumber(validVipps);
 
-
-
-// booking
+// Checkout
     // if (!checkedSeat && (selectedEvent === "aeronautics_lecture")) {
-    //     validBooking = false;
+    //     validCheckout = false;
     //     setError(noteSelectSeat, roomContainer, "Select Seat");
     // }
 
     // if (!validQuantity && ((selectedEvent === "night_museum") || (selectedEvent === "guided_tour"))) {
-    //     validBooking = false;
+    //     validCheckout = false;
     //     setError(noteQuantityContainer, quantityContainer, "Enter valid reservation");
     // }
 
 // payment
     if (!validCardNumber && visaChecked) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteCardNumberContainer, cardNumberContainer, "Enter valid card number");
     }
 
     if (!validValidMonth && visaChecked) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteValidThruContainer, validMonthContainer, "Enter valid month");
     }
 
     if (!validValidYear && visaChecked) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteValidThruContainer, validYearContainer, "Enter valid year");
     }
 
     if (!validValidCVC && visaChecked) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteCVCContainer, validCVCContainer, "Enter valid CVC");
     }
 
     if (!validValidVipps && vippsChecked) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteVippsNumberContainer, validVippsNumberContainer, "Enter valid phone number");
     }
 
 //personal info
 
     if (!validFirstName) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteFirstNameContainer, firstNameContainer, "First name is required");
     }
 
     if (!validLastName) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteLastNameContainer, lastNameContainer, "Last name is required");
     }
 
     if (!validMobile) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteMobileContainer, mobileContainer, "Enter valid Phone number");
     }
 
     if (!validEmail) {
-        validBooking = false;
+        validCheckout = false;
         setError(noteEmailContainer, emailContainer, "Enter valid email");
     }
 
-    if (validBooking) {
-        messageContainer.innerHTML = displayMessage("Booking successfully completed!", "success");
+    if (validCheckout) {
+        messageContainer.innerHTML = displayMessage("Order successfully completed!", "success");
         checkoutFormContainer.reset();
         // setDate(dateContainer);
         // displayPrice(priceContainer, 0);

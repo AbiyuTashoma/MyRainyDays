@@ -223,7 +223,7 @@ body {
   border-bottom: var(--dark-blue-rainydays) thin solid;
 }
 
-/* -----------------  CHECKOUT PAGE -------------- */
+/* -------------------------------------  CHECKOUT PAGE ---------------------- */
 .about-contact-section,
 .checkout-section {
   max-width: 650px;
@@ -244,6 +244,15 @@ body {
 
 .ol-contact-info {
   font-size: 0.9em;
+}
+
+.shipping-left-padding {
+  padding-left: 25px;
+  margin-left: -2px;
+}
+
+.visa-vipps-container {
+  margin-left: 15px;
 }
 
 /* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */
@@ -529,11 +538,6 @@ footer p {
     font-size: 0.8em;
   }
 
-  .visa-vipps-container {
-    flex-direction: column;
-    gap: 25px;
-  }
-
   .vipps-container {
     align-items: flex-start;
   }
@@ -779,8 +783,7 @@ footer p {
     gap: 20px;
   }
   .visa-vipps-container {
-    flex-direction: column;
-    gap: 25px;
+    margin-left: -5px;
   }
 
   .vipps-container {
@@ -799,8 +802,12 @@ footer p {
     width: auto;
   }
 
-  .left-padding {
-    padding-left: 8px;
+  .contact-left-padding {
+    padding-left: 17px;
+  }
+
+  .shipping-left-padding {
+    margin-left: -23px;
   }
 
   /*================ SUCCESS PAGE ==========*/

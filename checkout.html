@@ -108,7 +108,7 @@
                     <form class="checkout-form"> <!--method post is removed temporarily due to error 404-->
                         <ol start="2" class="ol-contact-info">
                             <li class="checkout-li container-margin">Contact information</li>
-                                <ul class="left-padding">
+                                <ul class="contact-left-padding">
                                     <li class="item-margin">
                                         <div>
                                             <label for="first-name" title="name">
@@ -146,7 +146,7 @@
                                 </ul>
                                 
                             <li class="checkout-li container-margin">Shipping information</li>                                
-                                <ul class="left-padding">
+                                <ul class="shipping-left-padding">
                                     <div>
                                         <label for="street-address" title="street address">Street Address</label>
                                         <input type="text" title="street address" name="street-address" id="street-address" class="input-fields">
@@ -168,7 +168,10 @@
                                 <div class="visa-vipps-container">
                                     <div class="container-margin">
                                         <input type="radio" name="visa-vipps" id="visa-payment" value="visa" checked>
-                                        <label for="visa-payment" title="visa">Visa</label>
+                                        <label for="visa-payment" class="vipps-label" title="visa">
+                                           <span>Visa</span>
+                                           <img src="icons/visa.svg" alt="vipps log" class="visa-logo">
+                                        </label>
                                         
                                         <ul>
                                             <li>
