@@ -39,6 +39,10 @@
   margin: var(--inter-li-margin);
 }
 
+.country-list {
+  width: 15em;
+}
+
 .item-margin {
   margin: var(--li-margin) auto;
 }
