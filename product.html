@@ -7,7 +7,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
         <link href="styles/product.css" rel="stylesheet"/>
         <!-- <link href="styles/checkout.css" rel="stylesheet"/> -->
-        <!-- <link href="styles/styles.css" rel="stylesheet"/> -->
+        <link href="styles/styles.css" rel="stylesheet"/>
     </head>
 
     <body>
@@ -77,8 +77,15 @@
                         <p class="price">699 kr</p>
                         <form ac>
                             <ul class="product-ul">
-                                <li class="checkout-li">Select Size</li>
-                                <div class="item-margin">
+                                <li class="checkout-li"><label for="size">Select Size</label></li>
+                                <select class="input-fields" id="size">
+                                    <option value="s">Small</option>
+                                    <option value="m">Medium</option>
+                                    <option value="l">Large</option>
+                                    <option value="xl">X-Large</option>
+                                    <option value="xxl">XX-Large</option>
+                                </select>
+                                <!-- <div class="item-margin">
                                     <input type="radio" name="product-size" value="small" id="small" title="small">
                                     <label for="small" class="size-li">s</label>
                                 </div>
@@ -93,25 +100,31 @@
                                 <div class="item-margin">
                                     <input type="radio" name="product-size" value="xlarge" id="xlarge" title="extra large">
                                     <label for="xlarge" class="size-li">xl</label>
-                                </div>
+                                </div> -->
 
-                                <li class="checkout-li">Select Color</li>
-                                    <div class="item-margin">
-                                        <input type="radio" checked name="product-color" value="red" id="red" title="red">
-                                        <label for="red" class="option-li">red</label>
-                                    </div>
-                                    <div class="item-margin">
-                                        <input type="radio" name="product-color" value="navy" id="navy" title="navy">
-                                        <label for="navy" class="option-li">navy</label>
-                                    </div>
-                                    <div class="item-margin">
-                                        <input type="radio" name="product-color" value="green" id="green" title="green">
-                                        <label for="green" class="option-li">green</label>
-                                    </div>
+                                <li class="checkout-li"><label for="color">Color</label></li>
+                                <select class="input-fields" id="color">
+                                    <option value="red">Red</option>
+                                    <option value="blue">Blue</option>
+                                    <option value="yellow">Yellow</option>
+                                    <option value="Gray">Grey</option>
+                                </select>
+                                <!-- <div class="item-margin">
+                                    <input type="radio" checked name="product-color" value="red" id="red" title="red">
+                                    <label for="red" class="option-li">red</label>
+                                </div>
+                                <div class="item-margin">
+                                    <input type="radio" name="product-color" value="navy" id="navy" title="navy">
+                                    <label for="navy" class="option-li">navy</label>
+                                </div>
+                                <div class="item-margin">
+                                    <input type="radio" name="product-color" value="green" id="green" title="green">
+                                    <label for="green" class="option-li">green</label>
+                                </div> -->
                             </ul>
                             <div class="product-cta-container">
-                                <input type="submit" id="add-to-cart" formaction="cartoverlay.html">
-                                <label for="add-to-cart" title="add to cart">
+                                <input type="submit" class="add-to-cart" id="addtocart-product" formaction="cartoverlay.html">
+                                <label for="addtocart-product" title="add to cart">
                                     <div class="add-to-cart-container">
                                         <div class="cart-container">
                                             <img src="icons/cart.svg" alt="cart" class="cart-size">
@@ -120,8 +133,8 @@
                                         <p class="add-to-cart-txt">Add To Cart</p>
                                     </div>
                                 </label>
-                                <input type="submit" id="add-to-wish">
-                                <label for="add-to-wish" title="wish list">
+                                <input type="submit" class="add-to-wish" id="addtowish-product">
+                                <label for="addtowish-product" title="wish list">
                                 <!-- <a href="about.html" title="wish list" class="link-addto"> -->
                                     <div class="add-to-wish-container">
                                         <div class="cart-container">

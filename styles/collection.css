@@ -66,3 +66,20 @@
 .p-price {
   font-style: italic;
 }
+
+.product-footer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.cart-size {
+  width: 1.4em;
+}
+
+.add-to-cart-container {
+  padding: 6px 9px;
+}
+
+.add-to-cart-txt {
+  font-size: 0.9em;
+}

@@ -223,6 +223,87 @@ body {
   border-bottom: var(--dark-blue-rainydays) thin solid;
 }
 
+/* -------------------------------------  shop/collection PAGE ---------------------- */
+
+.add-to-cart-container,
+.add-to-wish-container {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  gap: 10px;
+  background-color: var(--cta-background);
+  border-radius: 13px;
+  transition-property: all;
+  transition-duration: 0.5s;
+}
+
+.add-to-cart,
+.add-to-wish {
+  display: none;
+}
+
+.add-to-wish-container {
+  background-color: white;
+  border: var(--dark-blue-rainydays) solid thin;
+}
+
+.add-to-cart-container:hover {
+  background: var(--cta-hover-background);
+  cursor: pointer;
+}
+
+.add-to-wish-container:hover {
+  background-color: var(--light-blue-footer);
+  cursor: pointer;
+}
+
+.cart-container {
+  position: relative;
+}
+
+.cart-size {
+  width: 1.7em;
+}
+
+.add-cart,
+.add-wish {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  position: absolute;
+  border-radius: 50%;
+  width: 19px;
+  height: 19px;
+  text-align: center;
+}
+
+.add-cart {
+  top: -5px;
+  right: -7px;
+  background-color: var(--cart-add-background);
+  color: white;
+}
+
+.add-wish {
+  top: 2px;
+  right: -8px;
+  background-color: white;
+  color: var(--dark-blue-rainydays);
+}
+
+.add-to-cart-txt,
+.add-to-wish-txt {
+  color: white;
+  font-size: 1.25em;
+  font-weight: bold;
+  margin: 0;
+}
+
+.add-to-wish-txt {
+  color: var(--dark-blue-rainydays);
+  font-weight: normal;
+}
+
 /* -------------------------------------  CHECKOUT PAGE ---------------------- */
 .about-contact-section,
 .checkout-section {
@@ -828,14 +909,15 @@ footer p {
   /*================ WOMENS PAGE / COLLECTION PAGE==========*/
 
   .collection-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
   }
   .grid-image {
-    width: 160px;
+    /* width: 160px; */
+    width: 100%;
   }
 
   .p-title,
   .p-price {
-    font-size: 00.9em;
+    font-size: 0.9em;
   }
 }
