@@ -223,10 +223,12 @@ body {
   border-bottom: var(--dark-blue-rainydays) thin solid;
 }
 
-/* -------------------------------------  shop/collection PAGE ---------------------- */
+/* -------------------------------------   ---------------------- */
+/* -------------------------------------CHECKOUT PAGE +  shop/collection PAGE ---------------------- */
 
 .add-to-cart-container,
-.add-to-wish-container {
+.add-to-wish-container,
+.add-to-cart-shop {
   display: inline-flex;
   align-items: center;
   padding: 10px 20px;
@@ -235,6 +237,11 @@ body {
   border-radius: 13px;
   transition-property: all;
   transition-duration: 0.5s;
+}
+
+.add-to-cart-shop {
+  padding: 6px 9px;
+  border-radius: 10px;
 }
 
 .add-to-cart,
@@ -247,7 +254,8 @@ body {
   border: var(--dark-blue-rainydays) solid thin;
 }
 
-.add-to-cart-container:hover {
+.add-to-cart-container:hover,
+.add-to-cart-shop:hover {
   background: var(--cta-hover-background);
   cursor: pointer;
 }
@@ -263,6 +271,10 @@ body {
 
 .cart-size {
   width: 1.7em;
+}
+
+.cartsize-shop {
+  width: 1.4em;
 }
 
 .add-cart,
@@ -292,11 +304,16 @@ body {
 }
 
 .add-to-cart-txt,
-.add-to-wish-txt {
+.add-to-wish-txt,
+.add-to-cart-txt-shop {
   color: white;
   font-size: 1.25em;
   font-weight: bold;
   margin: 0;
+}
+
+.add-to-cart-txt-shop {
+  font-size: 0.9em;
 }
 
 .add-to-wish-txt {
@@ -304,7 +321,6 @@ body {
   font-weight: normal;
 }
 
-/* -------------------------------------  CHECKOUT PAGE ---------------------- */
 .about-contact-section,
 .checkout-section {
   max-width: 650px;
@@ -340,7 +356,7 @@ body {
 
 .menu-about-container {
   display: flex;
-  margin: 0 var(--ol-margin);
+  /* margin: 0 var(--ol-margin); */
   align-items: center;
   justify-content: space-between;
   flex-wrap: wrap;
@@ -503,7 +519,7 @@ footer p {
 
 /* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
 
-@media only screen and (min-width: 551px) and (max-width: 1180px) {
+@media only screen and (min-width: 551px) and (max-width: 1000px) {
   .login-container {
     margin-right: 13px;
   }
@@ -617,6 +633,7 @@ footer p {
     width: 15px;
     height: 15px;
     font-size: 0.8em;
+    right: -9px;
   }
 
   .vipps-container {
@@ -641,11 +658,11 @@ footer p {
   /*================ WOMENS PAGE / COLLECTION PAGE==========*/
 
   .collection-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
   }
 
   .grid-image {
-    width: 164px;
+    width: 250px;
   }
 
   .p-title,
@@ -852,6 +869,7 @@ footer p {
     width: 15px;
     height: 15px;
     font-size: 0.8em;
+    right: -9px;
   }
 
   .divider-login {

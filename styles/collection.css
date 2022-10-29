@@ -1,4 +1,3 @@
-@import "styles.css";
 
 .loading {
   border: 5px dotted #5c58d7;
@@ -26,8 +25,8 @@
   padding-top: 25px;
   padding-bottom: 25px;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  column-gap: 1em;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 2em;
   row-gap: 2em;
 }
 
@@ -71,15 +70,15 @@
   display: flex;
   justify-content: space-around;
 }
-
+/* 
 .cart-size {
   width: 1.4em;
-}
+} */
 
-.add-to-cart-container {
+/* .add-to-cart-container {
   padding: 6px 9px;
-}
+} */
 
-.add-to-cart-txt {
+/* .add-to-cart-txt {
   font-size: 0.9em;
-}
+} */
