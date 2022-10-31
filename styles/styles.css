@@ -1,8 +1,8 @@
-@import "product.css";
+/* @import "product.css";
 @import "checkout.css";
 @import "cartoverlay.css";
 @import "collection.css";
-@import "success.css";
+@import "success.css"; */
 /* ----------------- GLOBAL STYLES -------------- */
 
 /* 
@@ -362,20 +362,6 @@ body {
   flex-wrap: wrap;
 }
 
-/* -------------------  FREE SHIPPING AREA STYLES (undecided)---------------- */
-/* 
-.free-shipping {
-  display: flex;
-  gap: 20px;
-}
-
-.free-shipping-text {
-  color: rgb(214, 93, 23);
-  text-decoration: underline;
-  font-style: italic;
-  font-size: 0.9em;
-} */
-
 /* -------------------------  MAIN BODY STYLES --------------------- */
 
 .main-body {
@@ -519,7 +505,7 @@ footer p {
 
 /* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
 
-@media only screen and (min-width: 551px) and (max-width: 1000px) {
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
   .login-container {
     margin-right: 13px;
   }
@@ -661,10 +647,6 @@ footer p {
     grid-template-columns: 1fr 1fr;
   }
 
-  .grid-image {
-    width: 250px;
-  }
-
   .p-title,
   .p-price {
     font-size: 0.9em;
@@ -673,7 +655,7 @@ footer p {
 
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 599px) {
   .logo {
     max-width: 100px;
   }
@@ -928,10 +910,6 @@ footer p {
 
   .collection-container {
     grid-template-columns: 1fr;
-  }
-  .grid-image {
-    /* width: 160px; */
-    width: 100%;
   }
 
   .p-title,
