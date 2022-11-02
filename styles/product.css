@@ -1,7 +1,8 @@
 @import "checkout.css";
 
 .product-image {
-  max-height: var(--product-image-height);
+  width: 100%;
+  max-width: 700px;
 }
 
 .product-section {
@@ -25,7 +26,12 @@
   margin: 0;
 }
 
-.option-li,
+.size-container,
+.colour-container {
+  margin: 25px 0px;
+}
+
+/* .option-li,
 .size-li {
   font-size: var(--li-font-size);
   text-transform: capitalize;
@@ -33,7 +39,7 @@
 
 .size-li {
   text-transform: uppercase;
-}
+} */
 
 .product-cta-container {
   display: flex;

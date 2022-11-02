@@ -67,7 +67,7 @@
         </header>
 
         <main class="main-body">
-            <section class="main-body-section">
+            <section class="main-body-section">                
                 <div class="product-section">
                     <div class="product-image-container">
                         <img src="images/man_red-jacket_big-image.jpg" alt="red hiking puffer jacket" class="product-image">
@@ -77,14 +77,16 @@
                         <p class="price">699 kr</p>
                         <form ac>
                             <ul class="product-ul">
-                                <li class="checkout-li"><label for="size">Select Size</label></li>
-                                <select class="input-fields" id="size">
-                                    <option value="s">Small</option>
-                                    <option value="m">Medium</option>
-                                    <option value="l">Large</option>
-                                    <option value="xl">X-Large</option>
-                                    <option value="xxl">XX-Large</option>
-                                </select>
+                                <div class="size-container">
+                                    <li class="checkout-li"><label for="size">Select Size</label></li>
+                                    <select class="input-fields" id="size">
+                                        <option value="s">Small</option>
+                                        <option value="m">Medium</option>
+                                        <option value="l">Large</option>
+                                        <option value="xl">X-Large</option>
+                                        <option value="xxl">XX-Large</option>
+                                    </select>
+                                </div>
                                 <!-- <div class="item-margin">
                                     <input type="radio" name="product-size" value="small" id="small" title="small">
                                     <label for="small" class="size-li">s</label>
@@ -101,14 +103,15 @@
                                     <input type="radio" name="product-size" value="xlarge" id="xlarge" title="extra large">
                                     <label for="xlarge" class="size-li">xl</label>
                                 </div> -->
-
-                                <li class="checkout-li"><label for="color">Color</label></li>
-                                <select class="input-fields" id="color">
-                                    <option value="red">Red</option>
-                                    <option value="blue">Blue</option>
-                                    <option value="yellow">Yellow</option>
-                                    <option value="Gray">Grey</option>
-                                </select>
+                                <div class="colour-container">
+                                    <li class="checkout-li"><label for="color">Colour</label></li>
+                                    <select class="input-fields" id="color">
+                                        <option value="red">Red</option>
+                                        <option value="blue">Blue</option>
+                                        <option value="yellow">Yellow</option>
+                                        <option value="Gray">Grey</option>
+                                    </select>
+                                </div>
                                 <!-- <div class="item-margin">
                                     <input type="radio" checked name="product-color" value="red" id="red" title="red">
                                     <label for="red" class="option-li">red</label>

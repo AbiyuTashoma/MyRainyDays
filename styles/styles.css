@@ -230,6 +230,7 @@ body {
 .add-to-wish-container,
 .add-to-cart-shop {
   display: inline-flex;
+  min-width: max-content;
   align-items: center;
   padding: 10px 20px;
   gap: 10px;
@@ -350,6 +351,15 @@ body {
 
 .visa-vipps-container {
   margin-left: 15px;
+}
+
+.input-fields {
+  font-size: var(--li-font-size);
+  width: var(--normal-field-width);
+  border: var(--dark-grey-border) solid thin;
+  border-radius: 7px;
+  padding: 3px 7px;
+  margin: var(--inter-li-margin);
 }
 
 /* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */
@@ -568,7 +578,7 @@ footer p {
   }
 
   .product-image {
-    max-height: 250px;
+    max-width: 500px;
   }
 
   .product-detail {
@@ -780,6 +790,22 @@ footer p {
     font-size: 1.5em;
   }
 
+  /* =================== PRODUCT COLLECTION PAGE ============== */
+
+  .orderby-container {
+    padding: 25px 0px;
+    max-width: 90%;
+    margin: 0 auto;
+  }
+
+  .collection-container {
+    grid-template-columns: 1fr;
+  }
+
+  .p-title,
+  .p-price {
+    font-size: 0.9em;
+  }
   /* =================== PRODUCT PAGE ============== */
 
   .product-section {
@@ -790,7 +816,7 @@ footer p {
   }
 
   .product-image {
-    max-height: 250px;
+    max-width: 340px;
   }
 
   .product-detail {
@@ -806,6 +832,10 @@ footer p {
     margin-top: 0;
   }
 
+  .size-container,
+  .colour-container {
+    margin: 15px 0px;
+  }
   .product-ul {
     margin: 5px auto;
   }
@@ -904,16 +934,5 @@ footer p {
 
   .hidden-item {
     display: none;
-  }
-
-  /*================ WOMENS PAGE / COLLECTION PAGE==========*/
-
-  .collection-container {
-    grid-template-columns: 1fr;
-  }
-
-  .p-title,
-  .p-price {
-    font-size: 0.9em;
   }
 }
