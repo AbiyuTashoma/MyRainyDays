@@ -1,19 +1,18 @@
 const productsContainer = document.querySelector(".display");
 
-const CORS_URL = "https://noroffcors.herokuapp.com/";
-const url = "http://rainydays.rf.gd/wp-json/wc/store/products";
-const api_url = CORS_URL + url;
-
-const url2 = "http://flower-power.42web.io/wp-json";
-const api_url2 = CORS_URL + url2;
+const url = "https://www.rainydays.casa/wp-json/wc/store/products";
 
 async function getProducts() {
 
     try {
-        const response = await fetch(api_url2);
+        const response = await fetch(url);
         const products = await response.json();
     
         console.log(products);
+        productsContainer.innerHTML = `<p>name: ${products[0]["name"]}</p>
+                                        <p>price: ${products[0]["prices"]["price"]} ${products[0]["prices"]["currency_code"]}</p>
+                                        <img src="${products[0]["images"][0]["src"]}">`;
+    
     } 
     
     catch (error) {
