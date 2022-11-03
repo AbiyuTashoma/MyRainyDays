@@ -100,7 +100,7 @@ body {
 }
 
 .logo {
-  max-width: 160px;
+  max-width: 90px;
   padding-top: var(--li-margin);
 }
 
@@ -666,9 +666,9 @@ footer p {
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
 
 @media only screen and (max-width: 599px) {
-  .logo {
+  /* .logo {
     max-width: 100px;
-  }
+  } */
 
   .login-wish-cart {
     gap: 10px;
@@ -793,7 +793,7 @@ footer p {
   /* =================== PRODUCT COLLECTION PAGE ============== */
 
   .orderby-container {
-    padding: 25px 0px;
+    padding: 15px 0px;
     max-width: 90%;
     margin: 0 auto;
   }
