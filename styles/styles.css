@@ -820,7 +820,8 @@ footer p {
   }
 
   .product-detail {
-    margin-left: -100px;
+    /* margin-left: -100px; */
+    margin-left: 20px;
   }
 
   .product-title,
@@ -833,7 +834,7 @@ footer p {
   }
 
   .size-container,
-  .colour-container {
+  .color-container {
     margin: 15px 0px;
   }
   .product-ul {
