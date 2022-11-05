@@ -20,7 +20,7 @@ function displayProducts (products) {
                         </a>
                         <div class="product-footer">
                             <div>                                
-                                <a href="product.html?productID=${products[i]["id"]} class="a-title">
+                                <a href="product.html?productID=${products[i]["id"]}" class="a-title">
                                     <p class="p-title">${products[i]["name"]}</p>
                                     <p class="p-price">${products[i]["price_html"]}</p>
                                 </a>
