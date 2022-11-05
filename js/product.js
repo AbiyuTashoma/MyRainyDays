@@ -1,21 +1,30 @@
-const productsContainer = document.querySelector(".collection-container");
+const pImageContainer = document.querySelector(".product-image-container");
+const pName = document.querySelector(".product-title");
+const pPrice = document.querySelector(".price");
 
-const url = "https://www.rainydays.casa/wp-json/wc/store/products";
+const queryString = document.location.search;
+const parameter = new URLSearchParams(queryString);
+const pID = parameter.get("productID");
 
-async function getProducts() {
+const baseURL = "https://www.rainydays.casa/wp-json/wc/store/products/?P=";
+
+const productURL = baseURL + pID;
+
+async function getProduct() {
 
     try {
-        const response = await fetch(url);
-        const products = await response.json();
+        const response = await fetch(productURL);
+        const product = await response.json();
     
-        console.log(products);
-        productsContainer.innerHTML = displayProducts(products);
-    
+        console.log(product);
+        // productsContainer.innerHTML = displayDetail(product);
+        // pImageContainer.innerHTML = `<img src="${product["images"][0]["src"]}" alt="red hiking puffer jacket" class="product-image">`;
+        pImageContainer.innerHTML = `Success`;
     } 
     
     catch (error) {
-        productsContainer.innerHTML = error;
+        pImageContainer.innerHTML = displayMessage("An error has occurred. Please try again", "error");
     }
 }
 
-getProducts();
+getProduct();
