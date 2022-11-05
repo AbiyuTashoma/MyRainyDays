@@ -33,7 +33,7 @@ async function getProduct() {
         sizeContainer.innerHTML = createAttribute(product["attributes"], "size");
         colorContainer.innerHTML = createAttribute(product["attributes"], "color");
         
-        descriptionContainer.innerHTML = `${product["description"]}`;
+        descriptionContainer.innerHTML = `About the product: ${product["description"]}`;
         // pImageContainer.innerHTML = `Success`;
     } 
     

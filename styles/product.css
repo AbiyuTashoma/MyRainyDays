@@ -3,6 +3,7 @@
 .product-image {
   width: 100%;
   max-width: 700px;
+  border: solid #d6d3d3 thin;
 }
 
 .product-section {
@@ -29,6 +30,12 @@
 .size-container,
 .color-container {
   margin: 25px 0px;
+}
+
+.description {
+  font-style: italic;
+  margin: 30px 0px;
+  font-size: smaller;
 }
 
 /* .option-li,

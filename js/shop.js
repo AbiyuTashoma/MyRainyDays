@@ -2,6 +2,10 @@ const productsContainer = document.querySelector(".collection-container");
 
 const url = "https://www.rainydays.casa/wp-json/wc/store/products";
 
+
+// orderby id and order ascending
+// https://www.rainydays.casa/wp-json/wc/store/products/?orderby=id&order=asc
+
 async function getProducts() {
 
     try {
