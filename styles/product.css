@@ -38,6 +38,12 @@
   font-size: smaller;
 }
 
+.related-products {
+  display: flex;
+  gap: 8px;
+}
+
+
 /* .option-li,
 .size-li {
   font-size: var(--li-font-size);

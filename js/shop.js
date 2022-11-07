@@ -2,7 +2,7 @@ const productsContainer = document.querySelector(".collection-container");
 
 const orderByContainer = document.querySelector(".orderby");
 
-const url = "https://www.rainydays.casa/wp-json/wc/store/products";
+const url = "https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15";
 
 
 async function getProducts() {
@@ -32,7 +32,7 @@ getProducts();
 orderByContainer.onchange = async function () {
     const orderBy = orderByContainer.value;
 
-    const newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?orderby=${orderBy}`;
+    const newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=${orderBy}`;
 
     try {
         const response = await fetch(newURL);

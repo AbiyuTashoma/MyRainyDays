@@ -19,3 +19,29 @@ function createAttribute (attributelist, attributeName) {
 
     return html;
 }
+
+async function displayRelatedProducts (relatedProductsContainer, related, baseURL, consumerKey, consumerSecret) {
+
+    
+    relatedProductsContainer.innerHTML = "";
+    for (let i = 0; i < related.length; i++) {
+    
+        try {    
+                const rproductURL = `${baseURL}${related[i]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
+            
+                const rresponse = await fetch(rproductURL);
+                const rproduct = await rresponse.json();
+    
+                relatedProductsContainer.innerHTML += `<div>
+                            <img src="${rproduct["images"][0]["src"]}" alt="${rproduct["name"]}" class="product-image">
+                            <p>${rproduct["name"]}</p>
+                            <p>${rproduct["price_html"]}</p>
+                    </div>`;                
+        }
+    
+        catch(error) {
+            relatedProductsContainer.innerHTML += displayMessage("An error has occurred. Please try again", "error");
+        }
+    }
+
+}

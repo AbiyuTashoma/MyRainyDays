@@ -7,6 +7,8 @@ const colorContainer = document.querySelector("#color");
 
 const descriptionContainer = document.querySelector(".description");
 
+const relatedProductsContainer = document.querySelector(".related-products");
+
 const queryString = document.location.search;
 const parameter = new URLSearchParams(queryString);
 const pID = parameter.get("productID");
@@ -24,7 +26,6 @@ async function getProduct() {
         const response = await fetch(productURL);
         const product = await response.json();
     
-        // console.log(product);
         // productsContainer.innerHTML = displayDetail(product);
         pImageContainer.innerHTML = `<img src="${product["images"][0]["src"]}" alt="${product["name"]}" class="product-image">`;
         pNameContainer.innerHTML = `${product["name"]}`;
@@ -34,7 +35,8 @@ async function getProduct() {
         colorContainer.innerHTML = createAttribute(product["attributes"], "color");
         
         descriptionContainer.innerHTML = `About the product: ${product["description"]}`;
-        // pImageContainer.innerHTML = `Success`;
+        
+        displayRelatedProducts (relatedProductsContainer, product.related_ids, baseURL, consumerKey, consumerSecret);
     } 
     
     catch (error) {
