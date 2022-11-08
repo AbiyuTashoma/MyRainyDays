@@ -20,22 +20,22 @@ function createAttribute (attributelist, attributeName) {
     return html;
 }
 
-async function displayRelatedProducts (relatedProductsContainer, related, baseURL, consumerKey, consumerSecret) {
+async function displayRelatedProducts (relatedProductsContainer, relatedProducts, baseURL, consumerKey, consumerSecret) {
 
     
     relatedProductsContainer.innerHTML = "";
-    for (let i = 0; i < related.length; i++) {
+    for (let i = 0; i < relatedProducts.length; i++) {
     
         try {    
-                const rproductURL = `${baseURL}${related[i]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
+                const rProductURL = `${baseURL}${relatedProducts[i]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
             
-                const rresponse = await fetch(rproductURL);
-                const rproduct = await rresponse.json();
+                const rResponse = await fetch(rProductURL);
+                const rProduct = await rResponse.json();
     
                 relatedProductsContainer.innerHTML += `<div>
-                            <img src="${rproduct["images"][0]["src"]}" alt="${rproduct["name"]}" class="product-image">
-                            <p>${rproduct["name"]}</p>
-                            <p>${rproduct["price_html"]}</p>
+                            <img src="${rProduct["images"][0]["src"]}" alt="${rProduct["name"]}" class="product-image">
+                            <p>${rProduct["name"]}</p>
+                            <p>${rProduct["price_html"]}</p>
                     </div>`;                
         }
     
