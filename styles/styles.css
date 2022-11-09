@@ -363,6 +363,10 @@ body {
   margin: var(--inter-li-margin);
 }
 
+.orderby {
+  width: max-content;
+}
+
 .message-field {
   width: 90%;
   height: 100px;
