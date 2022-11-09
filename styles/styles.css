@@ -625,6 +625,10 @@ footer p {
     height: 16px;
   }
 
+  .related-products {
+    font-size: 0.8em;
+  }
+
   /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/
 
   .about-contact-section {
@@ -866,6 +870,10 @@ footer p {
     font-size: 13px;
     width: 16px;
     height: 16px;
+  }
+
+  .related-products {
+    font-size: 0.6em;
   }
 
   /*================ CART OVERLAY ==========*/
