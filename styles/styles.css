@@ -393,7 +393,7 @@ body {
 
 /* NOTE: check variationS on different screen sizes*/
 .main-body-section {
-  max-width: var(--max-width-main);
+  /* max-width: var(--max-width-main); */
   margin: 0 auto;
 }
 

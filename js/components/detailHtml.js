@@ -32,11 +32,13 @@ async function displayRelatedProducts (relatedProductsContainer, relatedProducts
                 const rResponse = await fetch(rProductURL);
                 const rProduct = await rResponse.json();
     
-                relatedProductsContainer.innerHTML += `<div>
-                            <img src="${rProduct["images"][0]["src"]}" alt="${rProduct["name"]}" class="product-image">
-                            <p>${rProduct["name"]}</p>
-                            <p>${rProduct["price_html"]}</p>
-                    </div>`;                
+                relatedProductsContainer.innerHTML += `
+                                                            <a href="product.html?productID=${rProduct["id"]}" class="product-a">
+                                                                <img src="${rProduct["images"][0]["src"]}" alt="${rProduct["name"]}" class="product-image">
+                                                                <p class="related-title">${rProduct["name"]}</p>
+                                                                <p class="related-title">${rProduct["price_html"]}</p>
+                                                            </a>
+                                                        `;                
         }
     
         catch(error) {
