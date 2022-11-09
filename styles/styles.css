@@ -355,11 +355,17 @@ body {
 
 .input-fields {
   font-size: var(--li-font-size);
-  width: var(--normal-field-width);
+  /* width: var(--normal-field-width); */
+  width: 50%;
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
   padding: 3px 7px;
   margin: var(--inter-li-margin);
+}
+
+.message-field {
+  width: 90%;
+  height: 100px;
 }
 
 /* -----------------  MAIN MENU - SEARCH - ABOUT STYLES  ---------------- */

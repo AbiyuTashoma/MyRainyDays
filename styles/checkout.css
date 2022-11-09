@@ -107,11 +107,17 @@
 .checkout-section {
   max-width: 800px;
 }
-.about-text {
+
+.about-text,
+.contact-padding {
   font-size: 0.95em;
   padding: 0 8px;
 }
 
 .bold {
   font-weight: bold;
+}
+
+.contact-form {
+  margin-top: 45px;
 }
