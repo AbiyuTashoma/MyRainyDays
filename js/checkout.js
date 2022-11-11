@@ -287,8 +287,6 @@ function validate(event) {
     if (validCheckout) {
         messageContainer.innerHTML = displayMessage("Order successfully completed!", "success");
         checkoutFormContainer.reset();
-        // setDate(dateContainer);
-        // displayPrice(priceContainer, 0);
     }
 }
 

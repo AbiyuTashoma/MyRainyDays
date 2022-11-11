@@ -75,13 +75,15 @@
                     <!-- <p class="about-text bold">customer-service@rainydays.com</p> -->
                     <form class="contact-form contact-padding">
                         <p>We are also available available via our contact form below:</p>
+                        <div class="message"></div>
+                        
                         <div>
-                            <label for="first-name" title="name">
+                            <label for="name" title="name">
                                 Name
                             </label>
                             <div>
-                                <input type="text" title="first name" id="first-name" name="first-name" class="input-fields">
-                                <div class="note-firstname"></div>                                                
+                                <input type="text" title="name" id="name" name="name" class="input-fields">
+                                <div class="note-name"></div>                                                
                             </div>
                         </div>
                         <div>
@@ -103,6 +105,8 @@
                         <div>
                             <input type="submit" title="send" name="send" value="Send" class="send item-margin">
                         </div>
+
+
                     </form>
                 </div>
                 
@@ -139,5 +143,8 @@
             </div>
         </footer>
 
+        <script src="js/components/message.js"></script>
+        <script src="js/components/validate.js"></script>
+        <script src="js/contact.js"></script>
     </body>
 </html>
