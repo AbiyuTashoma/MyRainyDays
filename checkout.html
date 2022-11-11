@@ -36,8 +36,6 @@
                         <nav class="main-menu">
                             <ul class="main-menu-ul">
                                 <li><a href="index.html" title="home" class="menu-a">Home</a></li>
-                                <!-- <li><a href="womens.html" title="womens jackets" class="menu-a">Womens</a></li> -->
-                                <!-- <li><a href="mens.html" title="mens jackets" class="menu-a">Mens</a></li> -->
                                 <li><a href="shop.html" title="shop" class="menu-a">Shop</a></li>
                                 <li><a href="new-arrivals.html" title="new arrivals jackets" class="menu-a">New Arrivals</a></li>
                             </ul>
@@ -60,10 +58,6 @@
                             <li><a href="contact-us.html" title="contact us" class="menu-a">Contact Us</a></li>
                         </ul>
                     </nav>
-                <!-- <div class="free-shipping">
-                    <p class="free-shipping-text">Free Shipping All Over The World</p>
-                    <img src="icons/delivery-truck.svg" alt="delivery truck" class="delivery-truck">
-                </div> -->
                 </div>
             </section>
         </header>
@@ -73,41 +67,36 @@
                 <div class="checkout-section">
                     <ol class="ol-contact-info">
                         <li class="checkout-li container-margin">login for early checkout</li>
-                            <div class="checkout-login-section item-margin">
-                                <form> <!--method post is removed temporarily due to error 404-->  
-                                    <div class="checkout-login">                          
-                                        <div>
-                                            <label for="username" title="username">Username:</label>
-                                            <input type="text" name="username" title="user name" id="username" class="input-fields">
-                                        </div>
-                                        <div>
-                                            <label for="password" title="password">Password:</label>
-                                            <input type="password" name="password" title="password" id="password" class="input-fields">
-                                        </div>
-                                        <div class="center-aligned top-margin">
-                                            <input type="submit" title="login" name="login" value="Login" class="login item-margin" formaction=#scroll-to>
-                                        </div>
-                                    </div>                                    
-                                </form>
-                                
-                                <div class="divider-login">                                            
-                                </div>
-
-                                <div class="center-aligned">
-                                    <label for="register"  class="new-line">New user</label>
-                                    <input type="button" title="register" name="register" value="Register" class="login">
-                                </div>
+                        <div class="checkout-login-section item-margin">
+                            <form>  
+                                <div class="checkout-login">                          
+                                    <div>
+                                        <label for="username" title="username">Username:</label>
+                                        <input type="text" name="username" title="user name" id="username" class="input-fields">
+                                    </div>
+                                    <div>
+                                        <label for="password" title="password">Password:</label>
+                                        <input type="password" name="password" title="password" id="password" class="input-fields">
+                                    </div>
+                                    <div class="center-aligned top-margin">
+                                        <input type="submit" title="login" name="login" value="Login" class="login item-margin" formaction=#scroll-to>
+                                    </div>
+                                </div>                                    
+                            </form>
+                            
+                            <div class="divider-login">                                            
                             </div>
-                            <!-- <div class="container-margin">
-                                <input type="checkbox" name="cont-without-profile" id="cont-without-profile">
-                                <label for="cont-without-profile" title="continue without profile" class="bottom-margin">Continue without profile</label>
-                            </div> -->
-                            
-                            
+
+                            <div class="center-aligned">
+                                <label for="register"  class="new-line">New user</label>
+                                <input type="button" title="register" name="register" value="Register" class="login">
+                            </div>
+                        </div>
                     </ol>
-                    <form class="checkout-form"> <!--method post is removed temporarily due to error 404-->
+                    <form class="checkout-form">
                         <ol start="2" class="ol-contact-info">
-                            <li class="checkout-li container-margin">Contact information</li>
+                            <div class="container-margin">
+                                <li class="checkout-li">Contact information</li>
                                 <ul class="contact-left-padding">
                                     <li class="item-margin">
                                         <div>
@@ -144,13 +133,14 @@
                                         </div>
                                     </li>
                                 </ul>
-                                
-                            <li class="checkout-li container-margin">Shipping information</li>                                
+                            </div> 
+
+                            <div class="container-margin">
+                                <li class="checkout-li">Shipping information</li>                                
                                 <ul class="shipping-left-padding">
-                                    <div>
+                                    <div class="item-margin">
                                         <label for="country" title="country">
                                             Country
-                                            <!-- <input type="text" id="country" title="country" name="country" class="input-fields"> -->
                                             <select class="country-list input-fields" id="country" name="country">
                                                 <option value="AF">Afghanistan</option>
                                                 <option value="AX">Aland Islands</option>
@@ -408,21 +398,21 @@
                                             <div class="note-country"></div>
                                         </label>
                                     </div>
-                                    <div>
+                                    <div class="item-margin">
                                         <label for="street-address" title="street address">
                                             Street Address
                                             <input type="text" id="street-address" title="street address" name="street-address" class="input-fields">
                                             <div class="note-streetaddress"></div>
                                         </label>
                                     </div>
-                                    <div>
+                                    <div class="item-margin">
                                         <label for="postal-code" title="postal code">
                                             Postal code
                                             <input type="number" id="postal-code" title="postal code" name="postal-code" class="input-fields">
                                             <div class="note-postalcode"></div>
                                         </label>
                                     </div>
-                                    <div>
+                                    <div class="item-margin">
                                         <label for="city" title="city">
                                             City
                                             <input type="text" id="city" title="city" name="city" class="input-fields">
@@ -430,9 +420,11 @@
                                         </label>
                                     </div>                                                                            
                                 </ul>
-                            <li class="checkout-li container-margin" id="scroll-to">Payment information</li>
+                            </div>
+                            <div class="container-margin">
+                                <li class="checkout-li" id="scroll-to">Payment information</li>
                                 <div class="visa-vipps-container">
-                                    <div class="container-margin">
+                                    <div class="item-margin">
                                         <input type="radio" name="visa-vipps" id="visa-payment" value="visa" checked>
                                         <label for="visa-payment" class="vipps-label" title="visa">
                                            <span>Visa</span>
@@ -499,6 +491,7 @@
                                 </div>
 
                                 <div class="message"></div>
+                            </div>
                         </ol>
                     </form>
                 </div>
