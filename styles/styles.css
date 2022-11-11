@@ -223,6 +223,24 @@ body {
   border-bottom: var(--dark-blue-rainydays) thin solid;
 }
 
+.send {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 1em;
+  color: white;
+  background-color: var(--dark-blue-rainydays);
+  border: none;
+  border-radius: 7px;
+  padding: 4px 20px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+  margin: var(--inter-li-margin);
+}
+
+.send:hover {
+  background-color: rgb(114 153 166);
+  cursor: pointer;
+}
+
 /* -------------------------------------   ---------------------- */
 /* -------------------------------------CHECKOUT PAGE +  shop/collection PAGE ---------------------- */
 
