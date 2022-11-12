@@ -374,11 +374,15 @@ body {
 .input-fields {
   font-size: var(--li-font-size);
   /* width: var(--normal-field-width); */
-  width: 50%;
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
   padding: 3px 7px;
   margin: var(--inter-li-margin);
+}
+
+#size,
+#color {
+  width: fit-content;
 }
 
 .orderby {
