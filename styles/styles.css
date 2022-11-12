@@ -554,8 +554,7 @@ footer p {
 
   .login {
     font-size: 1em;
-    /* border: var(--dark-blue-rainydays) solid thin; */
-    padding: 5px 20px;
+    padding: 7px 20px;
   }
 
   .wish-cart,
@@ -672,6 +671,10 @@ footer p {
     align-items: flex-start;
   }
 
+  .input-fields {
+    padding: 7px;
+  }
+
   .left-margin {
     margin-left: 25px;
   }
@@ -713,8 +716,7 @@ footer p {
   .login {
     font-size: 0.9em;
     margin: auto 0;
-    padding: 5px 15px;
-    /* border: var(--dark-blue-rainydays) solid thin; */
+    padding: 7px 20px;
   }
 
   .about-contact-section {
@@ -948,6 +950,7 @@ footer p {
 
   .input-fields {
     font-size: 0.8em;
+    padding: 7px;
   }
 
   .wide-field {
