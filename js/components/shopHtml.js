@@ -11,9 +11,6 @@
 //                             </label>
 //                        </div>`;
 
-const addToCartHTML = `<div>
-                            <input type="button" class="view-product" id="viewproduct" value="View">
-                        </div>`;
                         
 function displayProducts (products) {
     let html = "";
@@ -30,7 +27,9 @@ function displayProducts (products) {
                                 </a>
                             </div>
                                 <a href="product.html?productID=${products[i]["id"]}" class="a-title">
-                                    ${addToCartHTML}
+                                    <div>
+                                        <input type="button" class="view-product" id="viewproduct" value="View">
+                                    </div>
                                 </a>
                             </div>
                     </div>`;     

@@ -5,6 +5,7 @@
 }
 
 .cart-items {
+  display: none;
   margin: 0;
   padding: 2px;
   position: absolute;
