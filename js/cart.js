@@ -1,25 +1,34 @@
-const user = window.sessionStorage.getItem("user");
-const loginButton = document.querySelector("#login");
-const loginLink = document.querySelector(".login-link");
-const currentUser = document.querySelector(".current-user");
-const registerContainer = document.querySelector(".register");
+const cartItemsContainer = document.querySelector(".cart-items");
 
-if (user) {
-    loginButton.innerHTML = "Logout";
-    loginLink.title = "logout";
-    loginLink.href = "";
-    currentUser.innerHTML = "UN";
-    currentUser.style.display = "block";
-    registerContainer.style.display = "none";
-}
+function checkCart() {
 
-function logout() {
-    const user = window.sessionStorage.getItem("user");
+    let cartItems = 0;
 
-    if (user) {
-        window.sessionStorage.removeItem("user");
-        currentUser.style.display = "none";
+    for (let i = 12; i < 25; i++) {
+        const items = window.sessionStorage.getItem(i);
+        if (items) {
+            cartItems += parseInt(items)
+            console.log(i +" "+ items);
+        }
     }
+
+    if (cartItems !== 0) {
+        cartItemsContainer.innerHTML = cartItems;
+        console.log("total count: " + cartItems);
+    }
+   
 }
 
-loginButton.addEventListener("click", logout);
+function clearCart(event) {
+    for (let i = 12; i < 25; i++) {
+        const items = window.sessionStorage.getItem(i);
+        if (items) {
+            window.sessionStorage.removeItem(i);
+        }
+    }
+
+    cartItemsContainer.innerHTML = 0;
+    console.log("total count: " + 0);
+}
+
+checkCart();

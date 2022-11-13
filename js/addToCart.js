@@ -1,26 +1,26 @@
 const addToCartProductContainer = document.querySelector("#addtocart-product");
-const cartItemsContainer = document.querySelector(".cart-items");
 const wishItemContainer = document.querySelector("#addtowish-product");
 
-const addToCartQueryString = document.location.search;
-const addToCartParameter = new URLSearchParams(addToCartQueryString);
-const addToCartPID = addToCartParameter.get("productID");
-
 function addItem(event) {
-    window.sessionStorage.setItem("id", addToCartPID);
-    cartItemsContainer.style.display = "block";
-    cartItemsContainer.innerHTML = addToCartPID;
-    console.log(addToCartPID);
-}
+    const newQueryString = document.location.search;
+    const newParameter = new URLSearchParams(newQueryString);
+    const PID = newParameter.get("productID");
 
-function checkItem() {
-    const items = window.sessionStorage.getItem("id");
-    if (items) {
-        cartItemsContainer.style.display = "block";
-        cartItemsContainer.innerHTML = items;
-        console.log(items);
+    const item = window.sessionStorage.getItem(PID);
+
+    if (item) {
+        window.sessionStorage.setItem(PID, parseInt(item) + 1);
+        console.log("added: " + (parseInt(item) + 1));
     }
+
+    else {
+        window.sessionStorage.setItem(PID, 1);
+        console.log("added new 1");
+    }
+
+    checkCart();
 }
 
+checkCart();
 addToCartProductContainer.addEventListener("click", addItem);
-wishItemContainer.addEventListener("click", checkItem);
+wishItemContainer.addEventListener("click", clearCart);

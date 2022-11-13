@@ -22,10 +22,12 @@
                     <div class="login-wish-cart">
                         <p class="login" title="login">Login</p>
                         <img src="icons/wish-list.svg" alt="wish list" class="wish-cart">
-                        <div class="cart-item-ref">
-                            <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
-                            <p class="cart-items center-aligned"></p>
-                        </div>
+                        <a href="checkout.html">
+                            <div class="cart-item-ref">
+                                <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
+                                <p class="cart-items center-aligned">0</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="menu-about-container">
@@ -84,7 +86,7 @@
                             </ul>
                             <div class="product-cta-container">
                                 <input type="button" class="add-to-cart" id="addtocart-product">
-                                <label for="addtocart-product" title="add to cart">
+                                <label for="addtocart-product" class="fitcontent" title="add to cart">
                                     <div class="add-to-cart-container">
                                         <div class="cart-container">
                                             <img src="icons/cart.svg" alt="cart" class="cart-size">
@@ -94,7 +96,7 @@
                                     </div>
                                 </label>
                                 <input type="button" class="add-to-wish" id="addtowish-product">
-                                <label for="addtowish-product" title="wish list">
+                                <label for="addtowish-product" class="fitcontent" title="wish list">
                                     <div class="add-to-wish-container">
                                         <div class="cart-container">
                                             <img src="icons/wish.svg" alt="wish" class="cart-size">
@@ -143,6 +145,7 @@
             </div>
         </footer>
 
+        <script src="js/cart.js"></script>
         <script src="js/addToCart.js"></script>
         <script src="js/components/message.js"></script>
         <script src="js/components/detailHtml.js"></script>

@@ -11,7 +11,6 @@ async function getProducts() {
         const response = await fetch(url);
         const products = await response.json();
     
-        console.log(products);
         productsContainer.innerHTML = displayProducts(products);
     
     } 

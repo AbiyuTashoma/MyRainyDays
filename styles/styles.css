@@ -105,6 +105,24 @@ body {
 }
 
 /* ----------------- LOGIN WISH-LIST CART STYLES -------------- */
+/* ----------------- CART INDICATOR -----------------*/
+
+.cart-item-ref {
+  position: relative;
+}
+
+.cart-items {
+  margin: 0;
+  padding: 2px;
+  position: absolute;
+  top: -6px;
+  right: -11px;
+  background-color: green;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+}
 
 .login-wish-cart {
   display: flex;
@@ -345,6 +363,10 @@ body {
   max-width: 650px;
   margin-left: 150px;
   padding: 25px 0;
+}
+
+.fitcontent {
+  width: fit-content;
 }
 
 .divider-login {
