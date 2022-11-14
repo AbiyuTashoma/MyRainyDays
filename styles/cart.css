@@ -1,0 +1,16 @@
+.cart-row {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    max-width: 484px;
+    margin-left: 30px;
+}
+
+.cart-product-image {
+    max-height: 28px;
+    outline: solid #e3e3e3 thin;
+}
+
+.related-title {
+    margin: 5px 0px;
+  }

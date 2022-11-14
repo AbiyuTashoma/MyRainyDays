@@ -21,7 +21,6 @@ function createAttribute (attributelist, attributeName) {
 }
 
 async function displayRelatedProducts (relatedProductsContainer, relatedProducts, baseURL, consumerKey, consumerSecret) {
-
     
     relatedProductsContainer.innerHTML = "";
     for (let i = 0; i < relatedProducts.length; i++) {

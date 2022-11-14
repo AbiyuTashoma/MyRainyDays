@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>RAINYDAYS | checkout</title>
+        <title>RAINYDAYS | cart</title>
         <meta charset="UTF-8"/>
         <meta name="description" content="mens womens quality outdoor jackets"/>
         <meta name="viewport" content="width=device-width, initial-scale=1"/>
-        <link href="styles/checkout.css" rel="stylesheet"/>
+        <link href="styles/cart.css" rel="stylesheet"/>
         <link href="styles/styles.css" rel="stylesheet"/>
     </head>
 
@@ -20,11 +20,13 @@
                 <div class="login-container">
                     <div class="login-wish-cart">
                         <p class="login" title="login">Login</p>
-                        <img src="icons/wish-list.svg" alt="wish list" title="wish list" class="wish-cart">
-                        <div class="cart-item-ref">
-                            <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
-                            <p class="cart-items center-aligned">0</p>
-                        </div>
+                        <img src="icons/wish-list.svg" alt="wish list" class="wish-cart">
+                        <a href="cart.html">
+                            <div class="cart-item-ref">
+                                <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
+                                <p class="cart-items center-aligned">0</p>
+                            </div>
+                        </a>
                     </div>
                 </div>
                 <div class="menu-about-container">
@@ -63,7 +65,7 @@
 
         <main class="main-body">
             <section class="main-body-section">
-                
+                <div class="cart-list"></div>
             </section>
         </main>
 
@@ -94,9 +96,10 @@
             </div>
         </footer>
 
-        <script src="js/cart.js"></script>
+        <script src="js/components/cartIndicator.js"></script>
         <script src="js/components/message.js"></script>
         <script src="js/components/validate.js"></script>
-        <script src="js/checkout.js"></script>
+        <script src="js/cart.js"></script>
+
     </body>
 </html>
