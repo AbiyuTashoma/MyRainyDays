@@ -9,7 +9,8 @@ async function displayCartProducts() {
 
     cartListArray = checkCart();
     
-    cartListContainer.innerHTML = "";
+    cartListContainer.innerHTML = `<p>Cart is empty</p>`;
+    let totalPrice = 0;
 
     for (let i = 0; i < cartListArray.length; i++) {
         try {    
@@ -18,22 +19,27 @@ async function displayCartProducts() {
             const cResponse = await fetch(cProductURL);
             const cProduct = await cResponse.json();
 
+
+            // <a href="product.html?productID=${cProduct[0]}"></a>
             cartListContainer.innerHTML += `<div class="cart-row">
-                                                <p class="cartrow-title">${i+1}</p>
-                                                <a href="product.html?productID=${cProduct[0]}"></a>
+                                                <span>${i+1}.</span>
                                                 <img src="${cProduct["images"][0]["src"]}" alt="${cProduct["name"]}" class="cart-product-image">
-                                                <p class="cartrow-title">${cProduct["name"]}</p>
-                                                <p class="cartrow-title">${cProduct["price_html"]}</p>
-                                                <p class="cartrow-title">Quantity: ${cartListArray[i][1]}</p>
+                                                <span class="cartrow-title">${cProduct["name"]}</span>
+                                                <span class="cartrow-title">${cProduct["price_html"]}</span>
+                                                <span class="cartrow-title">x${cartListArray[i][1]}</span>
+                                                <span class="cartrow-title">Sub-total:${cProduct["price"]*cartListArray[i][1]}</span>
                                             </div>
-                                            `;                
+                                            `;
+            totalPrice += parseInt(cProduct["price"]) * cartListArray[i][1];    
         }
 
         catch(error) {
-            relatedProductsContainer.innerHTML += displayMessage("An error has occurred. Please try again", "error");
+            cartListContainer.innerHTML += displayMessage("An error has occurred. Please try again", "error");
         }
 
     }
+
+    cartListContainer.innerHTML += `<span class="total-sum">Total sum: ${totalPrice}</span>`;
 
 }
 

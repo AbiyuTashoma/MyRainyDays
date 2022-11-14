@@ -1,17 +1,3 @@
-// const addToCartHTML = `<div>
-//                             <input type="button" class="add-to-cart" id="addtocart">
-//                             <label for="addtocart" title="add to cart">
-//                                 <div class="add-to-cart-shop">
-//                                     <div class="cart-container">
-//                                         <img src="icons/cart.svg" alt="cart" class="cartsize-shop">
-//                                         <p class="add-cart">+</p>
-//                                     </div>
-//                                     <p class="add-to-cart-txt-shop">Add To Cart</p>
-//                                 </div>
-//                             </label>
-//                        </div>`;
-
-                        
 function displayProducts (products) {
     let html = "";
     for (let i = 0; i < products.length; i++) {

@@ -23,4 +23,3 @@ function addItem(event) {
 
 checkCart();
 addToCartProductContainer.addEventListener("click", addItem);
-wishItemContainer.addEventListener("click", clearCart);

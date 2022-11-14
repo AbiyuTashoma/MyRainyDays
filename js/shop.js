@@ -13,11 +13,13 @@ async function getProducts() {
     
         productsContainer.innerHTML = displayProducts(products);
     
+        console.log(products);
     } 
     
     catch (error) {
         productsContainer.innerHTML = displayMessage("An error has occurred. Please try again", "error");
     }
+
 }
 
 getProducts();
