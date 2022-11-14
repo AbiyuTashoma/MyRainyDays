@@ -12,7 +12,16 @@ async function displayCartProducts() {
     cartListContainer.innerHTML = `<p>Cart is empty</p>`;
     let totalPrice = 0;
 
+    if (cartListArray.length) {                    
+        cartListContainer.innerHTML = `<div class="loading"></div>`;
+    }
+
     for (let i = 0; i < cartListArray.length; i++) {
+
+        if ( i === 0) {
+            cartListContainer.innerHTML = "";
+        }
+        
         try {    
             const cProductURL = `${baseURL}${cartListArray[i][0]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
         
