@@ -18,12 +18,19 @@
     }
 }
 
-.cart-row {
+/* .cart-row {
     display: flex;
     align-items: center;
     gap: 15px;
     margin: 15px 0px;
 
+} */
+
+.table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    border: 3px solid purple;
 }
 
 .cart-product-image {
