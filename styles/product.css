@@ -71,3 +71,20 @@
   gap: 25px;
 }
 
+.viewcart {
+  background-color: white;
+  color: var(--dark-blue-rainydays);
+  text-decoration: none;
+  font-size: 1.25em;
+  font-weight: bold;
+  padding: 7px 25px;
+  border: var(--dark-blue-rainydays) solid thin;
+  border-radius: 10px;
+  transition-property: background-color;
+  transition-duration: 0.5s;
+}
+
+.viewcart:hover {
+  background-color: lightblue;
+  cursor: pointer;
+}
