@@ -39,9 +39,6 @@ async function displayCartProducts() {
 
             totalPrice += parseInt(cProduct["price"]) * cartListArray[i][1];
 
-
-            console.log(cProduct);
-            // <a href="product.html?productID=${cProduct[0]}"></a>
             tableBody += `<tr>
                                 <th scope="row">${i+1}</th>
                                 <td>
