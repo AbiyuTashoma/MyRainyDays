@@ -7,6 +7,7 @@ const colorContainer = document.querySelector("#color");
 
 const descriptionContainer = document.querySelector(".description");
 
+
 const relatedProductsContainer = document.querySelector(".related-products");
 
 const queryString = document.location.search;
@@ -42,6 +43,11 @@ async function getProduct() {
     catch (error) {
         pImageContainer.innerHTML = displayMessage("An error has occurred. Please try again", "error");
     }
+
 }
 
 getProduct();
+
+
+
+displayViewCart();

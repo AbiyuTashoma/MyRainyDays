@@ -72,6 +72,8 @@
 }
 
 .viewcart {
+  display: none;
+  align-items: center;
   background-color: white;
   color: var(--dark-blue-rainydays);
   text-decoration: none;
@@ -80,6 +82,7 @@
   padding: 7px 25px;
   border: var(--dark-blue-rainydays) solid thin;
   border-radius: 10px;
+  width: fit-content;
   transition-property: background-color;
   transition-duration: 0.5s;
 }

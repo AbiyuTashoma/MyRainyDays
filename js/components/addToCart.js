@@ -1,5 +1,6 @@
 const addToCartProductContainer = document.querySelector("#addtocart-product");
-const wishItemContainer = document.querySelector("#addtowish-product");
+const viewCartContainer = document.querySelector(".viewcart");
+
 
 function addItem(event) {
     const newQueryString = document.location.search;
@@ -19,7 +20,16 @@ function addItem(event) {
     }
 
     checkCart();
+    displayViewCart();
+
+}
+
+function displayViewCart() {
+    if (checkCart().length) {
+        viewCartContainer.style.display = "flex";
+    }
 }
 
 checkCart();
+displayViewCart();
 addToCartProductContainer.addEventListener("click", addItem);

@@ -1,5 +1,8 @@
 const cartListContainer = document.querySelector(".cart-list");
 const cartInfoContainer = document.querySelector(".cart-info");
+const cartPageBtnContainer = document.querySelector(".cartpage-btn");
+const checkoutContainer = document.querySelector("continue-checkout");
+const continueShoppingContainer = document.querySelector(".continue-shopping");
 
 const baseURL = "https://www.rainydays.casa/wp-json/wc/v3/products/";
 const consumerKey = "ck_410e0eecbaff8e7d39eee8fefaa6ac02fab52640";
@@ -23,6 +26,7 @@ async function displayCartProducts() {
         cartInfoContainer.style.display = "none";
         cartListContainer.innerHTML = `<div class="loading"></div>`;
         tableBody = "";
+        cartPageBtnContainer.style.display = "flex";
     }
 
     for (let i = 0; i < cartListArray.length; i++) {
@@ -35,12 +39,17 @@ async function displayCartProducts() {
 
             totalPrice += parseInt(cProduct["price"]) * cartListArray[i][1];
 
+
+            console.log(cProduct);
             // <a href="product.html?productID=${cProduct[0]}"></a>
             tableBody += `<tr>
                                 <th scope="row">${i+1}</th>
-                                <td class="td-description"><img src="${cProduct["images"][0]["src"]}" alt="${cProduct["name"]}" class="cart-product-image">
-                                    <span>&nbsp;${cProduct["name"]}</span>
-                                    <span>&nbsp;${cProduct["price_html"]}</span>
+                                <td>
+                                    <a href="product.html?productID=${cProduct["id"]}"  class="td-description">
+                                        <img src="${cProduct["images"][0]["src"]}" alt="${cProduct["name"]}" class="cart-product-image">
+                                        <span>&nbsp;${cProduct["name"]}</span>
+                                        <span>&nbsp;${cProduct["price_html"]}</span>
+                                    </a>
                                 </td>
                                 <td>${cartListArray[i][1]}</td>
                                 <td>${cProduct["price"]*cartListArray[i][1]}</td>

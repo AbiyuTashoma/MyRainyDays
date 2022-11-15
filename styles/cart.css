@@ -33,7 +33,8 @@
     padding-top: 25px;
 }
 
-.cart-continue {
+.continue-checkout,
+.continue-shopping {
     background-color: var(--cta-background);
     color: white;
     text-decoration: none;
@@ -46,9 +47,27 @@
     transition-property: background-color;
     transition-duration: 0.5s;
 }
+
+.cartpage-btn {
+    display: none;
+    max-width: 540px;
+    justify-content: space-evenly;
+    margin: 0 auto;
+}
+
+.continue-shopping {
+    background-color: white;
+    color: var(--dark-blue-rainydays);
+    border: var(--dark-blue-rainydays) solid thin;
+}
   
-.cart-continue:hover {
+.continue-checkout:hover {
     background-color: var(--cta-hover-background);
+    cursor: pointer;
+}
+
+.continue-shopping:hover {
+    background-color: lightblue;
     cursor: pointer;
 }
 
@@ -86,6 +105,9 @@ thead th:nth-child(4) {
 .td-description {
     display: flex;
     align-items: center;
+    width: fit-content;
+    text-decoration: none;
+    color: var(--dark-blue-rainydays);
 }
 
 th,
