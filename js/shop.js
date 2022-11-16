@@ -32,8 +32,11 @@ getProducts();
 
 orderByContainer.onchange = async function () {
     const orderBy = orderByContainer.value;
+    let newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=${orderBy}`;
 
-    const newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=${orderBy}`;
+    if (orderBy === "lowprice") {
+        newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=price&order=asc`;
+    }
 
     try {
         const response = await fetch(newURL);

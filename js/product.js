@@ -27,7 +27,6 @@ async function getProduct() {
         const response = await fetch(productURL);
         const product = await response.json();
     
-        // productsContainer.innerHTML = displayDetail(product);
         pImageContainer.innerHTML = `<img src="${product["images"][0]["src"]}" alt="${product["name"]}" class="product-image">`;
         pNameContainer.innerHTML = `${product["name"]}`;
         pPriceContainer.innerHTML = `${product["price_html"]}`;
