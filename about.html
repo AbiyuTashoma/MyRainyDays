@@ -17,31 +17,24 @@
                         <img src="images/RainyDays_Logo.png" alt="rainydays logo" class="logo">
                     </a>
                 </div>
-                <div class="login-container">
-                    <div class="login-wish-cart">
-                        <p class="login" title="login">Login</p>
-                        <a href="cart.html">
-                            <div class="cart-item-ref">
-                                <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
-                                <p class="cart-items center-aligned">0</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="menu-about-container">
                     <div class="drop-down">
-                        <label for="hamb-menu" class="ham-menu-label"><img src="icons/hamburger-menu.svg" class="hamburger-icon" alt="hamburger menu"></label>
+                        <label for="hamb-menu" class="ham-menu-label">
+                            <img src="icons/hamburger-menu.svg" class="hamburger-icon" alt="hamburger menu">
+                        </label>
                         <input type="checkbox" name="hamburger-menu" id="hamb-menu">
                         <nav class="main-menu">
                             <ul class="main-menu-ul">
                                 <li><a href="index.html" title="home" class="menu-a">Home</a></li>
                                 <li><a href="shop.html" title="shop" class="menu-a">Shop</a></li>
+                                <li><a href="about.html" title="about rainydays" class="active menu-a smaller-menu">About</a></li>
+                                <li><a href="contact-us.html" title="contact us" class="menu-a smaller-menu">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
                     <form class="search">
                         <label for="search-item" class="search-label"><img src="icons/search.svg" alt="search icon" title="search" class="search-icon"></label>
-                        <input type="search" name="search-item" id="search-item" list="search-items" title="search" class="search-field">
+                        <input type="search" name="search-item" id="search-item" list="search-items" title="search" class="search-field">                        
                         <datalist id="search-items">
                             <option value="jackets"></option>
                             <option value="running jackets"></option>
@@ -50,12 +43,17 @@
                             <option value="puffer jackets"></option>
                         </datalist>
                     </form>
-                    <nav class="about-contact">
-                        <ul>
-                            <li><a href="about.html" title="about rainydays" class="active menu-a">About RAINYDAYS</a></li>
-                            <li><a href="contact-us.html" title="contact us" class="menu-a">Contact Us</a></li>
-                        </ul>
-                    </nav>
+                    <div class="login-container">
+                        <div class="login-wish-cart">
+                            <p class="login" title="login">Login</p>
+                            <a href="cart.html">
+                                <div class="cart-item-ref">
+                                    <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
+                                    <p class="cart-items center-aligned">0</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </header>

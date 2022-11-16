@@ -69,8 +69,6 @@
   font-style: italic;
 }
 
-/* .p-title:hover, */
-/* .p-price:hover  */
 .title-container:hover {
   text-decoration: underline;
   cursor: pointer;

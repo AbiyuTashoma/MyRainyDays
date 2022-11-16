@@ -90,7 +90,6 @@ body {
 .header-container {
   background-color: var(--white-background);
   margin: 0 auto;
-  /* align-content: center; */
 }
 
 .header-section {
@@ -126,7 +125,6 @@ body {
 
 .login-wish-cart {
   display: flex;
-  justify-content: center;
   align-items: center;
   gap: var(--ol-margin);
 }
@@ -162,10 +160,8 @@ body {
 }
 
 .wish-cart:hover,
-.shopping-cart:hover,
 .hamburger-icon:hover,
 .search-icon:hover {
-  fill: #18b418;
   opacity: 0.7;
   cursor: pointer;
 }
@@ -210,11 +206,15 @@ body {
   transition-duration: 0.5s;
 }
 
+.smaller-menu {
+  font-size: 1em;
+}
+
 .active {
   border-bottom: var(--dark-blue-rainydays) solid thin;
 }
 
-/* -------------------  SEARCH MENU STYLES ( for hover style check LOGIN WISH-LIST CART STYLES)---------------- */
+/* -------------------  SEARCH MENU STYLES ( for hover style check CART STYLES)---------------- */
 
 .search {
   display: flex;
@@ -395,7 +395,6 @@ body {
 
 .input-fields {
   font-size: var(--li-font-size);
-  /* width: var(--normal-field-width); */
   border: var(--dark-grey-border) solid thin;
   border-radius: 7px;
   padding: 3px 7px;
@@ -420,10 +419,9 @@ body {
 
 .menu-about-container {
   display: flex;
-  /* margin: 0 var(--ol-margin); */
   align-items: center;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  justify-content: space-around  /* space-between; */
+  /* flex-wrap: wrap; */
 }
 
 /* -------------------------  MAIN BODY STYLES --------------------- */
@@ -439,9 +437,7 @@ body {
   background-repeat: no-repeat;
 }
 
-/* NOTE: check variationS on different screen sizes*/
 .main-body-section {
-  /* max-width: var(--max-width-main); */
   margin: 0 auto;
 }
 
@@ -585,11 +581,6 @@ footer p {
     max-width: 1.7em;
   }
 
-  .menu-about-container {
-    align-items: flex-start;
-    margin: 0 15px;
-  }
-
   .main-menu li,
   .about-contact li {
     display: block;
@@ -698,18 +689,7 @@ footer p {
     margin-left: 25px;
   }
 
-  /*================ SUCCESS PAGE ==========*/
-
-  .success-body {
-    margin: 50px auto;
-    max-width: 500px;
-  }
-
-  .success-img {
-    height: 115px;
-  }
-
-  /*================ WOMENS PAGE / COLLECTION PAGE==========*/
+  /*================ COLLECTION PAGE ==========*/
 
   .collection-container {
     grid-template-columns: 1fr 1fr;
@@ -724,9 +704,6 @@ footer p {
 /* ----------------------- Small size screens MEDIA QUERY --------------------- */
 
 @media only screen and (max-width: 599px) {
-  /* .logo {
-    max-width: 100px;
-  } */
 
   .login-wish-cart {
     gap: 7px;
@@ -918,20 +895,6 @@ footer p {
     font-size: 0.6em;
   }
 
-  /*================ CART OVERLAY ==========*/
-
-  .overlay-container {
-    width: 330px;
-    height: 90px;
-    margin-top: 150px;
-  }
-
-  .overlay {
-    text-decoration: none;
-    font-size: 1em;
-    padding: 6px 10px;
-  }
-
   /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/
 
   .checkout-section {
@@ -996,7 +959,8 @@ footer p {
     font-size: smaller;
   }
 
-  th, td {
+  th, 
+  td {
     padding: 2px;
-}
+  }
 }

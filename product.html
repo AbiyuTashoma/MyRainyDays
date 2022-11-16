@@ -18,17 +18,6 @@
                         <img src="images/RainyDays_Logo.png" alt="rainydays logo" class="logo">
                     </a>
                 </div>
-                <div class="login-container">
-                    <div class="login-wish-cart">
-                        <p class="login" title="login">Login</p>
-                        <a href="cart.html">
-                            <div class="cart-item-ref">
-                                <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
-                                <p class="cart-items center-aligned">0</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
                 <div class="menu-about-container">
                     <div class="drop-down">
                         <label for="hamb-menu" class="ham-menu-label">
@@ -38,7 +27,9 @@
                         <nav class="main-menu">
                             <ul class="main-menu-ul">
                                 <li><a href="index.html" title="home" class="menu-a">Home</a></li>
-                                <li><a href="shop.html" title="shop" class="menu-a">Shop</a></li>
+                                <li><a href="shop.html" title="shop" class="active menu-a">Shop</a></li>
+                                <li><a href="about.html" title="about rainydays" class="menu-a smaller-menu">About</a></li>
+                                <li><a href="contact-us.html" title="contact us" class="menu-a smaller-menu">Contact</a></li>
                             </ul>
                         </nav>
                     </div>
@@ -53,12 +44,17 @@
                             <option value="puffer jackets"></option>
                         </datalist>
                     </form>
-                    <nav class="about-contact">
-                        <ul>
-                            <li><a href="about.html" title="about rainydays" class="menu-a">About RAINYDAYS</a></li>
-                            <li><a href="contact-us.html" title="contact us" class="menu-a">Contact Us</a></li>
-                        </ul>
-                    </nav>
+                    <div class="login-container">
+                        <div class="login-wish-cart">
+                            <p class="login" title="login">Login</p>
+                            <a href="cart.html">
+                                <div class="cart-item-ref">
+                                    <img src="icons/shopping-cart.svg" alt="shopping cart" class="wish-cart">
+                                    <p class="cart-items center-aligned">0</p>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </section>
         </header>
@@ -97,17 +93,6 @@
                                 </label>
 
                                 <a href="cart.html" class="viewcart">View Cart</a>
-
-                                <!-- <input type="button" class="add-to-wish" id="addtowish-product">
-                                <label for="addtowish-product" class="fitcontent" title="wish list">
-                                    <div class="add-to-wish-container">
-                                        <div class="cart-container">
-                                            <img src="icons/wish.svg" alt="wish" class="cart-size">
-                                            <p class="add-wish">+</p>
-                                        </div>
-                                        <p class="add-to-wish-txt">Wish list</p>
-                                    </div>
-                                </label>                                 -->
                             </div>
                             <div class="description"></div>
                         </form>
