@@ -44,6 +44,7 @@
     margin-top: var(--ol-margin);
     border: var(--cta-background) solid thin;
     border-radius: 10px;
+    width: fit-content;
     transition-property: background-color;
     transition-duration: 0.5s;
 }

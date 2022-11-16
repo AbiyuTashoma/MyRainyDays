@@ -728,13 +728,13 @@ footer p {
   } */
 
   .login-wish-cart {
-    gap: 10px;
+    gap: 7px;
   }
 
   .login {
     font-size: 0.9em;
     margin: auto 0;
-    padding: 7px 20px;
+    padding: 6px 18px;
   }
 
   .about-contact-section {
@@ -790,7 +790,7 @@ footer p {
     grid-area: menu-about;
     align-items: center;
     margin: 0 auto;
-    gap: 20px;
+    gap: 10px;
   }
 
   /* -----grid area definition----- */
@@ -981,18 +981,16 @@ footer p {
     margin-left: -23px;
   }
 
-  /*================ SUCCESS PAGE ==========*/
+  /*================ CART PAGE ==========*/
 
-  .success-body {
-    margin: 50px auto;
-    max-width: 310px;
+  .cartpage-btn {
+    flex-direction: column;
+    align-items: flex-end;
   }
 
-  .success-img {
-    height: 95px;
-  }
-
-  .hidden-item {
-    display: none;
+  thead,
+  tbody,
+  tfoot {
+    font-size: smaller;
   }
 }
