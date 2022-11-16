@@ -84,6 +84,11 @@ caption {
     font-size: larger;
 }
 
+thead,
+tfoot {
+    background-color: var(--light-blue-footer);
+}
+
 thead th:nth-child(1) {
     width: 10%;
 }

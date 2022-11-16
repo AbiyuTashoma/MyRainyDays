@@ -24,7 +24,7 @@ COLOURS
 
 :root {
   --dark-blue-rainydays: #013440; /*RAINYDAYS color*/
-  --light-blue-footer: #e6f4ff; /*footer*/
+  --light-blue-footer: #d7ebfb;; /*footer*/
   --white-background: #ffffff;
   --cta-background: #299748;
   --cart-add-background: #026259;
@@ -594,6 +594,7 @@ footer p {
   .about-contact li {
     display: block;
     margin: 0 5px 5px;
+    padding: 5px;
   }
 
   .main-menu {
@@ -764,6 +765,7 @@ footer p {
   .main-menu li {
     display: block;
     margin: 0 5px 5px;
+    padding: 5px;
   }
 
   .main-menu,
@@ -993,4 +995,8 @@ footer p {
   tfoot {
     font-size: smaller;
   }
+
+  th, td {
+    padding: 2px;
+}
 }

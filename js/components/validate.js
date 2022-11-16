@@ -21,44 +21,11 @@ function validateNumber (num, len = 8) {
     }
 }
 
-//clean and validate money
-function validateMoney (money) {
-    if (money > 0) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
-}
-
 //validate email
 function validateEmail (emailValue) {
     const regEx = /\S+@\S+\.\S+/;
     const match = regEx.test(emailValue);
     return match;
-}
-
-//validate matching passwords
-function validateMatch (value1, value2) {
-    if (value1 === value2) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
-}
-
-//validate user info
-function validateProfile (username, password) {
-    if ((username === "username") && (password === "password")) {
-        return true;
-    }
-
-    else {
-        return false;
-    }
 }
 
 function validateMonth (monthValue) {
@@ -72,35 +39,14 @@ function validateMonth (monthValue) {
 
 }
 
-//Set valid date
-function setDate (calender) {
-    const date = new Date();
-    const year = date.getFullYear();
-    let month = date.getMonth() + 1;
-    let day = date.getDate();
-    
-    if (day < 10) {
-        day = "0" + day;
-    }
-
-    if (month < 10) {
-        month = "0" + month;
-    }
-
-    const today = year + "-" + month + "-" + day;
-
-    calender.value = today;
-    calender.min = today;
-}
-
-//Count seats
-function countSeat (seats) {
-    let totalSeat = 0;
-    seats.forEach(function(seat) {
-        if (seat.checked && !seat.disabled) {
-            totalSeat += 1;
+//clear cart
+function clearCart() {
+    for (let i = 12; i < 25; i++) {
+        const items = window.sessionStorage.getItem(i);
+        if (items) {
+            window.sessionStorage.removeItem(i);
         }
-    })
+    }
 
-    return totalSeat;
+    checkCart();
 }

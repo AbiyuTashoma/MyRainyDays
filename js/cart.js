@@ -83,15 +83,4 @@ async function displayCartProducts() {
 
 }
 
-function clearCart(event) {
-    for (let i = 12; i < 25; i++) {
-        const items = window.sessionStorage.getItem(i);
-        if (items) {
-            window.sessionStorage.removeItem(i);
-        }
-    }
-
-    checkCart();
-}
-
 displayCartProducts();

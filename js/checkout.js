@@ -1,66 +1,3 @@
-// //Event selection
-// const eventContainer = document.querySelector("#event");
-// const seatContainer = document.querySelector(".seat-container");
-// const seatLabelContainer = document.querySelector(".seat-label");
-// const reservationContainer = document.querySelector(".reservation");
-
-// eventContainer.onchange = function() {
-//     const eventValue = eventContainer.value;
-//     const allSeat = document.querySelectorAll("input.seat");
-//     const checkedSeat = countSeat(allSeat);
-//     const quantity = quantityContainer.value;
-
-//     if (eventValue === "aeronautics_lecture") {
-//         seatContainer.style.display = "flex";
-//         seatLabelContainer.style.display = "block";
-//         reservationContainer.style.display = "none";
-//         displayPrice(priceContainer, checkedSeat);
-//         clearError(noteQuantityContainer, quantityContainer);
-//     }
-
-//     if ((eventValue === "night_museum") || (eventValue === "guided_tour")) {
-//         seatContainer.style.display = "none";
-//         seatLabelContainer.style.display = "none";
-//         reservationContainer.style.display = "block";
-//         displayPrice(priceContainer, quantity);
-//         clearError(noteSelectSeat, roomContainer);
-//     }
-// }
-
-// //Date
-// const dateContainer = document.querySelector("#event-date");
-// setDate(dateContainer);
-
-// //Seat selection
-// const roomContainer = document.querySelector(".lecture-room");
-// const priceContainer = document.querySelector(".price");
-
-// const noteSelectSeat = document.querySelector(".note-seat");
-// displayPrice(priceContainer, 0);
-
-// //Reservation
-// const quantityContainer = document.querySelector("#quantity");
-// const noteQuantityContainer = document.querySelector(".note-quantity");
-
-// quantityContainer.onchange = function() {
-//     const reserved = quantityContainer.value;
-//     displayPrice(priceContainer, reserved);
-// }
-
-// quantityContainer.onkeyup = function() {
-//     const reserved = quantityContainer.value;
-//     displayPrice(priceContainer, reserved);
-// }
-
-// roomContainer.onchange = function() {
-//     const allSeat = document.querySelectorAll("input.seat");
-//     const checkedSeat = countSeat(allSeat);
-
-//     displayPrice(priceContainer, checkedSeat);
-//     clearError(noteSelectSeat, roomContainer);
-// }
-
-
 //checkout form and feedback
 const messageContainer = document.querySelector(".message");
 const checkoutFormContainer = document.querySelector(".checkout-form");
@@ -167,14 +104,6 @@ function validate(event) {
     messageContainer.innerHTML = "";
     let validCheckout = true;
 
-    // const selectedEvent = eventContainer.value;
-
-    // const seats = document.querySelectorAll("input.seat");
-    // const checkedSeat = countSeat(seats);
-
-    // const quantity = quantityContainer.value;
-    // const validQuantity = validateMoney(quantity);
-
     const firstName = firstNameContainer.value;
     const lastName = lastNameContainer.value;
     const mobile = mobileContainer.value;
@@ -207,20 +136,7 @@ function validate(event) {
     const validValidCVC = validateNumber(validCVC, 3);
     const validValidVipps = validateNumber(validVipps);
 
-    // Checkout
-    // if (!checkedSeat && (selectedEvent === "aeronautics_lecture")) {
-    //     validCheckout = false;
-    //     setError(noteSelectSeat, roomContainer, "Select Seat");
-    // }
-
-    // if (!validQuantity && ((selectedEvent === "night_museum") || (selectedEvent === "guided_tour"))) {
-    //     validCheckout = false;
-    //     setError(noteQuantityContainer, quantityContainer, "Enter valid reservation");
-    // }
-
-
     //personal info
-
     if (!validFirstName) {
         validCheckout = false;
         setError(noteFirstNameContainer, firstNameContainer, "First name is required");
@@ -287,6 +203,7 @@ function validate(event) {
     if (validCheckout) {
         messageContainer.innerHTML = displayMessage("Order successfully completed!", "success");
         checkoutFormContainer.reset();
+        clearCart();
     }
 }
 
