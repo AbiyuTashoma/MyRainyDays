@@ -138,6 +138,7 @@ body {
   font-size: 1.1em;
   border: var(--dark-blue-rainydays) solid;
   border-radius: 30px;
+  width: max-content;
   background-color: var(--white-background);
   padding: 3px 26px;
   margin: 0;
