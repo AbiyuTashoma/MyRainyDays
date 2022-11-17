@@ -41,7 +41,6 @@
     font-size: 1.25em;
     font-weight: bold;
     padding: 7px 25px;
-    margin-top: var(--ol-margin);
     border: var(--cta-background) solid thin;
     border-radius: 10px;
     width: fit-content;
@@ -49,11 +48,15 @@
     transition-duration: 0.5s;
 }
 
-.cartpage-btn {
+.continue-checkout {
     display: none;
+}
+
+.cartpage-btn {
+    display: flex;
     max-width: 540px;
     justify-content: space-evenly;
-    margin: 0 auto;
+    margin: 30px auto;
 }
 
 .continue-shopping {
@@ -83,10 +86,10 @@ caption {
     font-size: larger;
 }
 
-thead,
+/* thead,
 tfoot {
     background-color: var(--light-blue-footer);
-}
+} */
 
 thead th:nth-child(1) {
     width: 10%;
@@ -118,4 +121,9 @@ thead th:nth-child(4) {
 th,
 td {
   padding: 7px;
+  border-bottom: solid thin lightblue;
+}
+
+.no-border {
+    border: none;
 }

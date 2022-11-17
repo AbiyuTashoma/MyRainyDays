@@ -11,12 +11,10 @@ function addItem(event) {
 
     if (item) {
         window.sessionStorage.setItem(PID, parseInt(item) + 1);
-        console.log("added: " + (parseInt(item) + 1));
     }
 
     else {
         window.sessionStorage.setItem(PID, 1);
-        console.log("added new 1");
     }
 
     checkCart();

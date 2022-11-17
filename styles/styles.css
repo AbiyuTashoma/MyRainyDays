@@ -98,6 +98,10 @@ body {
   z-index: 100;
 }
 
+.logo-container {
+  margin-bottom: 10px;
+}
+
 .logo {
   max-width: 90px;
   padding-top: var(--li-margin);
@@ -132,20 +136,20 @@ body {
 .login {
   font-family: Verdana, Geneva, Tahoma, sans-serif;
   font-size: 1.1em;
-  margin: auto 0;
   border: var(--dark-blue-rainydays) solid;
   border-radius: 30px;
   background-color: var(--white-background);
   padding: 3px 26px;
+  margin: 0;
   transition-property: background-color;
   transition-duration: 0.5s;
 }
 
-.login-container {
+/* .login-container {
   display: flex;
   justify-content: right;
   margin: 20px 60px 20px 0;
-}
+} */
 
 .login:hover {
   background-color: var(--light-blue-footer);
@@ -421,7 +425,6 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-around  /* space-between; */
-  /* flex-wrap: wrap; */
 }
 
 /* -------------------------  MAIN BODY STYLES --------------------- */
@@ -566,9 +569,6 @@ footer p {
 /* ----------------------- Medium sized screens MEDIA QUERY --------------------- */
 
 @media only screen and (min-width: 600px) and (max-width: 1000px) {
-  .login-container {
-    margin-right: 13px;
-  }
 
   .login {
     font-size: 1em;
@@ -706,12 +706,11 @@ footer p {
 @media only screen and (max-width: 599px) {
 
   .login-wish-cart {
-    gap: 7px;
+    gap: 15px;
   }
 
   .login {
     font-size: 0.9em;
-    margin: auto 0;
     padding: 6px 18px;
   }
 
@@ -765,25 +764,28 @@ footer p {
     z-index: 100;
   }
 
-  .menu-about-container {
+  .logo-container {
+    margin-bottom: 0px;
+  }
+
+  /* .menu-about-container {
     grid-area: menu-about;
     align-items: center;
     margin: 0 auto;
     gap: 10px;
-  }
+  } */
 
   /* -----grid area definition----- */
 
-  .logo-container {
+  /* .logo-container {
     grid-area: logo;
-  }
+  } */
 
-  .login-container {
-    grid-area: login;
+  /* .login-container {
     margin: 10px 0;
-  }
+  } */
 
-  .header-section {
+  /* .header-section {
     display: grid;
     grid-template-areas:
       "logo logo"
@@ -791,16 +793,15 @@ footer p {
     justify-content: center;
     padding-bottom: 0;
     margin: 0 auto;
-  }
+  } */
 
   .header-section,
-  .footer,
   .main-body {
     min-width: 350px;
   }
 
   .main-body {
-    margin: 0 auto 25px;
+    margin: 10px auto 25px;
   }
 
   .main-body-container {
@@ -870,6 +871,7 @@ footer p {
   .color-container {
     margin: 15px 0px;
   }
+
   .product-ul {
     margin: 5px auto;
   }
@@ -951,6 +953,7 @@ footer p {
   .cartpage-btn {
     flex-direction: column;
     align-items: flex-end;
+    gap: 20px;
   }
 
   thead,

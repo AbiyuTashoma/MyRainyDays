@@ -12,8 +12,6 @@ async function getProducts() {
         const products = await response.json();
     
         productsContainer.innerHTML = displayProducts(products);
-    
-        console.log(products);
     } 
     
     catch (error) {

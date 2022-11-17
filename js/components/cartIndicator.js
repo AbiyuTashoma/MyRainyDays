@@ -10,13 +10,10 @@ function checkCart() {
         if (items) {
             cartItems += parseInt(items)
             cartList.push([parseInt(i), parseInt(items)]);
-            console.log(i +" "+ items);
         }
     }
 
     cartItemsIndicator.innerHTML = cartItems;
-    console.log("total count: " + cartItems);
-    console.log();
 
     return cartList;
    

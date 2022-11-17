@@ -1,7 +1,7 @@
 const cartListContainer = document.querySelector(".cart-list");
 const cartInfoContainer = document.querySelector(".cart-info");
 const cartPageBtnContainer = document.querySelector(".cartpage-btn");
-const checkoutContainer = document.querySelector("continue-checkout");
+const checkoutContainer = document.querySelector(".continue-checkout");
 const continueShoppingContainer = document.querySelector(".continue-shopping");
 
 const baseURL = "https://www.rainydays.casa/wp-json/wc/v3/products/";
@@ -26,7 +26,8 @@ async function displayCartProducts() {
         cartInfoContainer.style.display = "none";
         cartListContainer.innerHTML = `<div class="loading"></div>`;
         tableBody = "";
-        cartPageBtnContainer.style.display = "flex";
+        checkoutContainer.style.display = "block";
+
     }
 
     for (let i = 0; i < cartListArray.length; i++) {
@@ -72,8 +73,8 @@ async function displayCartProducts() {
                                         <tbody>${tableBody}</tbody>
                                         <tfoot>
                                             <tr>
-                                                <td></td>
-                                                <td></td>
+                                                <td class="no-border"></td>
+                                                <td class="no-border"></td>
                                                 <td>Total sum</td>
                                                 <td>${totalPrice}</td>
                                             </tr>
