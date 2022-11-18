@@ -2,16 +2,20 @@ const productsContainer = document.querySelector(".collection-container");
 
 const orderByContainer = document.querySelector(".orderby");
 
+const searchItemContainer = document.querySelector("#search-item");
+const searchFormContainer = document.querySelector(".search");
+
 const url = "https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15";
 
 
-async function getProducts() {
+async function getProducts(targetUrl) {
 
     try {
-        const response = await fetch(url);
+        const response = await fetch(targetUrl);
         const products = await response.json();
     
         productsContainer.innerHTML = displayProducts(products);
+
     } 
     
     catch (error) {
@@ -20,15 +24,23 @@ async function getProducts() {
 
 }
 
-getProducts();
+getProducts(url);
 
-// orderby id and order ascending
-// https://www.rainydays.casa/wp-json/wc/store/products/?orderby=id&order=asc
-// orderby=price asc and desc
-// https://www.rainydays.casa/wp-json/wc/store/products/?orderby=price&order=desc
-// date, price, rating, popularity, modified, id, include, title, slug, menu_order, comment_count
+// search for products
+function searchProduct (event) {
+    event.preventDefault();
+    const searchText = searchItemContainer.value;
+    const searchUrl = `https://www.rainydays.casa/wp-json/wc/store/products/?search=${searchText}`;
 
-orderByContainer.onchange = async function () {
+    getProducts(searchUrl);
+
+}
+
+searchFormContainer.addEventListener("submit", searchProduct);
+
+
+// order products
+orderByContainer.onchange = function () {
     const orderBy = orderByContainer.value;
     let newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=${orderBy}`;
 
@@ -36,14 +48,7 @@ orderByContainer.onchange = async function () {
         newURL = `https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15&orderby=price&order=asc`;
     }
 
-    try {
-        const response = await fetch(newURL);
-        const newList = await response.json();
+    getProducts(newURL);
 
-        productsContainer.innerHTML = displayProducts(newList);
-    }
-
-    catch (error) {
-        productsContainer.innerHTML = displayMessage("An error has occurred. Please try again", "error");
-    }
 }
+

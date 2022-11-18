@@ -1,8 +1,3 @@
-/* @import "product.css";
-@import "checkout.css";
-@import "cartoverlay.css";
-@import "collection.css";
-@import "success.css"; */
 /* ----------------- GLOBAL STYLES -------------- */
 
 /* 
@@ -145,12 +140,6 @@ body {
   transition-property: background-color;
   transition-duration: 0.5s;
 }
-
-/* .login-container {
-  display: flex;
-  justify-content: right;
-  margin: 20px 60px 20px 0;
-} */
 
 .login:hover {
   background-color: var(--light-blue-footer);
@@ -768,33 +757,6 @@ footer p {
   .logo-container {
     margin-bottom: 0px;
   }
-
-  /* .menu-about-container {
-    grid-area: menu-about;
-    align-items: center;
-    margin: 0 auto;
-    gap: 10px;
-  } */
-
-  /* -----grid area definition----- */
-
-  /* .logo-container {
-    grid-area: logo;
-  } */
-
-  /* .login-container {
-    margin: 10px 0;
-  } */
-
-  /* .header-section {
-    display: grid;
-    grid-template-areas:
-      "logo logo"
-      "menu-about login";
-    justify-content: center;
-    padding-bottom: 0;
-    margin: 0 auto;
-  } */
 
   .header-section,
   .main-body {
