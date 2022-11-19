@@ -1,3 +1,5 @@
+const indicatorMenuContainer = document.querySelector(".indicator-menu");
+
 const pImageContainer = document.querySelector(".product-image-container");
 const pNameContainer = document.querySelector(".product-title");
 const pPriceContainer = document.querySelector(".price");
@@ -35,7 +37,8 @@ async function getProduct() {
         colorContainer.innerHTML = createAttribute(product["attributes"], "color");
         
         descriptionContainer.innerHTML = `About the product: ${product["description"]}`;
-        
+        indicatorMenuContainer.innerHTML += `${product["name"]}`;
+
         displayRelatedProducts (relatedProductsContainer, product.related_ids, baseURL, consumerKey, consumerSecret);
     } 
     

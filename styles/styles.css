@@ -208,6 +208,18 @@ body {
   border-bottom: var(--dark-blue-rainydays) solid thin;
 }
 
+.indicator-menu {
+  max-width: 90%;
+  margin: 0 auto;
+  margin-top: 20px;
+}
+
+.indicator-link {
+  text-decoration: none;
+  border-bottom: solid thin;
+  color: var(--dark-blue-rainydays);
+}
+
 /* -------------------  SEARCH MENU STYLES ( for hover style check CART STYLES)---------------- */
 
 .search {
@@ -737,6 +749,10 @@ footer p {
   .main-menu,
   .about-contact {
     display: none;
+  }
+
+  .indicator-menu {
+    font-size: small;
   }
 
   .about-contact li {
