@@ -4,6 +4,27 @@
   outline: solid #e3e3e3 thin;
 }
 
+.related-products,
+.featured-products {
+  display: flex;
+  gap: 10px;
+  width: 98%;
+  margin: 0 auto;
+}
+
+.related-left-margin {
+  margin-left: 10px;
+}
+
+.product-a {
+  text-decoration: none;
+  color: var(--dark-blue-rainydays);
+}
+
+.related-title {
+  margin: 5px 0px;
+}
+
 .product-image-container {
   text-align: center;
 }
@@ -41,29 +62,9 @@
   max-width: fit-content;
 }
 
-.related-products {
-  display: flex;
-  gap: 10px;
-  width: 98%;
-  margin: 0 auto;
-}
-
-.product-a {
-  text-decoration: none;
-  color: var(--dark-blue-rainydays);
-}
-
-.related-title {
-  margin: 5px 0px;
-}
-
 .related-container {
   max-width: 1300px;
   margin: 50px auto;
-}
-
-.related-left-margin {
-  margin-left: 10px;
 }
 
 .product-cta-container {

@@ -269,6 +269,26 @@ body {
 /* -------------------------------------   ---------------------- */
 /* -------------------------------------CHECKOUT PAGE +  shop/collection PAGE ---------------------- */
 
+.loading {
+  border: 5px dotted #5c58d7;
+  border-radius: 50%;
+  border-right: 0;
+  border-top: 0;
+  width: 75px;
+  height: 75px;
+  margin: 70px 50%;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+      transform: rotate(0deg);
+  }
+  100% {
+      transform: rotate(360deg);
+  }
+}
+
 .add-to-cart-container,
 .add-to-wish-container,
 .add-to-cart-shop {
@@ -875,6 +895,14 @@ footer p {
 
   .related-products {
     font-size: 0.6em;
+  }
+
+  .featured-products {
+    font-size: 0.8em;
+  }
+
+  .related-left-margin {
+    font-size: larger;
   }
 
   /*================ CHECKOUT SECTION (ABOUT-CONTACT-SECTION) ==========*/

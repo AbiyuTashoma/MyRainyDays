@@ -1,4 +1,4 @@
-.loading {
+/* .loading {
     border: 5px dotted #5c58d7;
     border-radius: 50%;
     border-right: 0;
@@ -16,7 +16,7 @@
     100% {
         transform: rotate(360deg);
     }
-}
+} */
 
 .cart-div {
     width: 98%;
