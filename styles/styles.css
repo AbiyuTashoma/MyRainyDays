@@ -470,6 +470,7 @@ body {
 /* ----------------------- LANDING IMAGE STYLES --------------------- */
 
 .image-container {
+  background-image: url("https://www.rainydays.casa/wp-content/uploads/2022/11/man_red-jacket_big-image-1024x781.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
