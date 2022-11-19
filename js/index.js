@@ -1,8 +1,9 @@
 const featuredProductsContainer = document.querySelector(".featured-products");
+const landingImageContainer = document.querySelector(".image-container");
 
 const featuredUrl = "https://www.rainydays.casa/wp-json/wc/store/products/?featured=true";
 
-async function getFeaturedProducts() {
+async function getFeaturedProducts(featuredLandingImage = 2) {
 
     featuredProductsContainer.innerHTML = "";
 
@@ -19,6 +20,8 @@ async function getFeaturedProducts() {
             </a>
         `;
         }
+
+        landingImageContainer.style.backgroundImage = `url(${fProducts[featuredLandingImage]["images"][0]["src"]})`;
 
     } 
     
