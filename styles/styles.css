@@ -470,7 +470,6 @@ body {
 /* ----------------------- LANDING IMAGE STYLES --------------------- */
 
 .image-container {
-  background-image: url("../images/man_red-jacket_big-image.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 70vh;
