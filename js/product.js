@@ -50,6 +50,6 @@ async function getProduct() {
 
 getProduct();
 
-
-
 displayViewCart();
+
+

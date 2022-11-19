@@ -26,19 +26,6 @@ async function getProducts(targetUrl) {
 
 getProducts(url);
 
-// search for products
-function searchProduct (event) {
-    event.preventDefault();
-    const searchText = searchItemContainer.value;
-    const searchUrl = `https://www.rainydays.casa/wp-json/wc/store/products/?search=${searchText}`;
-
-    getProducts(searchUrl);
-
-}
-
-searchFormContainer.addEventListener("submit", searchProduct);
-
-
 // order products
 orderByContainer.onchange = function () {
     const orderBy = orderByContainer.value;
@@ -52,3 +39,14 @@ orderByContainer.onchange = function () {
 
 }
 
+// search for products
+function searchProduct (event) {
+    event.preventDefault();
+    const searchText = searchItemContainer.value;
+    const searchUrl = `https://www.rainydays.casa/wp-json/wc/store/products/?search=${searchText}`;
+
+    getProducts(searchUrl);
+
+}
+
+searchFormContainer.addEventListener("submit", searchProduct);
