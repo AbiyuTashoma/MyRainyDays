@@ -530,6 +530,12 @@ body {
   font-size: 2.5em;
 }
 
+/* ---------------- Feature products ----------------- */
+.featured-container {
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
 /* ----------------------- FOOTER SECTION STYLES --------------------- */
 
 .footer {
@@ -892,6 +898,7 @@ footer p {
     width: 16px;
     height: 16px;
   }
+
 
   .related-products {
     font-size: 0.6em;
