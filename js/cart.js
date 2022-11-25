@@ -4,10 +4,7 @@ const cartPageBtnContainer = document.querySelector(".cartpage-btn");
 const checkoutContainer = document.querySelector(".continue-checkout");
 const continueShoppingContainer = document.querySelector(".continue-shopping");
 
-const baseURL = "https://www.rainydays.casa/wp-json/wc/v3/products/";
-const consumerKey = "ck_410e0eecbaff8e7d39eee8fefaa6ac02fab52640";
-const consumerSecret = "cs_bd76bc88ee10754a51d8f7bb7a7405ef4d668a22";
-
+const storeURL = "https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15";
 
 async function displayCartProducts() {
 
@@ -15,6 +12,7 @@ async function displayCartProducts() {
     
     cartInfoContainer.innerHTML = `<p>Cart is empty</p>`;
     let totalPrice = 0;
+    let currency = "";
     let tableBody = `<tr>
                         <th scope="row">0</th>
                         <td class="td-description">0</td>
@@ -27,31 +25,33 @@ async function displayCartProducts() {
         cartListContainer.innerHTML = `<div class="loading"></div>`;
         tableBody = "";
         checkoutContainer.style.display = "block";
-
-    }
-
-    for (let i = 0; i < cartListArray.length; i++) {
         
         try {    
-            const cProductURL = `${baseURL}${cartListArray[i][0]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
-        
-            const cResponse = await fetch(cProductURL);
+
+            const cResponse = await fetch(storeURL);
             const cProduct = await cResponse.json();
 
-            totalPrice += parseInt(cProduct["price"]) * cartListArray[i][1];
+            currency = cProduct[0]["prices"]["currency_suffix"];
 
-            tableBody += `<tr>
-                                <th scope="row">${i+1}</th>
-                                <td>
-                                    <a href="product.html?productID=${cProduct["id"]}"  class="td-description">
-                                        <img src="${cProduct["images"][0]["src"]}" alt="${cProduct["name"]}" class="cart-product-image">
-                                        <span>&nbsp;${cProduct["name"]}</span>
-                                        <span>&nbsp;${cProduct["price_html"]}</span>
-                                    </a>
-                                </td>
-                                <td>${cartListArray[i][1]}</td>
-                                <td>${cProduct["price"]*cartListArray[i][1]}</td>
-                            </tr>`;
+            for (let i = 0; i < cartListArray.length; i++) {
+
+                const cResult = cProduct.find(({ id }) => id == cartListArray[i][0]);
+
+                totalPrice += cResult["prices"]["price"] * parseInt(cartListArray[i][1]);
+
+                tableBody += `<tr>
+                                    <th scope="row">${i+1}</th>
+                                    <td>
+                                        <a href="product.html?productID=${cResult["id"]}"  class="td-description">
+                                            <img src="${cResult["images"][0]["src"]}" alt="${cResult["name"]}" class="cart-product-image">
+                                            <span>&nbsp;${cResult["name"]}</span>
+                                            <span>&nbsp;${cResult["price_html"]}</span>
+                                        </a>
+                                    </td>
+                                    <td>${cartListArray[i][1]}</td>
+                                    <td>${cResult["prices"]["price"]*parseInt(cartListArray[i][1])}${cResult["prices"]["currency_suffix"]}</td>
+                                </tr>`;
+            }
         }
 
         catch(error) {
@@ -76,7 +76,7 @@ async function displayCartProducts() {
                                                 <td class="no-border"></td>
                                                 <td class="no-border"></td>
                                                 <td>Total sum</td>
-                                                <td>${totalPrice}</td>
+                                                <td>${totalPrice}${currency}</td>
                                             </tr>
                                         </tfoot>
                                         

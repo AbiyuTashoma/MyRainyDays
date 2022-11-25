@@ -17,6 +17,7 @@ const parameter = new URLSearchParams(queryString);
 const pID = parameter.get("productID");
 
 const baseURL = "https://www.rainydays.casa/wp-json/wc/v3/products/";
+const storeURL = "https://www.rainydays.casa/wp-json/wc/store/products/?per_page=15";
 
 const consumerKey = "ck_410e0eecbaff8e7d39eee8fefaa6ac02fab52640";
 const consumerSecret = "cs_bd76bc88ee10754a51d8f7bb7a7405ef4d668a22";
@@ -39,7 +40,7 @@ async function getProduct() {
         descriptionContainer.innerHTML = `About the product: ${product["description"]}`;
         indicatorMenuContainer.innerHTML += `${product["name"]}`;
 
-        displayRelatedProducts (relatedProductsContainer, product.related_ids, baseURL, consumerKey, consumerSecret);
+        displayRelatedProducts (relatedProductsContainer, product.related_ids, storeURL);
     } 
     
     catch (error) {

@@ -20,29 +20,32 @@ function createAttribute (attributelist, attributeName) {
     return html;
 }
 
-async function displayRelatedProducts (relatedProductsContainer, relatedProducts, baseURL, consumerKey, consumerSecret) {
+async function displayRelatedProducts (relatedProductsContainer, relatedProducts, urlRelated) {
     
     relatedProductsContainer.innerHTML = "";
-    for (let i = 0; i < relatedProducts.length; i++) {
     
         try {    
-                const rProductURL = `${baseURL}${relatedProducts[i]}?consumer_key=${consumerKey}&consumer_secret=${consumerSecret}`;
-            
-                const rResponse = await fetch(rProductURL);
+                const rResponse = await fetch(urlRelated);
                 const rProduct = await rResponse.json();
-    
-                relatedProductsContainer.innerHTML += `
-                                                            <a href="product.html?productID=${rProduct["id"]}" class="product-a">
-                                                                <img src="${rProduct["images"][0]["src"]}" alt="${rProduct["name"]}" class="product-image">
-                                                                <p class="related-title">${rProduct["name"]}</p>
-                                                                <p class="related-title">${rProduct["price_html"]}</p>
+
+                for (let i = 0; i < relatedProducts.length; i++) {
+                    const rResult = rProduct.find(({ id }) => id == relatedProducts[i]);
+
+                    relatedProductsContainer.innerHTML += `
+                                                            <a href="product.html?productID=${rResult["id"]}" class="product-a">
+                                                                <img src="${rResult["images"][0]["src"]}" alt="${rResult["name"]}" class="product-image">
+                                                                <p class="related-title">${rResult["name"]}</p>
+                                                                <p class="related-title">${rResult["price_html"]}</p>
                                                             </a>
-                                                        `;                
+                                                        `; 
+                }
+                
+    
+                               
         }
     
         catch(error) {
             relatedProductsContainer.innerHTML += displayMessage("An error has occurred. Please try again", "error");
         }
-    }
 
 }
